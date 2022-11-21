@@ -12,3 +12,10 @@
   force = true
   [redirects.headers]
     X-From = "Netlify"
+[[redirects]]
+  from = "/icons/*"
+  to = "https://oyanglulu.synology.me:2873/icons/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
