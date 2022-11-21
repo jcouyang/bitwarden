@@ -187,12 +187,7 @@
     "message": "Modifier le dossier"
   },
   "baseDomain": {
-    "message": "Domaine de base",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Nom de domaine",
-    "description": "Domain name. Ex. website.com"
+    "message": "Domaine de base"
   },
   "host": {
     "message": "Hôte",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Note sécurisée"
   },
-  "typeLoginPlural": {
-    "message": "Identifiants"
-  },
-  "typeCardPlural": {
-    "message": "Cartes"
-  },
-  "typeIdentityPlural": {
-    "message": "Identités"
-  },
-  "typeSecureNotePlural": {
-    "message": "Notes sécurisées"
-  },
   "folders": {
     "message": "Dossiers"
   },
@@ -421,23 +404,11 @@
     "message": "Copier l'URI",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Moi"
-  },
   "myVault": {
     "message": "Mon coffre"
   },
-  "allVaults": {
-    "message": "Tous les Coffres"
-  },
   "vault": {
     "message": "Coffre"
-  },
-  "vaults": {
-    "message": "Coffres-forts"
-  },
-  "vaultItems": {
-    "message": "Objets du Coffre"
   },
   "moveSelectedToOrg": {
     "message": "Déplacer la sélection vers l'organisation"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Longueur"
   },
-  "uppercase": {
-    "message": "Majuscule (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Minuscule (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Chiffres (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Caractères spéciaux (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Nombre de mots"
   },
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Options"
   },
-  "preferences": {
-    "message": "Préférences"
-  },
-  "preferencesDesc": {
+  "optionsDesc": {
     "message": "Personnaliser l'expérience de votre coffre web."
   },
-  "preferencesUpdated": {
-    "message": "Préférences mises à jour"
+  "optionsUpdated": {
+    "message": "Options mises à jour"
   },
   "language": {
     "message": "Langue"
@@ -1459,10 +1413,6 @@
   "reports": {
     "message": "Rapports"
   },
-  "reportsDesc": {
-    "message": "Identifiez et fermez les trous de sécurité dans vos comptes en ligne en cliquant sur les rapports ci-dessous.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
-  },
   "unsecuredWebsitesReport": {
     "message": "Rapport sur les sites web non sécurisés"
   },
@@ -1512,7 +1462,7 @@
     "message": "Rapport sur les mots de passe exposés"
   },
   "exposedPasswordsReportDesc": {
-    "message": "Exposed passwords are passwords have been uncovered in known data breaches that were released publicly or sold on the dark web by hackers."
+    "message": "Les mots de passe exposés sont des mots de passe qui ont été découverts lors de fuites de données connues qui ont été rendues publiques ou vendues sur le Web par des pirates informatiques."
   },
   "exposedPasswordsFound": {
     "message": "Mots de passe exposés trouvés"
@@ -1545,7 +1495,7 @@
     "message": "Rapport sur les mots de passe faibles"
   },
   "weakPasswordsReportDesc": {
-    "message": "Les mots de passe faibles peuvent être facilement devinés par des pirates informatiques et des outils automatisés qui sont utilisés pour pirater les mots de passe. Le générateur de mots de passe Bitwarden peut vous aider à créer des mots de passe forts."
+    "message": "Les mots de passe faibles peuvent être facilement devinés par des pirates informatiques et des outils automatisés qui sont utilisés pour pirater les mots de passe. Le générateur de mots de passe de Bitwarden peut vous aider à créer des mots de passe forts."
   },
   "weakPasswordsFound": {
     "message": "Mots de passe faibles trouvés"
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Supprimer l'organisation"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "Entrez le mot de passe maître pour confirmer la suppression de $ORGANIZATION$ et de toutes les données associées. Les données du coffre dans $ORGANIZATION$ inclut:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Poursuivez ci-dessous pour supprimer cette organisation ainsi que toutes les données associées. Les comptes des utilisateurs individuels ne seront pas supprimés, mais ils ne seront plus associés à cette organisation. "
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "Les comptes utilisateur resteront actifs après la suppression, mais ne seront plus associés à cette organisation."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "La suppression de $ORGANIZATION$ est permanente et irréversible.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "La suppression d'une organisation est définitive. Cette action ne peut pas être annulée."
   },
   "organizationDeleted": {
     "message": "Organisation supprimée"
@@ -3646,8 +3581,7 @@
     "message": "Tous les Sends"
   },
   "maxAccessCountReached": {
-    "message": "Nombre maximum d'accès atteint",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Nombre maximum d'accès atteint"
   },
   "pendingDeletion": {
     "message": "En attente de suppression"
@@ -4431,12 +4365,6 @@
   "vaultTimeoutToLarge": {
     "message": "Le délai d'expiration de votre coffre-fort dépasse les restrictions définies par votre organisation."
   },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Le délai minimum de mise en veille personnalisée est 1 minute."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Le délai de mise en veille du coffre n'est pas dans l'intervalle de temps autorisé."
-  },
   "disablePersonalVaultExport": {
     "message": "Désactiver l'export du coffre personnel"
   },
@@ -4489,22 +4417,22 @@
     "message": "Récupérer les claims depuis l'endpoint d'informations utilisateur (User Info Endpoint)"
   },
   "additionalScopes": {
-    "message": "Scopes personnalisés"
+    "message": "Scopes supplémentaires/personnalisés (séparés par des virgules)"
   },
   "additionalUserIdClaimTypes": {
-    "message": "Types de claim personnalisés pour l'identifiant de l'utilisateur"
+    "message": "Types de claim supplémentaires/personnalisés pour l'identifiant de l'utilisateur (séparés par des virgules)"
   },
   "additionalEmailClaimTypes": {
-    "message": "Types de claim pour l'e-mail"
+    "message": "Types de claim supplémentaires/personnalisés pour l'e-mail (séparé par des virgules)"
   },
   "additionalNameClaimTypes": {
-    "message": "Types de claim personnalisés pour le nom"
+    "message": "Types de claim supplémentaires/personnalisés pour le nom (séparé par des virgules)"
   },
   "acrValues": {
-    "message": "Valeurs Authentication Context Class Reference demandées"
+    "message": "Valeurs Authentication Context Class Reference demandées (acr_values)"
   },
   "expectedReturnAcrValue": {
-    "message": "Valeur attendue pour le claim \"acr\" dans la réponse"
+    "message": "Valeur attendue pour le claim \"acr\" dans la réponse (validation acr)"
   },
   "spEntityId": {
     "message": "ID de l'entité du Service Provider"
@@ -4528,7 +4456,7 @@
     "message": "Algorithme de signature entrant minimal"
   },
   "spWantAssertionsSigned": {
-    "message": "Exiger des assertions signées"
+    "message": "Exiger des Assertions signées"
   },
   "spValidateCertificates": {
     "message": "Vérifier les certificats"
@@ -4555,10 +4483,10 @@
     "message": "Autoriser les réponses d'authentification non sollicitées"
   },
   "idpAllowOutboundLogoutRequests": {
-    "message": "Autoriser les demandes de déconnexion sortantes"
+    "message": "Allow outbound logout requests"
   },
   "idpSignAuthenticationRequests": {
-    "message": "Signer les demandes d'authentification"
+    "message": "Sign authentication requests"
   },
   "ssoSettingsSaved": {
     "message": "La configuration SSO a été enregistrée."
@@ -4680,8 +4608,8 @@
   "removeSponsorshipSuccess": {
     "message": "Parrainage supprimé"
   },
-  "ssoKeyConnectorError": {
-    "message": "Erreur de Connecteur de Clé : assurez-vous que le Connecteur de Clé est disponible et qu'il fonctionne correctement."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Impossible de contacter Key Connector, réessayez plus tard."
   },
   "keyConnectorUrl": {
     "message": "URL de Key Connector"
@@ -4809,77 +4737,8 @@
   "freeWithSponsorship": {
     "message": "GRATUIT avec le parrainage"
   },
-  "viewBillingSyncToken": {
-    "message": "Voir le Jeton de Synchronisation de Facturation"
-  },
-  "generateBillingSyncToken": {
-    "message": "Générer un Jeton de Synchronisation de Facturation"
-  },
-  "copyPasteBillingSync": {
-    "message": "Copiez et collez ce jeton dans les paramètres de la Synchronisation de Facturation de votre organisation auto-hébergée."
-  },
-  "billingSyncCanAccess": {
-    "message": "Votre Jeton de Synchronisation de Facturation peut accéder et modifier les paramètres d'abonnement de cette organisation."
-  },
-  "manageBillingSync": {
-    "message": "Gérer la Synchronisation de Facturation"
-  },
-  "setUpBillingSync": {
-    "message": "Configurer la Synchronisation de Facturation"
-  },
-  "generateToken": {
-    "message": "Générer le Jeton"
-  },
-  "rotateToken": {
-    "message": "Permiter le Jeton"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "Si vous continuez, vous devrez reconfigurer la synchronisation de facturation sur votre serveur auto-hébergé."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Permuter le Jeton de Synchronisation de Facturation invalidera le jeton précédent."
-  },
-  "selfHostingTitle": {
-    "message": "Auto-Hébergement"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "Pour configurer votre organisation sur votre propre serveur, vous devrez télécharger votre fichier de licence. Pour prendre en charge les forfaits Familles Gratuits et les fonctionnalités avancées de facturation pour votre organisation auto-hébergée, vous devrez configurer la synchronisation de facturation."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Jeton permuté."
-  },
-  "billingSync": {
-    "message": "Synchronisation de Facturation"
-  },
-  "billingSyncDesc": {
-    "message": "La Synchronisation de Facturation fournit des forfaits Familles Gratuits pour les membres et des capacités de facturation avancées en liant votre Bitwarden auto-hébergé au serveur cloud Bitwarden."
-  },
-  "billingSyncKeyDesc": {
-    "message": "Un Jeton de Synchronisation de Facturation à partir des paramètres d'abonnement de votre organisation dans le cloud est nécessaire pour remplir ce formulaire."
-  },
-  "billingSyncKey": {
-    "message": "Jeton de Synchronisation de Facturation"
-  },
-  "active": {
-    "message": "Actif"
-  },
-  "inactive": {
-    "message": "Inactif"
-  },
-  "sentAwaitingSync": {
-    "message": "Envoyé (en Attente de Synchronisation)"
-  },
-  "sent": {
-    "message": "Envoyé"
-  },
-  "requestRemoved": {
-    "message": "Supprimé (en Attente de Synchronisation)"
-  },
-  "requested": {
-    "message": "Demandé"
-  },
   "formErrorSummaryPlural": {
-    "message": "$COUNT$ champs ci-dessus nécessitent votre attention.",
+    "message": "$COUNT$ fields above need your attention.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -4888,10 +4747,10 @@
     }
   },
   "formErrorSummarySingle": {
-    "message": "1 champ ci-dessus nécessite votre attention."
+    "message": "1 field above needs your attention."
   },
   "fieldRequiredError": {
-    "message": "$FIELDNAME$ est requis.",
+    "message": "$FIELDNAME$ is required.",
     "placeholders": {
       "fieldname": {
         "content": "$1",
@@ -4900,16 +4759,16 @@
     }
   },
   "required": {
-    "message": "requis"
+    "message": "required"
   },
   "idpSingleSignOnServiceUrlRequired": {
-    "message": "Requis si l'ID d'Entité n'est pas une URL."
+    "message": "Required if Entity ID is not a URL."
   },
   "openIdOptionalCustomizations": {
-    "message": "Personnalisations Optionnelles"
+    "message": "Optional Customizations"
   },
   "openIdAuthorityRequired": {
-    "message": "Requis si l'Autorité n'est pas valide."
+    "message": "Required if Authority is not valid."
   },
   "separateMultipleWithComma": {
     "message": "Séparer avec des virgules."
@@ -4940,140 +4799,5 @@
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Accès Refusé. Vous n'avez pas la permission de voir cette page."
-  },
-  "masterPassword": {
-    "message": "Mot de Passe Maître"
-  },
-  "security": {
-    "message": "Sécurité"
-  },
-  "keys": {
-    "message": "Clés"
-  },
-  "billingHistory": {
-    "message": "Historique de Facturation"
-  },
-  "backToReports": {
-    "message": "Retour aux Rapports"
-  },
-  "organizationPicker": {
-    "message": "Sélecteur d'organisation"
-  },
-  "currentOrganization": {
-    "message": "Organisation actuelle",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Paramètres de Compte"
-  },
-  "generator": {
-    "message": "Générateur"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "Que souhaitez-vous générer ?"
-  },
-  "passwordType": {
-    "message": "Type de Mot de Passe"
-  },
-  "regenerateUsername": {
-    "message": "Régénérer le Nom d'Utilisateur"
-  },
-  "generateUsername": {
-    "message": "Générer le Nom d'Utilisateur"
-  },
-  "usernameType": {
-    "message": "Type de Nom d'Utilisateur"
-  },
-  "plusAddressedEmail": {
-    "message": "Courriel Adressé Plus",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "Utilisez les capacités de sous-adressage de votre fournisseur de messagerie."
-  },
-  "catchallEmail": {
-    "message": "Collecteur d'Email (catch-all)"
-  },
-  "catchallEmailDesc": {
-    "message": "Utilisez la boîte de réception du collecteur (catch-all) configurée de votre domaine."
-  },
-  "random": {
-    "message": "Aléatoire",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Mot Aléatoire"
-  },
-  "service": {
-    "message": "Service"
-  },
-  "unknownCipher": {
-    "message": "Élément inconnu, vous devrez peut-être vous connecter avec un autre compte pour accéder à cet élément."
-  },
-  "cannotSponsorSelf": {
-    "message": "Vous ne pouvez pas réclamer pour le compte actif. Entrez un e-mail différent."
-  },
-  "revokeWhenExpired": {
-    "message": "Expire le $DATE$",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Jeton permuté il y a $DAYS$ jour. Mettez à jour le jeton de synchronisation de facturation dans les paramètres de votre organisation auto-hébergée.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Jeton permuté il y a $DAYS$ jour. Mettez à jour le jeton de synchronisation de facturation dans les paramètres de votre organisation auto-hébergée.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Dernière Synchronisation",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Des parrainages auto-hébergés ont été synchronisés."
-  },
-  "billingManagedByProvider": {
-    "message": "Géré par $PROVIDER$",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Veuillez les contacter pour plus d'assistance",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Alias d'email transféré"
-  },
-  "forwardedEmailDesc": {
-    "message": "Générer un alias de courriel avec un service de transfert externe."
-  },
-  "hostname": {
-    "message": "Nom d'hôte",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "Jetons d'accès API"
   }
 }

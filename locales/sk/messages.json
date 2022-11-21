@@ -41,7 +41,7 @@
     "message": "Nové heslo"
   },
   "passphrase": {
-    "message": "Prístupová fráza"
+    "message": "Heslo"
   },
   "notes": {
     "message": "Poznámky"
@@ -187,12 +187,7 @@
     "message": "Upraviť priečinok"
   },
   "baseDomain": {
-    "message": "Základná doména",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Názov domény",
-    "description": "Domain name. Ex. website.com"
+    "message": "Základná doména"
   },
   "host": {
     "message": "Hostiteľ",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Zabezpečená poznámka"
   },
-  "typeLoginPlural": {
-    "message": "Prihlásenia"
-  },
-  "typeCardPlural": {
-    "message": "Karty"
-  },
-  "typeIdentityPlural": {
-    "message": "Identity"
-  },
-  "typeSecureNotePlural": {
-    "message": "Zabezpečené poznámky"
-  },
   "folders": {
     "message": "Priečinky"
   },
@@ -421,23 +404,11 @@
     "message": "Kopírovať URI",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Ja"
-  },
   "myVault": {
     "message": "Môj trezor"
   },
-  "allVaults": {
-    "message": "Všetky trezory"
-  },
   "vault": {
     "message": "Trezor"
-  },
-  "vaults": {
-    "message": "Trezory"
-  },
-  "vaultItems": {
-    "message": "Položky v trezore"
   },
   "moveSelectedToOrg": {
     "message": "Presunúť vybraté do organizácie"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Dĺžka"
   },
-  "uppercase": {
-    "message": "Veľké písmená (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Malé písmená (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Čísla (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Špeciálne znaky (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Počet slov"
   },
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Možnosti"
   },
-  "preferences": {
-    "message": "Predvoľby"
-  },
-  "preferencesDesc": {
+  "optionsDesc": {
     "message": "Prispôsobte si svoj webový trezor."
   },
-  "preferencesUpdated": {
-    "message": "Predvoľby boli aktualizované"
+  "optionsUpdated": {
+    "message": "Nastavenia aktualizované"
   },
   "language": {
     "message": "Jazyk"
@@ -1459,15 +1413,11 @@
   "reports": {
     "message": "Reporty"
   },
-  "reportsDesc": {
-    "message": "Identify and close security gaps in your online accounts by clicking the reports below.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
-  },
   "unsecuredWebsitesReport": {
-    "message": "Nezabezpečené stránky"
+    "message": "Správa o nezabezpečených stránkach"
   },
   "unsecuredWebsitesReportDesc": {
-    "message": "URLs that start with http:// don’t use the best available encryption. Change the Login URIs for these accounts to https:// for safer browsing."
+    "message": "Používať nezabezpečené stránky s protokolom http:// môže byť nebezpečné. Ak to stránka umožňuje, mali by ste vždy používať protokol https:// aby bolo vaše pripojenie šifrované."
   },
   "unsecuredWebsitesFound": {
     "message": "Našli sa nezabezpečené stránky"
@@ -1485,10 +1435,10 @@
     "message": "Vo vašom trezore nemáte nezabezpečené URI."
   },
   "inactive2faReport": {
-    "message": "Neaktívne 2FA"
+    "message": "Správa o neaktívnych 2FA"
   },
   "inactive2faReportDesc": {
-    "message": "Two-step Login adds a layer of protection to your accounts. Turn on Two-Step Login using Bitwarden Authenticator for these accounts or use an alternative method."
+    "message": "Dvojstupňové prihlásenie (2FA) je dôležité nastavenie ktoré vám pomôže zabezpečiť vaše kontá. Ak to stránka umožňuje, mali by ste 2FA použiť."
   },
   "inactive2faFound": {
     "message": "Našli sa prihlásenia bez dvojstupňového overenia"
@@ -1509,10 +1459,10 @@
     "message": "Pokyny"
   },
   "exposedPasswordsReport": {
-    "message": "Uniknuté heslá"
+    "message": "Správa o uniknutých heslách"
   },
   "exposedPasswordsReportDesc": {
-    "message": "Passwords exposed in a data breach are easy targets for attackers. Change these passwords to prevent potential break-ins."
+    "message": "Uniknuté heslá sú heslá ktoré boli odhalené v známych únikoch dát, alebo boli predávané hackermi na čiernom trhu."
   },
   "exposedPasswordsFound": {
     "message": "Našli sme uniknuté heslá"
@@ -1542,10 +1492,10 @@
     }
   },
   "weakPasswordsReport": {
-    "message": "Slabé heslá"
+    "message": "Správa o slabých heslách"
   },
   "weakPasswordsReportDesc": {
-    "message": "Weak passwords can be easily guessed by attackers. Change these passwords to strong ones using the Password Generator."
+    "message": "Slabé heslá sa dajú ľahko uhádnuť alebo prelomiť nástrojmi. Generátor hesiel Bitwarden vám pomôže vytvoríť silné heslá."
   },
   "weakPasswordsFound": {
     "message": "Našli sa slabé heslá"
@@ -1563,10 +1513,10 @@
     "message": "Žiadne položky vo vašom hesle nepoužívajú slabé heslá."
   },
   "reusedPasswordsReport": {
-    "message": "Viacnásobne použité heslá"
+    "message": "Správa o viacnásobne použitých heslách"
   },
   "reusedPasswordsReportDesc": {
-    "message": "Reusing passwords makes it easier for attackers to break into multiple accounts. Change these passwords so that each is unique."
+    "message": "Ak je stránka ktorú používate prelomená a používate to isté heslo aj inde, môže útočník získať prístup k viacerým vaším účtom. Mali by ste používať unikátne heslo pre každú stránku."
   },
   "reusedPasswordsFound": {
     "message": "Našli sa viacnásobne použité heslá"
@@ -1596,7 +1546,7 @@
     "message": "Report o úniku dát"
   },
   "breachDesc": {
-    "message": "Breached accounts can expose your personal information. Secure breached accounts by enabling 2FA or creating a stronger password."
+    "message": "\"Únik\" je incident kde údaje zo stránky boli ilegálne odcudzené hackermi a následne zverejnené. Overte si typ dát ktoré boli zverejnené (emaily, heslá, čísla kariet, atď.) a adekvátne reagujte - napríklad si zmeňte heslo."
   },
   "breachCheckUsernameEmail": {
     "message": "Overte všetky emaily alebo použivateľské mená, ktoré používate."
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Odstrániť organizáciu"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "Zadaním hlavného hesla potvrďte odstránenie $ORGANIZATION$ a všetkých súvisiacich údajov. Údaje trezora v položke $ORGANIZATION$ zahŕňajú:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Pokračujte nižšie ak chcete odstrániť túto organizáciu a všetky súvisiace dáta. Individuálni používatelia budu zachovaní, ale už nebudú súčasťou tejto organizácie. "
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "Používateľské účty zostanú aktívne aj po odstránení, ale už nebudú spojené s touto organizáciou."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "Odstránenie $ORGANIZATION$ je trvalé a nezvratné.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "Odstránenie organizácie je trvalé. Operáciu nie je možné vrátiť späť."
   },
   "organizationDeleted": {
     "message": "Organizácia odstránená"
@@ -3646,8 +3581,7 @@
     "message": "Všetky Sendy"
   },
   "maxAccessCountReached": {
-    "message": "Bol dosiahnutý maximálny počet prístupov",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Bol dosiahnutý maximálny počet prístupov"
   },
   "pendingDeletion": {
     "message": "Čakajúce odstránenie"
@@ -4431,12 +4365,6 @@
   "vaultTimeoutToLarge": {
     "message": "Časový limit vášho trezora prekračuje obmedzenia nastavené vašou organizáciou."
   },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Minimálny vlastný časový limit je 1 minúta."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Časový limit trezoru nie je v povolenom rozsahu."
-  },
   "disablePersonalVaultExport": {
     "message": "Zakázať export osobného trezora"
   },
@@ -4588,7 +4516,7 @@
     "message": "Reclaimed free plan"
   },
   "redeem": {
-    "message": "Uplatniť"
+    "message": "Redeem"
   },
   "sponsoredFamiliesSelectOffer": {
     "message": "Select the organization you would like sponsored"
@@ -4600,7 +4528,7 @@
     "message": "Enter your personal email to redeem Bitwarden Families"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "If you remove an offer or are removed from the sponsoring organization, your Families sponsorship will expire at the next renewal date."
+    "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Accept offer for an existing organization or create a new Families organization."
@@ -4627,7 +4555,7 @@
     "message": "Free Bitwarden Families offer successfully redeemed"
   },
   "redeemed": {
-    "message": "Uplatnené"
+    "message": "Redeemed"
   },
   "redeemedAccount": {
     "message": "Redeemed Account"
@@ -4657,7 +4585,7 @@
     "message": "Redeem Now"
   },
   "recipient": {
-    "message": "Príjemca"
+    "message": "Recipient"
   },
   "removeSponsorship": {
     "message": "Remove Sponsorship"
@@ -4669,19 +4597,19 @@
     "message": "Sponsorship Created"
   },
   "revoke": {
-    "message": "Odvolať"
+    "message": "Revoke"
   },
   "emailSent": {
-    "message": "Email Odoslaný"
+    "message": "Email Sent"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "After removing this account, the Families plan sponsorship will expire at the end of the billing period. You will not be able to redeem a new sponsorship offer until the existing one expires. Are you sure you want to continue?"
+    "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
   },
   "removeSponsorshipSuccess": {
     "message": "Sponsorship Removed"
   },
-  "ssoKeyConnectorError": {
-    "message": "Chyba Key Connector: uistite sa, že je Key Connector k dispozícii a funguje správne."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Unable to reach the Key Connector, try again later."
   },
   "keyConnectorUrl": {
     "message": "Key Connector URL"
@@ -4732,7 +4660,7 @@
     "message": "Once set up, your configuration will be saved and members will be able to authenticate using their Identity Provider credentials."
   },
   "ssoPolicyHelpStart": {
-    "message": "Povoliť",
+    "message": "Enable the",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
   },
   "ssoPolicyHelpLink": {
@@ -4789,7 +4717,7 @@
     "message": "New Families Organization"
   },
   "acceptOffer": {
-    "message": "Prijať ponuku"
+    "message": "Accept Offer"
   },
   "sponsoringOrg": {
     "message": "Sponsoring Organization"
@@ -4809,75 +4737,6 @@
   "freeWithSponsorship": {
     "message": "FREE with sponsorship"
   },
-  "viewBillingSyncToken": {
-    "message": "View Billing Sync Token"
-  },
-  "generateBillingSyncToken": {
-    "message": "Generate Billing Sync Token"
-  },
-  "copyPasteBillingSync": {
-    "message": "Copy and paste this token into the Billing Sync settings of your self-hosted organization."
-  },
-  "billingSyncCanAccess": {
-    "message": "Your Billing Sync token can access and edit this organization's subscription settings."
-  },
-  "manageBillingSync": {
-    "message": "Manage Billing Sync"
-  },
-  "setUpBillingSync": {
-    "message": "Set Up Billing Sync"
-  },
-  "generateToken": {
-    "message": "Vygenerovať Token"
-  },
-  "rotateToken": {
-    "message": "Rotate Token"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "If you proceed, you will need to re-setup billing sync on your self-hosted server."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Rotating the Billing Sync Token will invalidate the previous token."
-  },
-  "selfHostingTitle": {
-    "message": "Vlastný hosting"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "To set-up your organization on your own server, you will need to upload your license file. To support Free Families plans and advanced billing capabilities for your self-hosted organization, you will need to set up billing sync."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Token rotated."
-  },
-  "billingSync": {
-    "message": "Billing Sync"
-  },
-  "billingSyncDesc": {
-    "message": "Billing Sync provides Free Families plans for members and advanced billing capabilities by linking your self-hosted Bitwarden to the Bitwarden cloud server."
-  },
-  "billingSyncKeyDesc": {
-    "message": "A Billing Sync Token from your cloud organization's subscription settings is required to complete this form."
-  },
-  "billingSyncKey": {
-    "message": "Billing Sync Token"
-  },
-  "active": {
-    "message": "Aktívny"
-  },
-  "inactive": {
-    "message": "Neaktívny"
-  },
-  "sentAwaitingSync": {
-    "message": "Sent (Awaiting Sync)"
-  },
-  "sent": {
-    "message": "Odoslané"
-  },
-  "requestRemoved": {
-    "message": "Removed (Awaiting Sync)"
-  },
-  "requested": {
-    "message": "Vyžiadané"
-  },
   "formErrorSummaryPlural": {
     "message": "$COUNT$ fields above need your attention.",
     "placeholders": {
@@ -4891,7 +4750,7 @@
     "message": "1 field above needs your attention."
   },
   "fieldRequiredError": {
-    "message": "$FIELDNAME$ je povinné.",
+    "message": "$FIELDNAME$ is required.",
     "placeholders": {
       "fieldname": {
         "content": "$1",
@@ -4900,7 +4759,7 @@
     }
   },
   "required": {
-    "message": "povinné"
+    "message": "required"
   },
   "idpSingleSignOnServiceUrlRequired": {
     "message": "Required if Entity ID is not a URL."
@@ -4940,140 +4799,5 @@
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Prístup zamietnutý. Nemáte oprávnenie na zobrazenie tejto stránky."
-  },
-  "masterPassword": {
-    "message": "Hlavné heslo"
-  },
-  "security": {
-    "message": "Zabezpečenie"
-  },
-  "keys": {
-    "message": "Kľúče"
-  },
-  "billingHistory": {
-    "message": "História platieb"
-  },
-  "backToReports": {
-    "message": "Back to Reports"
-  },
-  "organizationPicker": {
-    "message": "Výber organizácie"
-  },
-  "currentOrganization": {
-    "message": "Aktuálna organizácia",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Nastavenia účtu"
-  },
-  "generator": {
-    "message": "Generátor"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "Čo by ste chceli vygenerovať?"
-  },
-  "passwordType": {
-    "message": "Typ hesla"
-  },
-  "regenerateUsername": {
-    "message": "Vygenerovať nové používateľské meno"
-  },
-  "generateUsername": {
-    "message": "Vygenerovať používateľské meno"
-  },
-  "usernameType": {
-    "message": "Typ používateľského mena"
-  },
-  "plusAddressedEmail": {
-    "message": "E-mail s plusovým aliasom",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "Použiť možnosti subadresovania svojho poskytovateľa e-mailu."
-  },
-  "catchallEmail": {
-    "message": "Catch-all e-mail"
-  },
-  "catchallEmailDesc": {
-    "message": "Použiť doručenú poštu typu catch-all nastavenú na doméne."
-  },
-  "random": {
-    "message": "Náhodné",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Náhodné slovo"
-  },
-  "service": {
-    "message": "Služba"
-  },
-  "unknownCipher": {
-    "message": "Neznáma položka, na prístup k tejto položke sa možno budete musieť prihlásiť pomocou iného účtu."
-  },
-  "cannotSponsorSelf": {
-    "message": "You cannot redeem for the active account. Enter a different email."
-  },
-  "revokeWhenExpired": {
-    "message": "Expires $DATE$",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Token rotated $DAYS$ day ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Token rotated $DAYS$ days ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Posledná synchronizácia",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Sponzorstvo s vlastným hostingom synchronizované."
-  },
-  "billingManagedByProvider": {
-    "message": "Spravuje $PROVIDER$",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Obráťte sa na nich so žiadosťou o ďalšiu pomoc",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Alias preposlaného e-mailu"
-  },
-  "forwardedEmailDesc": {
-    "message": "Vytvoriť e-mailový alias pomocou externej služby preposielania."
-  },
-  "hostname": {
-    "message": "Názov hostiteľa",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "Prístupový token API"
   }
 }

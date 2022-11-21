@@ -187,12 +187,7 @@
     "message": "Επεξεργασία Φακέλου"
   },
   "baseDomain": {
-    "message": "Βασικός τομέας",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Όνομα τομέα",
-    "description": "Domain name. Ex. website.com"
+    "message": "Βασικός τομέας"
   },
   "host": {
     "message": "Διακομιστής",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Ασφαλής Σημείωση"
   },
-  "typeLoginPlural": {
-    "message": "Συνδέσεις"
-  },
-  "typeCardPlural": {
-    "message": "Κάρτες"
-  },
-  "typeIdentityPlural": {
-    "message": "Ταυτότητες"
-  },
-  "typeSecureNotePlural": {
-    "message": "Ασφαλείς Σημειώσεις"
-  },
   "folders": {
     "message": "Φάκελοι"
   },
@@ -421,23 +404,11 @@
     "message": "Αντιγραφή URI",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Me"
-  },
   "myVault": {
     "message": "Το Vault μου"
   },
-  "allVaults": {
-    "message": "All Vaults"
-  },
   "vault": {
     "message": "Vault"
-  },
-  "vaults": {
-    "message": "Vaults"
-  },
-  "vaultItems": {
-    "message": "Vault Items"
   },
   "moveSelectedToOrg": {
     "message": "Μετακίνηση Επιλεγμένων στον Οργανισμό"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Μήκος"
   },
-  "uppercase": {
-    "message": "Uppercase (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Lowercase (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Numbers (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Special Characters (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Αριθμός Λέξεων"
   },
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Επιλογές"
   },
-  "preferences": {
-    "message": "Preferences"
+  "optionsDesc": {
+    "message": "Προσαρμόστε την εμπειρία σας στο web vault."
   },
-  "preferencesDesc": {
-    "message": "Customize your web vault experience."
-  },
-  "preferencesUpdated": {
-    "message": "Preferences updated"
+  "optionsUpdated": {
+    "message": "Οι επιλογές ενημερώθηκαν"
   },
   "language": {
     "message": "Γλώσσα"
@@ -1458,10 +1412,6 @@
   },
   "reports": {
     "message": "Αναφορές"
-  },
-  "reportsDesc": {
-    "message": "Προσδιορίστε και κλείστε τα κενά ασφαλείας στους online λογαριασμούς σας κάνοντας κλικ στις παρακάτω αναφορές.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
   },
   "unsecuredWebsitesReport": {
     "message": "Αναφορά Μη-Ασφαλών Ιστοσελίδων"
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Διαγραφή Οργανισμού"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "Εισάγετε τον κύριο κωδικό πρόσβασης για να επιβεβαιώσετε τη διαγραφή του $ORGANIZATION$ και όλων των σχετικών δεδομένων. Τα δεδομένα vault στο $ORGANIZATION$ περιλαμβάνουν:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Συνεχίστε παρακάτω για να διαγράψετε αυτόν τον οργανισμό και όλα τα σχετικά δεδομένα. Θα παραμείνουν μεμονωμένοι λογαριασμοί χρηστών, αν και δεν θα συσχετίζονται πλέον με αυτόν τον οργανισμό. "
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "Οι λογαριασμοί χρήστη θα παραμείνουν ενεργοί μετά τη διαγραφή αλλά δεν θα συσχετίζονται πλέον με αυτόν τον οργανισμό."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "Η διαγραφή του $ORGANIZATION$ είναι μόνιμη και μη αναστρέψιμη.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "Η διαγραφή του οργανισμού είναι μόνιμη. Δεν μπορεί να αναιρεθεί."
   },
   "organizationDeleted": {
     "message": "Ο Οργανισμός Διαγράφηκε"
@@ -3646,8 +3581,7 @@
     "message": "Όλα τα Sends"
   },
   "maxAccessCountReached": {
-    "message": "Φτάσατε στον μέγιστο αριθμό πρόσβασης",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Φτάσατε στον μέγιστο αριθμό πρόσβασης"
   },
   "pendingDeletion": {
     "message": "Εκκρεμεί διαγραφή"
@@ -4431,12 +4365,6 @@
   "vaultTimeoutToLarge": {
     "message": "Το χρονικό όριο του vault υπερβαίνει τον περιορισμό που ορίστηκε από τον οργανισμό σας."
   },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Minimum custom timeout is 1 minute."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Vault Timeout is not within allowed range."
-  },
   "disablePersonalVaultExport": {
     "message": "Απενεργοποίηση Εξαγωγής Προσωπικών Vault"
   },
@@ -4489,16 +4417,16 @@
     "message": "Λήψη Αιτημάτων Από Το Τελικό Σημείο Πληροφοριών Χρήστη"
   },
   "additionalScopes": {
-    "message": "Προσαρμοσμένα Πεδία"
+    "message": "Πρόσθετα/Προσαρμοσμένα Πεδία (οριοθετημένα με κόμμα)"
   },
   "additionalUserIdClaimTypes": {
-    "message": "Προσαρμοσμένοι Τύποι Ιδιότητας Χρήστη"
+    "message": "Πρόσθετα/Προσαρμοσμένοι Τύποι Ιδιότητας Χρήστη (οριοθετημένοι με κόμμα)"
   },
   "additionalEmailClaimTypes": {
-    "message": "Προσαρμοσμένοι Τύποι Διεκδίκησης Email"
+    "message": "Πρόσθετα/Προσαρμοσμένοι Τύποι Διεκδίκησης Email (οριοθετημένοι με κόμμα)"
   },
   "additionalNameClaimTypes": {
-    "message": "Προσαρμοσμένος Τύπος Διεκδίκησης Ονόματος"
+    "message": "Πρόσθετο/Προσαρμοσμένος Τύπος Διεκδίκησης Ονόματος (οριοθετημένος με κόμμα)"
   },
   "acrValues": {
     "message": "Ζητούμενες τιμές αναφοράς κατηγορίας πλαισίου ελέγχου ταυτότητας (acr_values)"
@@ -4528,7 +4456,7 @@
     "message": "Ελάχιστος Εισερχόμενος Αλγόριθμος Υπογραφής"
   },
   "spWantAssertionsSigned": {
-    "message": "Αναμονή υπογεγραμμένων ισχυρισμών"
+    "message": "Υπεγράφη Επιβεβαιώσεις"
   },
   "spValidateCertificates": {
     "message": "Επικύρωση Πιστοποιητικών"
@@ -4555,10 +4483,10 @@
     "message": "Να Επιτρέπεται Μη Αιτούμενη Απόκριση Ταυτοποίησης"
   },
   "idpAllowOutboundLogoutRequests": {
-    "message": "Να επιτρέπονται αιτήματα εξερχόμενης αποσύνδεσης"
+    "message": "Allow outbound logout requests"
   },
   "idpSignAuthenticationRequests": {
-    "message": "Υπογραφή αιτήσεων ταυτοποίησης"
+    "message": "Sign authentication requests"
   },
   "ssoSettingsSaved": {
     "message": "Οι ρυθμίσεις για απλή σύνδεση αποθηκεύτηκαν."
@@ -4680,8 +4608,8 @@
   "removeSponsorshipSuccess": {
     "message": "Χορηγία Αφαιρέθηκε"
   },
-  "ssoKeyConnectorError": {
-    "message": "Key Connector error: make sure Key Connector is available and working correctly."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Δεν είναι δυνατή η πρόσβαση στον σύνδεσμο κλειδιού, προσπαθήστε ξανά αργότερα."
   },
   "keyConnectorUrl": {
     "message": "URL Σύνδεσης Κλειδιού"
@@ -4809,77 +4737,8 @@
   "freeWithSponsorship": {
     "message": "ΔΩΡΕΑΝ με χορηγία"
   },
-  "viewBillingSyncToken": {
-    "message": "View Billing Sync Token"
-  },
-  "generateBillingSyncToken": {
-    "message": "Generate Billing Sync Token"
-  },
-  "copyPasteBillingSync": {
-    "message": "Copy and paste this token into the Billing Sync settings of your self-hosted organization."
-  },
-  "billingSyncCanAccess": {
-    "message": "Your Billing Sync token can access and edit this organization's subscription settings."
-  },
-  "manageBillingSync": {
-    "message": "Manage Billing Sync"
-  },
-  "setUpBillingSync": {
-    "message": "Set Up Billing Sync"
-  },
-  "generateToken": {
-    "message": "Generate Token"
-  },
-  "rotateToken": {
-    "message": "Rotate Token"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "If you proceed, you will need to re-setup billing sync on your self-hosted server."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Rotating the Billing Sync Token will invalidate the previous token."
-  },
-  "selfHostingTitle": {
-    "message": "Self-Hosting"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "To set-up your organization on your own server, you will need to upload your license file. To support Free Families plans and advanced billing capabilities for your self-hosted organization, you will need to set up billing sync."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Token rotated."
-  },
-  "billingSync": {
-    "message": "Billing Sync"
-  },
-  "billingSyncDesc": {
-    "message": "Billing Sync provides Free Families plans for members and advanced billing capabilities by linking your self-hosted Bitwarden to the Bitwarden cloud server."
-  },
-  "billingSyncKeyDesc": {
-    "message": "A Billing Sync Token from your cloud organization's subscription settings is required to complete this form."
-  },
-  "billingSyncKey": {
-    "message": "Billing Sync Token"
-  },
-  "active": {
-    "message": "Active"
-  },
-  "inactive": {
-    "message": "Inactive"
-  },
-  "sentAwaitingSync": {
-    "message": "Sent (Awaiting Sync)"
-  },
-  "sent": {
-    "message": "Sent"
-  },
-  "requestRemoved": {
-    "message": "Removed (Awaiting Sync)"
-  },
-  "requested": {
-    "message": "Requested"
-  },
   "formErrorSummaryPlural": {
-    "message": "$COUNT$ πεδία παραπάνω χρειάζονται την προσοχή σας.",
+    "message": "$COUNT$ fields above need your attention.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -4888,10 +4747,10 @@
     }
   },
   "formErrorSummarySingle": {
-    "message": "1 πεδίο παραπάνω χρειάζεται την προσοχή σας."
+    "message": "1 field above needs your attention."
   },
   "fieldRequiredError": {
-    "message": "$FIELDNAME$ απαιτείται.",
+    "message": "$FIELDNAME$ is required.",
     "placeholders": {
       "fieldname": {
         "content": "$1",
@@ -4900,31 +4759,31 @@
     }
   },
   "required": {
-    "message": "απαιτείται"
+    "message": "required"
   },
   "idpSingleSignOnServiceUrlRequired": {
-    "message": "Απαιτείται εάν το ID οντότητας δεν είναι URL."
+    "message": "Required if Entity ID is not a URL."
   },
   "openIdOptionalCustomizations": {
-    "message": "Προαιρετικές Προσαρμογές"
+    "message": "Optional Customizations"
   },
   "openIdAuthorityRequired": {
-    "message": "Απαιτείται εάν η Αρχή δεν είναι έγκυρη."
+    "message": "Required if Authority is not valid."
   },
   "separateMultipleWithComma": {
-    "message": "Διαχωρίστε το πολλαπλάσιο με κόμμα."
+    "message": "Separate multiple with a comma."
   },
   "sessionTimeout": {
     "message": "Έχει λήξει το χρονικό όριο. Παρακαλώ επιστρέψτε και προσπαθήστε να συνδεθείτε ξανά."
   },
   "exportingPersonalVaultTitle": {
-    "message": "Εξαγωγή Προσωπικού Vault"
+    "message": "Exporting Personal Vault"
   },
   "exportingOrganizationVaultTitle": {
-    "message": "Εξαγωγή Vault Οργανισμού"
+    "message": "Exporting Organization Vault"
   },
   "exportingPersonalVaultDescription": {
-    "message": "Θα εξαχθούν μόνο τα προσωπικά αντικείμενα Vault που σχετίζονται με το $EMAIL$. Τα αντικείμενα Vault οργανισμού δεν θα συμπεριληφθούν.",
+    "message": "Only the personal vault items associated with $EMAIL$ will be exported. Organization vault items will not be included.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4933,147 +4792,12 @@
     }
   },
   "exportingOrganizationVaultDescription": {
-    "message": "Μόνο το vault οργανισμού που σχετίζεται με το $ORGANIZATION$ θα εξαχθεί. Προσωπικά αντικείμενα και αντικείμενα από άλλους οργανισμούς δεν θα συμπεριληφθούν.",
+    "message": "Only the organization vault associated with $ORGANIZATION$ will be exported. Personal vault items and items from other organizations will not be included.",
     "placeholders": {
       "organization": {
         "content": "$1",
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Access Denied. You do not have permission to view this page."
-  },
-  "masterPassword": {
-    "message": "Master Password"
-  },
-  "security": {
-    "message": "Security"
-  },
-  "keys": {
-    "message": "Keys"
-  },
-  "billingHistory": {
-    "message": "Billing History"
-  },
-  "backToReports": {
-    "message": "Επιστροφή στις Αναφορές"
-  },
-  "organizationPicker": {
-    "message": "Organization picker"
-  },
-  "currentOrganization": {
-    "message": "Current organization",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Account Settings"
-  },
-  "generator": {
-    "message": "Γεννήτρια"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "Τι θα θέλατε να δημιουργήσετε;"
-  },
-  "passwordType": {
-    "message": "Τύπος Κωδικού"
-  },
-  "regenerateUsername": {
-    "message": "Επαναδημιουργία Ονόματος Χρήστη"
-  },
-  "generateUsername": {
-    "message": "Δημιουργία Ονόματος Χρήστη"
-  },
-  "usernameType": {
-    "message": "Τύπος Ονόματος Χρήστη"
-  },
-  "plusAddressedEmail": {
-    "message": "Συν Διεύθυνση Email",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "Χρησιμοποιήστε τις δυνατότητες δευτερεύουσας διεύθυνσης του παρόχου email σας."
-  },
-  "catchallEmail": {
-    "message": "Catch-all Email"
-  },
-  "catchallEmailDesc": {
-    "message": "Χρησιμοποιήστε τα διαμορφωμένα εισερχόμενα catch-all του domain σας."
-  },
-  "random": {
-    "message": "Τυχαίο",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Τυχαία Λέξη"
-  },
-  "service": {
-    "message": "Υπηρεσία"
-  },
-  "unknownCipher": {
-    "message": "Unknown Item, you may need to request permission to access this item."
-  },
-  "cannotSponsorSelf": {
-    "message": "You cannot redeem for the active account. Enter a different email."
-  },
-  "revokeWhenExpired": {
-    "message": "Expires $DATE$",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Token rotated $DAYS$ day ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Token rotated $DAYS$ days ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Last Sync",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Self-hosted sponsorships synced."
-  },
-  "billingManagedByProvider": {
-    "message": "Managed by $PROVIDER$",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Please reach out to them for further assistance",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Forwarded Email Alias"
-  },
-  "forwardedEmailDesc": {
-    "message": "Generate an email alias with an external forwarding service."
-  },
-  "hostname": {
-    "message": "Hostname",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "API Access Token"
   }
 }

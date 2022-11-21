@@ -167,7 +167,7 @@
     "message": "Booleano"
   },
   "cfTypeLinked": {
-    "message": "Ligado",
+    "message": "Linked",
     "description": "This describes a field that is 'linked' (related) to another field."
   },
   "remove": {
@@ -187,12 +187,7 @@
     "message": "Editar pasta"
   },
   "baseDomain": {
-    "message": "Domínio base",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Nome do Domínio",
-    "description": "Domain name. Ex. website.com"
+    "message": "Domínio base"
   },
   "host": {
     "message": "Servidor",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Nota segura"
   },
-  "typeLoginPlural": {
-    "message": "Credenciais"
-  },
-  "typeCardPlural": {
-    "message": "Cartões"
-  },
-  "typeIdentityPlural": {
-    "message": "Identidades"
-  },
-  "typeSecureNotePlural": {
-    "message": "Notas seguras"
-  },
   "folders": {
     "message": "Pastas"
   },
@@ -372,7 +355,7 @@
     "message": "Editar item"
   },
   "viewItem": {
-    "message": "Ver item"
+    "message": "View Item"
   },
   "ex": {
     "message": "ex.",
@@ -385,7 +368,7 @@
     "message": "Partilhar"
   },
   "moveToOrganization": {
-    "message": "Mover para organização"
+    "message": "Move to Organization"
   },
   "valueCopied": {
     "message": "$VALUE$ copiado(a)",
@@ -421,26 +404,14 @@
     "message": "Copiar URI",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Eu"
-  },
   "myVault": {
     "message": "Meu cofre"
-  },
-  "allVaults": {
-    "message": "Todos os Cofres"
   },
   "vault": {
     "message": "Cofre"
   },
-  "vaults": {
-    "message": "Cofres"
-  },
-  "vaultItems": {
-    "message": "Itens do Cofre"
-  },
   "moveSelectedToOrg": {
-    "message": "Mover selecionados para a organização"
+    "message": "Move Selected to Organization"
   },
   "deleteSelected": {
     "message": "Eliminar seleção"
@@ -488,7 +459,7 @@
     "message": "Item alterado"
   },
   "movedItemToOrg": {
-    "message": "$ITEMNAME$ movido para $ORGNAME$",
+    "message": "$ITEMNAME$ moved to $ORGNAME$",
     "placeholders": {
       "itemname": {
         "content": "$1",
@@ -501,7 +472,7 @@
     }
   },
   "movedItemsToOrg": {
-    "message": "Itens selecionados movidos para $ORGNAME$",
+    "message": "Selected items moved to $ORGNAME$",
     "placeholders": {
       "orgname": {
         "content": "$1",
@@ -784,10 +755,10 @@
     "message": "FIDO2 WebAuthn"
   },
   "webAuthnDesc": {
-    "message": "Utilize qualquer chave de segurança ativada pela WebAuthn para aceder à sua conta."
+    "message": "Use any WebAuthn enabled security key to access your account."
   },
   "webAuthnMigrated": {
-    "message": "(Migrado de FIDO)"
+    "message": "(Migrated from FIDO)"
   },
   "emailTitle": {
     "message": "Email"
@@ -805,10 +776,10 @@
     "message": "Organizações"
   },
   "moveToOrgDesc": {
-    "message": "Escolha uma organização para a qual deseja mover este item. A mudança para uma organização transfere a propriedade do item para essa organização. Deixará de ser o proprietário directo deste item uma vez que tenha sido movido."
+    "message": "Choose an organization that you wish to move this item to. Moving to an organization transfers ownership of the item to that organization. You will no longer be the direct owner of this item once it has been moved."
   },
   "moveManyToOrgDesc": {
-    "message": "Escolha uma organização para a qual deseja mover este item. A mudança para uma organização transfere a propriedade do item para essa organização. Deixará de ser o proprietário directo deste item uma vez que tenha sido movido."
+    "message": "Choose an organization that you wish to move these items to. Moving to an organization transfers ownership of the items to that organization. You will no longer be the direct owner of these items once they have been moved."
   },
   "collectionsDesc": {
     "message": "Edite as coleções em que este item está a ser partilhado. Apenas utilizadores da organização com acesso a estas coleções podem ver este item."
@@ -832,7 +803,7 @@
     }
   },
   "moveSelectedItemsCountDesc": {
-    "message": "Você selecionou $COUNT$ item(s). $MOVEABLE_COUNT$ item(s) podem ser movidos para uma organização, $NONMOVEABLE_COUNT$ não podem.",
+    "message": "You have selected $COUNT$ item(s). $MOVEABLE_COUNT$ item(s) can be moved to an organization, $NONMOVEABLE_COUNT$ cannot.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -858,16 +829,16 @@
     "message": "Aviso"
   },
   "confirmVaultExport": {
-    "message": "Confirmar exportação de cofre"
+    "message": "Confirm Vault Export"
   },
   "exportWarningDesc": {
     "message": "Esta exportação contém os seus dados do cofre num formato desencriptado. Não deve armazenar ou enviar o ficheiro exportado através de canais inseguros (como email). Elimine-o imediatamente após o utilizar."
   },
   "encExportKeyWarningDesc": {
-    "message": "Esta exportação criptografa seus dados usando a chave de criptografia da sua conta. Se alguma vez mudar a chave de criptografia da sua conta, deve exportar novamente, já que não será capaz de descriptografar este arquivo de exportação."
+    "message": "This export encrypts your data using your account's encryption key. If you ever rotate your account's encryption key you should export again since you will not be able to decrypt this export file."
   },
   "encExportAccountWarningDesc": {
-    "message": "As chaves de encriptação de conta são únicas para cada conta de utilizador Bitwarden, pelo que não se pode importar uma exportação encriptada para uma conta diferente."
+    "message": "Account encryption keys are unique to each Bitwarden user account, so you can't import an encrypted export into a different account."
   },
   "export": {
     "message": "Exportar"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Comprimento"
   },
-  "uppercase": {
-    "message": "Maiúsculas (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Minúsculas (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Números (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Caracteres Especiais (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Número de palavras"
   },
@@ -947,7 +904,7 @@
     "message": "Alterar email"
   },
   "changeEmailTwoFactorWarning": {
-    "message": "Prosseguir irá mudar o endereço de e-mail da sua conta. Ele não irá mudar o endereço de e-mail usado para autenticação de dois fatores. Você pode alterar este endereço de e-mail nas configurações de login em duas etapas."
+    "message": "Proceeding will change your account email address. It will not change the email address used for two-factor authentication. You can change this email address in the Two-Step Login settings."
   },
   "newEmail": {
     "message": "Novo email"
@@ -1049,7 +1006,7 @@
     "message": "Cofre da organização purgado."
   },
   "vaultAccessedByProvider": {
-    "message": "Cofre acessado pelo provedor."
+    "message": "Vault accessed by provider."
   },
   "purgeVaultDesc": {
     "message": "Proceda abaixo para eliminar todos os itens e pastas do seu cofre. Itens que pertençam a uma organização que partilhe não serão eliminados."
@@ -1088,16 +1045,16 @@
     "message": "Importar dados"
   },
   "importError": {
-    "message": "Erro de Importação"
+    "message": "Import Error"
   },
   "importErrorDesc": {
-    "message": "Houve um problema com os dados que você tentou importar. Por favor, resolva os erros listados abaixo em seu arquivo de origem e tente novamente."
+    "message": "There was a problem with the data you tried to import. Please resolve the errors listed below in your source file and try again."
   },
   "importSuccess": {
     "message": "Os dados foram importados com sucesso para o seu cofre."
   },
   "importWarning": {
-    "message": "Você está importando dados para $ORGANIZATION$. Os seus dados podem ser compartilhados com membros desta organização. Deseja continuar?",
+    "message": "You are importing data to $ORGANIZATION$. Your data may be shared with members of this organization. Do you want to proceed?",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -1112,7 +1069,7 @@
     "message": "Nada foi importado."
   },
   "importEncKeyError": {
-    "message": "Erro ao desencriptaro arquivo exportado. A sua chave de criptografia não corresponde à chave de criptografia usada para exportar os dados."
+    "message": "Error decrypting the exported file. Your encryption key does not match the encryption key used export the data."
   },
   "selectFormat": {
     "message": "Selecione o formato do ficheiro a importar"
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Opções"
   },
-  "preferences": {
-    "message": "Preferências"
-  },
-  "preferencesDesc": {
+  "optionsDesc": {
     "message": "Personalize a sua experiência do cofre web."
   },
-  "preferencesUpdated": {
-    "message": "Preferências atualizadas"
+  "optionsUpdated": {
+    "message": "Opções atualizadas"
   },
   "language": {
     "message": "Idioma"
@@ -1351,7 +1305,7 @@
     }
   },
   "webAuthnkeyX": {
-    "message": "Chave WebAuthn $INDEX$",
+    "message": "WebAuthn Key $INDEX$",
     "placeholders": {
       "index": {
         "content": "$1",
@@ -1405,7 +1359,7 @@
     "message": "Tem a certeza de que pretende remover esta chave de segurança?"
   },
   "twoFactorWebAuthnAdd": {
-    "message": "Adicione uma chave de segurança FIDO U2F à sua conta"
+    "message": "Add a WebAuthn security key to your account"
   },
   "readKey": {
     "message": "Ler chave"
@@ -1459,10 +1413,6 @@
   "reports": {
     "message": "Relatórios"
   },
-  "reportsDesc": {
-    "message": "Identify and close security gaps in your online accounts by clicking the reports below.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
-  },
   "unsecuredWebsitesReport": {
     "message": "Relatório de websites inseguros"
   },
@@ -1512,7 +1462,7 @@
     "message": "Relatório de palavras-passe expostas"
   },
   "exposedPasswordsReportDesc": {
-    "message": "Exposed passwords are passwords have been uncovered in known data breaches that were released publicly or sold on the dark web by hackers."
+    "message": "As palavras-passe expostas são palavras-passe que foram descobertas em brechas de dados conhecidas que foram lançadas publicamente ou vendidas na dark web por hackers."
   },
   "exposedPasswordsFound": {
     "message": "Palavras-passe expostas encontradas"
@@ -1696,7 +1646,7 @@
     "message": "Opções adicionais de início de sessão de dois passos, como YubiKey, FIDO U2F, e Duo."
   },
   "premiumSignUpEmergency": {
-    "message": "Acesso de emergência"
+    "message": "Emergency Access"
   },
   "premiumSignUpReports": {
     "message": "Higiene de palavras-passe, saúde das contas, e relatórios de brechas de dados para manter o seu cofre seguro."
@@ -1796,7 +1746,7 @@
     "message": "Informação de pagamento"
   },
   "billingInformation": {
-    "message": "Informação de faturação"
+    "message": "Billing Information"
   },
   "creditCard": {
     "message": "Cartão de crédito"
@@ -2203,7 +2153,7 @@
     "message": "Políticas"
   },
   "singleSignOn": {
-    "message": "Início de sessão único"
+    "message": "Single Sign-On"
   },
   "editPolicy": {
     "message": "Editar política"
@@ -2299,7 +2249,7 @@
     "message": "Confirmado"
   },
   "clientOwnerEmail": {
-    "message": "Cliente proprietário do email"
+    "message": "Client Owner Email"
   },
   "owner": {
     "message": "Proprietário"
@@ -2419,7 +2369,7 @@
     }
   },
   "movedItemIdToOrg": {
-    "message": "Item $ID$ movido para uma organização.",
+    "message": "Moved item $ID$ to an organization.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2635,7 +2585,7 @@
     }
   },
   "unlinkedSsoUser": {
-    "message": "SSO desvinculado para o usuário $ID$.",
+    "message": "Unlinked SSO for user $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2644,7 +2594,7 @@
     }
   },
   "createdOrganizationId": {
-    "message": "$ID$ organização criada.",
+    "message": "Created organization $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2653,7 +2603,7 @@
     }
   },
   "addedOrganizationId": {
-    "message": "$ID$ organização adicionada.",
+    "message": "Added organization $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2662,7 +2612,7 @@
     }
   },
   "removedOrganizationId": {
-    "message": "$ID$ organização removida.",
+    "message": "Removed organization $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2671,7 +2621,7 @@
     }
   },
   "accessedClientVault": {
-    "message": "Cofre da organização $ID$ acedido.",
+    "message": "Accessed $ID$ organization vault.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -2710,7 +2660,7 @@
     "message": "Reenviar convite"
   },
   "resendEmail": {
-    "message": "Reenviar Email"
+    "message": "Resend Email"
   },
   "hasBeenReinvited": {
     "message": "$USER$ foi novamente convidado.",
@@ -2767,10 +2717,10 @@
     "message": "Não foi possível verificar o seu email. Tente enviar um novo email de verificação."
   },
   "emailVerificationRequired": {
-    "message": "Verificação de Email Necessária"
+    "message": "Email Verification Required"
   },
   "emailVerificationRequiredDesc": {
-    "message": "Precisa verificar o seu email para usar esta funcionalidade."
+    "message": "You must verify your email to use this feature."
   },
   "updateBrowser": {
     "message": "Atualizar navegador"
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Eliminar organização"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "Digite a senha mestra para confirmar a exclusão de $ORGANIZATION$ e todos os dados associados. Os dados do cofre no $ORGANIZATION$ incluem:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Proceda abaixo para eliminar esta organização e todos os dados associados. Contas de utilizadores individuais serão mantidas, embora já não estarão associadas a esta organização. "
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "User accounts will remain active after deletion but will no longer be associated to this organization."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "Deleting $ORGANIZATION$ is permanent and irreversible.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "A eliminação da organização é permanente. Não pode ser desfeita."
   },
   "organizationDeleted": {
     "message": "Organização eliminada"
@@ -2983,7 +2918,7 @@
     "message": "Subscription Seats"
   },
   "subscriptionUpdated": {
-    "message": "Assinatura atualizada"
+    "message": "Subscription updated"
   },
   "additionalOptions": {
     "message": "Opções Adicionais"
@@ -3516,7 +3451,7 @@
     "message": "Ligar SSO"
   },
   "singleOrg": {
-    "message": "Organização única"
+    "message": "Single Organization"
   },
   "singleOrgDesc": {
     "message": "Restrict users from being able to join any other organizations."
@@ -3528,19 +3463,19 @@
     "message": "Organization members who are not Owners or Administrators and are already a member of another organization will be removed from your organization."
   },
   "requireSso": {
-    "message": "Autenticação de acesso único"
+    "message": "Single Sign-On Authentication"
   },
   "requireSsoPolicyDesc": {
     "message": "Require users to log in with the Enterprise Single Sign-On method."
   },
   "prerequisite": {
-    "message": "Pré-requisito"
+    "message": "Prerequisite"
   },
   "requireSsoPolicyReq": {
     "message": "The Single Organization enterprise policy must be enabled before activating this policy."
   },
   "requireSsoPolicyReqError": {
-    "message": "Política da Organização Única não ativada."
+    "message": "Single Organization policy not enabled."
   },
   "requireSsoExemption": {
     "message": "Organization Owners and Administrators are exempt from this policy's enforcement."
@@ -3552,142 +3487,141 @@
     "message": "Texto"
   },
   "createSend": {
-    "message": "Criar Novo Envio",
+    "message": "Create New Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "editSend": {
-    "message": "Editar Envio",
+    "message": "Edit Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "createdSend": {
-    "message": "Envio criado",
+    "message": "Created Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "editedSend": {
-    "message": "Envio editado",
+    "message": "Edited Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "deletedSend": {
-    "message": "Envio eliminado",
+    "message": "Deleted Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "deleteSend": {
-    "message": "Eliminar Envio",
+    "message": "Delete Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "deleteSendConfirmation": {
-    "message": "Tem a certeza que pretende eliminar este Envio?",
+    "message": "Are you sure you want to delete this Send?",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "whatTypeOfSend": {
-    "message": "Que tipo de Envio é este?",
+    "message": "What type of Send is this?",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "deletionDate": {
-    "message": "Data de eliminação"
+    "message": "Deletion Date"
   },
   "deletionDateDesc": {
-    "message": "O envio será eliminado permanentemente na data e hora especificadas.",
+    "message": "The Send will be permanently deleted on the specified date and time.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "expirationDate": {
-    "message": "Data de Expiração"
+    "message": "Expiration Date"
   },
   "expirationDateDesc": {
-    "message": "Se definido, o acesso a este Send expirará na data e hora especificadas.",
+    "message": "If set, access to this Send will expire on the specified date and time.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "maxAccessCount": {
-    "message": "Número máximo de acessos"
+    "message": "Maximum Access Count"
   },
   "maxAccessCountDesc": {
-    "message": "Se atribuído, os utilizadores não poderão mais aceder a este Envio, uma vez que a contagem máxima de acesso for alcançada.",
+    "message": "If set, users will no longer be able to access this Send once the maximum access count is reached.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "currentAccessCount": {
-    "message": "Código de acesso actual"
+    "message": "Current Access Count"
   },
   "sendPasswordDesc": {
-    "message": "Opcionalmente, exija uma senha para os utilizadores acederem a este Envio.",
+    "message": "Optionally require a password for users to access this Send.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendNotesDesc": {
-    "message": "Notas privadas sobre esse Envio.",
+    "message": "Private notes about this Send.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "disabled": {
-    "message": "Desabilitado"
+    "message": "Disabled"
   },
   "sendLink": {
-    "message": "Enviar ligação",
+    "message": "Send link",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "copySendLink": {
-    "message": "Copiar Link de Envio",
+    "message": "Copy Send Link",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "removePassword": {
-    "message": "Remover palavra-passe"
+    "message": "Remove Password"
   },
   "removedPassword": {
-    "message": "Senha removida"
+    "message": "Removed Password"
   },
   "removePasswordConfirmation": {
-    "message": "Tem a certeza que pretende remover a senha?"
+    "message": "Are you sure you want to remove the password?"
   },
   "hideEmail": {
-    "message": "Ocultar o meu endereço de correio eletrónico dos destinatários."
+    "message": "Hide my email address from recipients."
   },
   "disableThisSend": {
-    "message": "Desabilite este envio para que ninguém possa aceder.",
+    "message": "Disable this Send so that no one can access it.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "allSends": {
-    "message": "Todos os Envios"
+    "message": "All Sends"
   },
   "maxAccessCountReached": {
-    "message": "Número de acessos máximo atingido",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Max access count reached"
   },
   "pendingDeletion": {
-    "message": "Remoção pendente"
+    "message": "Pending deletion"
   },
   "expired": {
-    "message": "Expirado"
+    "message": "Expired"
   },
   "searchSends": {
-    "message": "Pesquisar Envios",
+    "message": "Search Sends",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendProtectedPassword": {
-    "message": "Este envio está protegido com uma senha. Por favor, digite a senha abaixo para continuar.",
+    "message": "This Send is protected with a password. Please type the password below to continue.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
-    "message": "Não sabe a senha? Peça ao Remetente a senha necessária para acessar esse Envio.",
+    "message": "Don't know the password? Ask the Sender for the password needed to access this Send.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendHiddenByDefault": {
-    "message": "Este envio está oculto por padrão. Pode alternar a visibilidade usando o botão abaixo.",
+    "message": "This send is hidden by default. You can toggle its visibility using the button below.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "downloadFile": {
     "message": "Descarregar Ficheiro"
   },
   "sendAccessUnavailable": {
-    "message": "O Envio que está tentando aceder não existe ou não está mais disponível.",
+    "message": "The Send you are trying to access does not exist or is no longer available.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "missingSendFile": {
-    "message": "O ficheiro associado a este envio não foi encontrado.",
+    "message": "The file associated with this Send could not be found.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "noSendsInList": {
-    "message": "Não existem eventos para listar.",
+    "message": "There are no Sends to list.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "emergencyAccess": {
-    "message": "Acesso de emergência"
+    "message": "Emergency Access"
   },
   "emergencyAccessDesc": {
     "message": "Grant and manage emergency access for trusted contacts. Trusted contacts may request access to either View or Takeover your account in case of an emergency. Visit our help page for more information and details into how zero knowledge sharing works."
@@ -3696,55 +3630,55 @@
     "message": "You are an Owner of one or more organizations. If you give takeover access to an emergency contact, they will be able to use all your permissions as Owner after a takeover."
   },
   "trustedEmergencyContacts": {
-    "message": "Contatos de emergência confiáveis"
+    "message": "Trusted emergency contacts"
   },
   "noTrustedContacts": {
     "message": "You have not added any emergency contacts yet, invite a trusted contact to get started."
   },
   "addEmergencyContact": {
-    "message": "Adicione um contacto de emergência"
+    "message": "Add emergency contact"
   },
   "designatedEmergencyContacts": {
-    "message": "Designado como contato de emergência"
+    "message": "Designated as emergency contact"
   },
   "noGrantedAccess": {
     "message": "You have not been designated as an emergency contact for anyone yet."
   },
   "inviteEmergencyContact": {
-    "message": "Convidar contato de emergência"
+    "message": "Invite emergency contact"
   },
   "editEmergencyContact": {
-    "message": "Editar contato de emergência"
+    "message": "Edit emergency contact"
   },
   "inviteEmergencyContactDesc": {
     "message": "Invite a new emergency contact by entering their Bitwarden account email address below. If they do not have a Bitwarden account already, they will be prompted to create a new account."
   },
   "emergencyAccessRecoveryInitiated": {
-    "message": "Acesso de emergência iniciado"
+    "message": "Emergency Access Initiated"
   },
   "emergencyAccessRecoveryApproved": {
-    "message": "Acesso de emergência aprovado"
+    "message": "Emergency Access Approved"
   },
   "viewDesc": {
-    "message": "Pode ver todos os itens no seu próprio cofre."
+    "message": "Can view all items in your own vault."
   },
   "takeover": {
     "message": "Takeover"
   },
   "takeoverDesc": {
-    "message": "Pode redefinir a sua conta com uma nova senha mestra."
+    "message": "Can reset your account with a new master password."
   },
   "waitTime": {
-    "message": "Tempo de Espera"
+    "message": "Wait Time"
   },
   "waitTimeDesc": {
-    "message": "Tempo necessário antes de conceder acesso automaticamente."
+    "message": "Time required before automatically granting access."
   },
   "oneDay": {
-    "message": "1 dia"
+    "message": "1 day"
   },
   "days": {
-    "message": "$DAYS$ dias",
+    "message": "$DAYS$ days",
     "placeholders": {
       "days": {
         "content": "$1",
@@ -3753,7 +3687,7 @@
     }
   },
   "invitedUser": {
-    "message": "Utilizador convidado."
+    "message": "Invited user."
   },
   "acceptEmergencyAccess": {
     "message": "You've been invited to become an emergency contact for the user listed above. To accept the invitation, you need to log in or create a new Bitwarden account."
@@ -3774,7 +3708,7 @@
     "message": "You can access the emergency options for this user after your identity has been confirmed. We'll send you an email when that happens."
   },
   "requestAccess": {
-    "message": "Solicitar acesso"
+    "message": "Request Access"
   },
   "requestAccessConfirmation": {
     "message": "Are you sure you want to request emergency access? You will be provided access after $WAITTIME$ day(s) or whenever the user manually approves the request.",
@@ -3795,10 +3729,10 @@
     }
   },
   "approve": {
-    "message": "Aprovar"
+    "message": "Approve"
   },
   "reject": {
-    "message": "Rejeitar"
+    "message": "Reject"
   },
   "approveAccessConfirmation": {
     "message": "Are you sure you want to approve emergency access? This will allow $USER$ to $ACTION$ your account.",
@@ -3814,13 +3748,13 @@
     }
   },
   "emergencyApproved": {
-    "message": "Acesso de emergência aprovado."
+    "message": "Emergency access approved."
   },
   "emergencyRejected": {
-    "message": "Acesso de emergência rejeitado"
+    "message": "Emergency access rejected"
   },
   "passwordResetFor": {
-    "message": "Redefinição de senha para $USER$. Agora você pode aceder usando a nova senha.",
+    "message": "Password reset for $USER$. You can now login using the new password.",
     "placeholders": {
       "user": {
         "content": "$1",
@@ -3829,7 +3763,7 @@
     }
   },
   "personalOwnership": {
-    "message": "Propriedade pessoal"
+    "message": "Personal Ownership"
   },
   "personalOwnershipPolicyDesc": {
     "message": "Require users to save vault items to an organization by removing the personal ownership option."
@@ -3841,7 +3775,7 @@
     "message": "Due to an enterprise policy, you are restricted from saving items to your personal vault. Change the Ownership option to an organization and choose from available Collections."
   },
   "disableSend": {
-    "message": "Desabilitar envio"
+    "message": "Disable Send"
   },
   "disableSendPolicyDesc": {
     "message": "Do not allow users to create or edit a Bitwarden Send. Deleting an existing Send is still allowed.",
@@ -3851,7 +3785,7 @@
     "message": "Organization users that can manage the organization's policies are exempt from this policy's enforcement."
   },
   "sendDisabled": {
-    "message": "Envio desabilitado",
+    "message": "Send disabled",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendDisabledWarning": {
@@ -3859,11 +3793,11 @@
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendOptions": {
-    "message": "Opções de envio",
+    "message": "Send Options",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendOptionsPolicyDesc": {
-    "message": "Definir opções para a criação e edição de Sends.",
+    "message": "Set options for creating and editing Sends.",
     "description": "'Sends' is a plural noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendOptionsExemption": {
@@ -3881,7 +3815,7 @@
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "modifiedPolicyId": {
-    "message": "Política modificada $ID$.",
+    "message": "Modified policy $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -3893,64 +3827,64 @@
     "message": "Plan price"
   },
   "estimatedTax": {
-    "message": "Imposto estimado"
+    "message": "Estimated tax"
   },
   "custom": {
-    "message": "Personalizado"
+    "message": "Custom"
   },
   "customDesc": {
     "message": "Allows more granular control of user permissions for advanced configurations."
   },
   "permissions": {
-    "message": "Permissões"
+    "message": "Permissions"
   },
   "accessEventLogs": {
-    "message": "Aceder ao Registro de Eventos"
+    "message": "Access Event Logs"
   },
   "accessImportExport": {
-    "message": "Aceder a Importar/Exportar"
+    "message": "Access Import/Export"
   },
   "accessReports": {
-    "message": "Relatórios de acesso"
+    "message": "Access Reports"
   },
   "missingPermissions": {
-    "message": "Não tem as permissões necessárias para executar esta ação."
+    "message": "You lack the necessary permissions to perform this action."
   },
   "manageAllCollections": {
-    "message": "Gerir todas as coleções"
+    "message": "Manage All Collections"
   },
   "createNewCollections": {
-    "message": "Criar novas coleções"
+    "message": "Create New Collections"
   },
   "editAnyCollection": {
-    "message": "Editar Qualquer Coleção"
+    "message": "Edit Any Collection"
   },
   "deleteAnyCollection": {
-    "message": "Excluir Qualquer Coleção"
+    "message": "Delete Any Collection"
   },
   "manageAssignedCollections": {
-    "message": "Gerenciar Coleções Atribuídas"
+    "message": "Manage Assigned Collections"
   },
   "editAssignedCollections": {
-    "message": "Editar Coleções Atribuídas"
+    "message": "Edit Assigned Collections"
   },
   "deleteAssignedCollections": {
-    "message": "Excluir Coleções Atribuídas"
+    "message": "Delete Assigned Collections"
   },
   "manageGroups": {
-    "message": "Gerenciar grupos"
+    "message": "Manage Groups"
   },
   "managePolicies": {
-    "message": "Gerenciar Políticas"
+    "message": "Manage Policies"
   },
   "manageSso": {
-    "message": "Gerenciar SSO"
+    "message": "Manage SSO"
   },
   "manageUsers": {
-    "message": "Gerenciar Utilizadores"
+    "message": "Manage Users"
   },
   "manageResetPassword": {
-    "message": "Gerenciar redefinição de senha"
+    "message": "Manage Password Reset"
   },
   "disableRequiredError": {
     "message": "You must manually disable the $POLICYNAME$ policy before this policy can be disabled.",
@@ -3979,67 +3913,67 @@
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendTextDesc": {
-    "message": "O texto que deseja enviar."
+    "message": "The text you want to send."
   },
   "sendFileDesc": {
-    "message": "O ficheiro que deseja enviar."
+    "message": "The file you want to send."
   },
   "copySendLinkOnSave": {
-    "message": "Copie o link para o partilhar para a área de transferências ao guardar."
+    "message": "Copy the link to share this Send to my clipboard upon save."
   },
   "sendLinkLabel": {
-    "message": "Enviar link",
+    "message": "Send link",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "send": {
-    "message": "Enviar",
+    "message": "Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendAccessTaglineProductDesc": {
-    "message": "Bitwarden Send transmite informações sensíveis e temporárias para outras pessoas de forma fácil e segura.",
+    "message": "Bitwarden Send transmits sensitive, temporary information to others easily and securely.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendAccessTaglineLearnMore": {
-    "message": "Saiba mais",
+    "message": "Learn more about",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more about** Bitwarden Send or sign up to try it today.'"
   },
   "sendVaultCardProductDesc": {
-    "message": "Compartilhe texto ou arquivos diretamente com qualquer um."
+    "message": "Share text or files directly with anyone."
   },
   "sendVaultCardLearnMore": {
-    "message": "Mais informações",
+    "message": "Learn more",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read '**Learn more**, see how it works, or try it now. '"
   },
   "sendVaultCardSee": {
-    "message": "ver",
+    "message": "see",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more, **see** how it works, or try it now.'"
   },
   "sendVaultCardHowItWorks": {
-    "message": "como funciona",
+    "message": "how it works",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more, see **how it works**, or try it now.'"
   },
   "sendVaultCardOr": {
-    "message": "ou",
+    "message": "or",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more, see how it works, **or** try it now.'"
   },
   "sendVaultCardTryItNow": {
-    "message": "experimente agora",
+    "message": "try it now",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more, see how it works, or **try it now**.'"
   },
   "sendAccessTaglineOr": {
-    "message": "ou",
+    "message": "or",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send **or** sign up to try it today.'"
   },
   "sendAccessTaglineSignUp": {
-    "message": "inscrever-se",
+    "message": "sign up",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or **sign up** to try it today.'"
   },
   "sendAccessTaglineTryToday": {
-    "message": "para experimentar hoje.",
+    "message": "to try it today.",
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Learn more about Bitwarden Send or sign up to **try it today.**'"
   },
   "sendCreatorIdentifier": {
-    "message": "O utilizaador do Bitwarden $USER_IDENTIFIER$ compartilhou o seguinte consigo",
+    "message": "Bitwarden user $USER_IDENTIFIER$ shared the following with you",
     "placeholders": {
       "user_identifier": {
         "content": "$1",
@@ -4048,56 +3982,56 @@
     }
   },
   "viewSendHiddenEmailWarning": {
-    "message": "O usuário Bitwarden que criou este Send escolheu ocultar o seu endereço de e-mail. Você deve garantir que confia na origem deste link antes de usar ou descarregar o seu conteúdo.",
+    "message": "The Bitwarden user who created this Send has chosen to hide their email address. You should ensure you trust the source of this link before using or downloading its content.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "expirationDateIsInvalid": {
-    "message": "A data de validade fornecida não é válida."
+    "message": "The expiration date provided is not valid."
   },
   "deletionDateIsInvalid": {
-    "message": "A data de exclusão fornecida não é válida."
+    "message": "The deletion date provided is not valid."
   },
   "expirationDateAndTimeRequired": {
-    "message": "Uma data e hora de expiração é necessária."
+    "message": "An expiration date and time are required."
   },
   "deletionDateAndTimeRequired": {
-    "message": "É necessária uma data e hora de exclusão."
+    "message": "A deletion date and time are required."
   },
   "dateParsingError": {
-    "message": "Ocorreu um erro ao gravar a sua data de exclusão e de validade."
+    "message": "There was an error saving your deletion and expiration dates."
   },
   "webAuthnFallbackMsg": {
-    "message": "Para verificar seu 2FA por favor, clique no botão abaixo."
+    "message": "To verify your 2FA please click the button below."
   },
   "webAuthnAuthenticate": {
-    "message": "Autenticar WebAuthn"
+    "message": "Authenticate WebAuthn"
   },
   "webAuthnNotSupported": {
-    "message": "O WebAuthn não é suportado neste navegador."
+    "message": "WebAuthn is not supported in this browser."
   },
   "webAuthnSuccess": {
-    "message": "WebAuthn verificado com sucesso! Pode fechar esta aba."
+    "message": "WebAuthn verified successfully! You may close this tab."
   },
   "hintEqualsPassword": {
-    "message": "A dica da sua senha não pode ser a mesma que a sua senha."
+    "message": "Your password hint cannot be the same as your password."
   },
   "enrollPasswordReset": {
-    "message": "Registar redefinição de senha"
+    "message": "Enroll in Password Reset"
   },
   "enrolledPasswordReset": {
-    "message": "Registada a redefinição de senha"
+    "message": "Enrolled in Password Reset"
   },
   "withdrawPasswordReset": {
-    "message": "Sair da Redefinição de Senha"
+    "message": "Withdraw from Password Reset"
   },
   "enrollPasswordResetSuccess": {
-    "message": "Registado com sucesso!"
+    "message": "Enrollment success!"
   },
   "withdrawPasswordResetSuccess": {
-    "message": "Saída com sucesso!"
+    "message": "Withdrawal success!"
   },
   "eventEnrollPasswordReset": {
-    "message": "Utilizador $ID$ registado na ajuda para redefinir senha.",
+    "message": "User $ID$ enrolled in password reset assistance.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4115,7 +4049,7 @@
     }
   },
   "eventAdminPasswordReset": {
-    "message": "Redefinir senha mestra para usuário $ID$.",
+    "message": "Master password reset for user $ID$.",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4124,7 +4058,7 @@
     }
   },
   "eventResetSsoLink": {
-    "message": "Redefinir link Sso para utilizador $ID$",
+    "message": "Reset Sso link for user $ID$",
     "placeholders": {
       "id": {
         "content": "$1",
@@ -4142,7 +4076,7 @@
     }
   },
   "resetPassword": {
-    "message": "Redefinir a senha"
+    "message": "Reset Password"
   },
   "resetPasswordLoggedOutWarning": {
     "message": "Proceeding will log $NAME$ out of their current session, requiring them to log back in. Active sessions on other devices may continue to remain active for up to one hour.",
@@ -4154,19 +4088,19 @@
     }
   },
   "thisUser": {
-    "message": "este utilizador"
+    "message": "this user"
   },
   "resetPasswordMasterPasswordPolicyInEffect": {
     "message": "One or more organization policies require the master password to meet the following requirements:"
   },
   "resetPasswordSuccess": {
-    "message": "Senha redefinida com sucesso!"
+    "message": "Password reset success!"
   },
   "resetPasswordEnrollmentWarning": {
-    "message": "Enrollment will allow organization administrators to change your master password"
+    "message": "Enrollment will allow organization administrators to change your master password. Are you sure you want to enroll?"
   },
   "resetPasswordPolicy": {
-    "message": "Redefinir Senha Mestra"
+    "message": "Master Password Reset"
   },
   "resetPasswordPolicyDescription": {
     "message": "Allow administrators in the organization to reset organization users' master password."
@@ -4175,7 +4109,7 @@
     "message": "Users in the organization will need to self-enroll or be auto-enrolled before administrators can reset their master password."
   },
   "resetPasswordPolicyAutoEnroll": {
-    "message": "Inscrição Automática"
+    "message": "Automatic Enrollment"
   },
   "resetPasswordPolicyAutoEnrollDescription": {
     "message": "All users will be automatically enrolled in password reset once their invite is accepted and will not be allowed to withdraw."
@@ -4184,7 +4118,7 @@
     "message": "Users already in the organization will not be retroactively enrolled in password reset. They will need to self-enroll before administrators can reset their master password."
   },
   "resetPasswordPolicyAutoEnrollCheckbox": {
-    "message": "Exigir que novos utilizadore sejam inscritos automaticamente"
+    "message": "Require new users to be enrolled automatically"
   },
   "resetPasswordAutoEnrollInviteWarning": {
     "message": "This organization has an enterprise policy that will automatically enroll you in password reset. Enrollment will allow organization administrators to change your master password."
@@ -4202,16 +4136,16 @@
     "message": "Items that have been in Trash for a while will be automatically deleted."
   },
   "passwordPrompt": {
-    "message": "Redefinir senha mestra"
+    "message": "Master password re-prompt"
   },
   "passwordConfirmation": {
-    "message": "Confirmação da senha mestra"
+    "message": "Master password confirmation"
   },
   "passwordConfirmationDesc": {
     "message": "This action is protected. To continue, please re-enter your master password to verify your identity."
   },
   "reinviteSelected": {
-    "message": "Reenviar convites"
+    "message": "Resend Invitations"
   },
   "noSelectedUsersApplicable": {
     "message": "This action is not applicable to any of the selected users."
@@ -4220,52 +4154,52 @@
     "message": "Are you sure you want to remove the following users? The process may take a few seconds to complete and cannot be interrupted or canceled."
   },
   "theme": {
-    "message": "Tema"
+    "message": "Theme"
   },
   "themeDesc": {
-    "message": "Escolha um tema para o seu cofre web."
+    "message": "Choose a theme for your web vault."
   },
   "themeSystem": {
-    "message": "Usar o tema do sistema"
+    "message": "Use System Theme"
   },
   "themeDark": {
-    "message": "Escuro"
+    "message": "Dark"
   },
   "themeLight": {
-    "message": "Claro"
+    "message": "Light"
   },
   "confirmSelected": {
-    "message": "Confirmar Seleção"
+    "message": "Confirm Selected"
   },
   "bulkConfirmStatus": {
-    "message": "Estado da ação em massa"
+    "message": "Bulk action status"
   },
   "bulkConfirmMessage": {
-    "message": "Confirmado com sucesso."
+    "message": "Confirmed successfully."
   },
   "bulkReinviteMessage": {
-    "message": "Convidados com sucesso."
+    "message": "Reinvited successfully."
   },
   "bulkRemovedMessage": {
-    "message": "Removido com sucesso"
+    "message": "Removed successfully"
   },
   "bulkFilteredMessage": {
-    "message": "Excluído, não aplicável para esta ação."
+    "message": "Excluded, not applicable for this action."
   },
   "fingerprint": {
-    "message": "Impressão digital"
+    "message": "Fingerprint"
   },
   "removeUsers": {
-    "message": "Remover utilizadores"
+    "message": "Remove Users"
   },
   "error": {
-    "message": "Erro"
+    "message": "Error"
   },
   "resetPasswordManageUsers": {
     "message": "Manage Users must also be enabled with the Manage Password Reset permission"
   },
   "setupProvider": {
-    "message": "Configuração do fornecedor"
+    "message": "Provider Setup"
   },
   "setupProviderLoginDesc": {
     "message": "You've been invited to setup a new provider. To continue, you need to log in or create a new Bitwarden account."
@@ -4274,22 +4208,22 @@
     "message": "Please enter the details below to complete the provider setup. Contact Customer Support if you have any questions."
   },
   "providerName": {
-    "message": "Nome do Provedor"
+    "message": "Provider Name"
   },
   "providerSetup": {
-    "message": "O provedor foi configurado."
+    "message": "The provider has been set up."
   },
   "clients": {
-    "message": "Clientes"
+    "message": "Clients"
   },
   "providerAdmin": {
-    "message": "Administração de fornecedor"
+    "message": "Provider Admin"
   },
   "providerAdminDesc": {
     "message": "The highest access user that can manage all aspects of your provider as well as access and manage client organizations."
   },
   "serviceUser": {
-    "message": "Utilizador do Serviço"
+    "message": "Service User"
   },
   "serviceUserDesc": {
     "message": "Service users can access and manage all client organizations."
@@ -4313,7 +4247,7 @@
     "message": "You have users that have accepted their invitation, but still need to be confirmed. Users will not have access to the provider until they are confirmed."
   },
   "provider": {
-    "message": "Fornecedor"
+    "message": "Provider"
   },
   "newClientOrganization": {
     "message": "New Client Organization"
@@ -4380,22 +4314,22 @@
     "message": "Are you sure you want to detach this organization? The organization will continue to exist but will no longer be managed by the provider."
   },
   "add": {
-    "message": "Adicionar"
+    "message": "Add"
   },
   "updatedMasterPassword": {
-    "message": "Senha Mestra Atualizada"
+    "message": "Updated Master Password"
   },
   "updateMasterPassword": {
-    "message": "Atualizar Senha Mestra"
+    "message": "Update Master Password"
   },
   "updateMasterPasswordWarning": {
-    "message": "Sua senha mestra foi alterada recentemente por um administrador da sua organização. Para aceder ao cofre, precisa atualizar a sua senha mestra agora. O processo irá desconectá-lo da sessão atual, exigindo que inicie a novamente a sessão. Sessões ativas em outros dispositivos podem continuar ativas por até uma hora."
+    "message": "Your Master Password was recently changed by an administrator in your organization. In order to access the vault, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
   },
   "masterPasswordInvalidWarning": {
     "message": "Your Master Password does not meet the policy requirements of this organization. In order to join the organization, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
   },
   "maximumVaultTimeout": {
-    "message": "Expiração do cofre"
+    "message": "Vault Timeout"
   },
   "maximumVaultTimeoutDesc": {
     "message": "Configure a maximum vault timeout for all users."
@@ -4407,10 +4341,10 @@
     "message": "Invalid Maximum Vault Timeout."
   },
   "hours": {
-    "message": "Horas"
+    "message": "Hours"
   },
   "minutes": {
-    "message": "Minutos"
+    "message": "Minutes"
   },
   "vaultTimeoutPolicyInEffect": {
     "message": "Your organization policies are affecting your vault timeout. Maximum allowed Vault Timeout is $HOURS$ hour(s) and $MINUTES$ minute(s)",
@@ -4426,16 +4360,10 @@
     }
   },
   "customVaultTimeout": {
-    "message": "Tempo limite do Cofre Personalizado"
+    "message": "Custom Vault Timeout"
   },
   "vaultTimeoutToLarge": {
     "message": "Your vault timeout exceeds the restriction set by your organization."
-  },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Tempo limite mínimo personalizado é 1 minuto."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Tempo limite do cofre não está dentro do intervalo permitido."
   },
   "disablePersonalVaultExport": {
     "message": "Disable Personal Vault Export"
@@ -4444,28 +4372,28 @@
     "message": "Prohibits users from exporting their private vault data."
   },
   "vaultExportDisabled": {
-    "message": "Exportação de cofre desabilitada"
+    "message": "Vault Export Disabled"
   },
   "personalVaultExportPolicyInEffect": {
-    "message": "Uma ou mais políticas da organização impedem que exporte o seu cofre pessoal."
+    "message": "One or more organization policies prevents you from exporting your personal vault."
   },
   "selectType": {
-    "message": "Selecionar tipo de SSO"
+    "message": "Select SSO Type"
   },
   "type": {
-    "message": "Tipo"
+    "message": "Type"
   },
   "openIdConnectConfig": {
-    "message": "Configuração OpenID Connect"
+    "message": "OpenID Connect Configuration"
   },
   "samlSpConfig": {
-    "message": "Configuração do fornecedor de Serviço SAML"
+    "message": "SAML Service Provider Configuration"
   },
   "samlIdpConfig": {
-    "message": "Configuração do fornecedor de Identidade SAML"
+    "message": "SAML Identity Provider Configuration"
   },
   "callbackPath": {
-    "message": "Caminho de retorno"
+    "message": "Callback Path"
   },
   "signedOutCallbackPath": {
     "message": "Signed Out Callback Path"
@@ -4531,19 +4459,19 @@
     "message": "Expect signed assertions"
   },
   "spValidateCertificates": {
-    "message": "Validar certificados"
+    "message": "Validate certificates"
   },
   "idpEntityId": {
-    "message": "ID da entidade"
+    "message": "Entity ID"
   },
   "idpBindingType": {
     "message": "Binding Type"
   },
   "idpSingleSignOnServiceUrl": {
-    "message": "URL de login único de serviço"
+    "message": "Single Sign On Service URL"
   },
   "idpSingleLogoutServiceUrl": {
-    "message": "URL de login único de serviço"
+    "message": "Single Log Out Service URL"
   },
   "idpX509PublicCert": {
     "message": "X509 Public Certificate"
@@ -4588,7 +4516,7 @@
     "message": "Reclaimed free plan"
   },
   "redeem": {
-    "message": "Resgatar"
+    "message": "Redeem"
   },
   "sponsoredFamiliesSelectOffer": {
     "message": "Select the organization you would like sponsored"
@@ -4600,7 +4528,7 @@
     "message": "Enter your personal email to redeem Bitwarden Families"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "If you remove an offer or are removed from the sponsoring organization, your Families sponsorship will expire at the next renewal date."
+    "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Accept offer for an existing organization or create a new Families organization."
@@ -4627,10 +4555,10 @@
     "message": "Free Bitwarden Families offer successfully redeemed"
   },
   "redeemed": {
-    "message": "Resgatado"
+    "message": "Redeemed"
   },
   "redeemedAccount": {
-    "message": "Conta resgatada"
+    "message": "Redeemed Account"
   },
   "revokeAccount": {
     "message": "Revoke account $NAME$",
@@ -4669,19 +4597,19 @@
     "message": "Sponsorship Created"
   },
   "revoke": {
-    "message": "Anular"
+    "message": "Revoke"
   },
   "emailSent": {
-    "message": "Email enviado"
+    "message": "Email Sent"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "After removing this account, the Families plan sponsorship will expire at the end of the billing period. You will not be able to redeem a new sponsorship offer until the existing one expires. Are you sure you want to continue?"
+    "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
   },
   "removeSponsorshipSuccess": {
     "message": "Sponsorship Removed"
   },
-  "ssoKeyConnectorError": {
-    "message": "Key Connector error: make sure Key Connector is available and working correctly."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Unable to reach the Key Connector, try again later."
   },
   "keyConnectorUrl": {
     "message": "Key Connector URL"
@@ -4690,10 +4618,10 @@
     "message": "Send a verification code to your email"
   },
   "sendCode": {
-    "message": "Enviar código"
+    "message": "Send Code"
   },
   "codeSent": {
-    "message": "Código enviado"
+    "message": "Code Sent"
   },
   "verificationCode": {
     "message": "Verification Code"
@@ -4809,75 +4737,6 @@
   "freeWithSponsorship": {
     "message": "FREE with sponsorship"
   },
-  "viewBillingSyncToken": {
-    "message": "View Billing Sync Token"
-  },
-  "generateBillingSyncToken": {
-    "message": "Generate Billing Sync Token"
-  },
-  "copyPasteBillingSync": {
-    "message": "Copy and paste this token into the Billing Sync settings of your self-hosted organization."
-  },
-  "billingSyncCanAccess": {
-    "message": "Your Billing Sync token can access and edit this organization's subscription settings."
-  },
-  "manageBillingSync": {
-    "message": "Manage Billing Sync"
-  },
-  "setUpBillingSync": {
-    "message": "Set Up Billing Sync"
-  },
-  "generateToken": {
-    "message": "Generate Token"
-  },
-  "rotateToken": {
-    "message": "Rotate Token"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "If you proceed, you will need to re-setup billing sync on your self-hosted server."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Rotating the Billing Sync Token will invalidate the previous token."
-  },
-  "selfHostingTitle": {
-    "message": "Self-Hosting"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "To set-up your organization on your own server, you will need to upload your license file. To support Free Families plans and advanced billing capabilities for your self-hosted organization, you will need to set up billing sync."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Token rotated."
-  },
-  "billingSync": {
-    "message": "Billing Sync"
-  },
-  "billingSyncDesc": {
-    "message": "Billing Sync provides Free Families plans for members and advanced billing capabilities by linking your self-hosted Bitwarden to the Bitwarden cloud server."
-  },
-  "billingSyncKeyDesc": {
-    "message": "A Billing Sync Token from your cloud organization's subscription settings is required to complete this form."
-  },
-  "billingSyncKey": {
-    "message": "Billing Sync Token"
-  },
-  "active": {
-    "message": "Ativo"
-  },
-  "inactive": {
-    "message": "Inativo"
-  },
-  "sentAwaitingSync": {
-    "message": "Sent (Awaiting Sync)"
-  },
-  "sent": {
-    "message": "Sent"
-  },
-  "requestRemoved": {
-    "message": "Removed (Awaiting Sync)"
-  },
-  "requested": {
-    "message": "Requested"
-  },
   "formErrorSummaryPlural": {
     "message": "$COUNT$ campos acima necessitam da sua atenção.",
     "placeholders": {
@@ -4940,140 +4799,5 @@
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Access Denied. You do not have permission to view this page."
-  },
-  "masterPassword": {
-    "message": "Master Password"
-  },
-  "security": {
-    "message": "Security"
-  },
-  "keys": {
-    "message": "Keys"
-  },
-  "billingHistory": {
-    "message": "Billing History"
-  },
-  "backToReports": {
-    "message": "Back to Reports"
-  },
-  "organizationPicker": {
-    "message": "Organization picker"
-  },
-  "currentOrganization": {
-    "message": "Current organization",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Account Settings"
-  },
-  "generator": {
-    "message": "Generator"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "What would you like to generate?"
-  },
-  "passwordType": {
-    "message": "Password Type"
-  },
-  "regenerateUsername": {
-    "message": "Regenerate Username"
-  },
-  "generateUsername": {
-    "message": "Generate Username"
-  },
-  "usernameType": {
-    "message": "Username Type"
-  },
-  "plusAddressedEmail": {
-    "message": "Plus Addressed Email",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "Use your email provider's sub-addressing capabilities."
-  },
-  "catchallEmail": {
-    "message": "Catch-all Email"
-  },
-  "catchallEmailDesc": {
-    "message": "Use your domain's configured catch-all inbox."
-  },
-  "random": {
-    "message": "Random",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Random Word"
-  },
-  "service": {
-    "message": "Service"
-  },
-  "unknownCipher": {
-    "message": "Item desconhecido, poderá precisar de iniciar sessão com outra conta para aceder a este item."
-  },
-  "cannotSponsorSelf": {
-    "message": "You cannot redeem for the active account. Enter a different email."
-  },
-  "revokeWhenExpired": {
-    "message": "Expira em $DATE$",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Token rotated $DAYS$ day ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Token rotated $DAYS$ days ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Last Sync",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Self-hosted sponsorships synced."
-  },
-  "billingManagedByProvider": {
-    "message": "Gerido por $PROVIDER$",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Por favor, contacte-os para mais assistência",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Forwarded Email Alias"
-  },
-  "forwardedEmailDesc": {
-    "message": "Generate an email alias with an external forwarding service."
-  },
-  "hostname": {
-    "message": "Hostname",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "API Access Token"
   }
 }

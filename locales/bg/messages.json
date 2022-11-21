@@ -187,12 +187,7 @@
     "message": "Редактиране на папка"
   },
   "baseDomain": {
-    "message": "Основен домейн",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Име на домейн",
-    "description": "Domain name. Ex. website.com"
+    "message": "Основен домейн"
   },
   "host": {
     "message": "Сървър",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Защитена бележка"
   },
-  "typeLoginPlural": {
-    "message": "Записи"
-  },
-  "typeCardPlural": {
-    "message": "Карти"
-  },
-  "typeIdentityPlural": {
-    "message": "Самоличности"
-  },
-  "typeSecureNotePlural": {
-    "message": "Защитени бележки"
-  },
   "folders": {
     "message": "Папки"
   },
@@ -421,23 +404,11 @@
     "message": "Копиране на адреса",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Me"
-  },
   "myVault": {
     "message": "Моят трезор"
   },
-  "allVaults": {
-    "message": "Всички трезори"
-  },
   "vault": {
     "message": "Трезор"
-  },
-  "vaults": {
-    "message": "Трезори"
-  },
-  "vaultItems": {
-    "message": "Елементи в трезора"
   },
   "moveSelectedToOrg": {
     "message": "Преместване на избраните в организация"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Дължина"
   },
-  "uppercase": {
-    "message": "Главни букви (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Малки букви (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Числа (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Специални знаци (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Брой думи"
   },
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Настройки"
   },
-  "preferences": {
-    "message": "Настройки"
-  },
-  "preferencesDesc": {
+  "optionsDesc": {
     "message": "Настройки на трезора по уеб."
   },
-  "preferencesUpdated": {
-    "message": "Настройките са обновени"
+  "optionsUpdated": {
+    "message": "Обновени настройки"
   },
   "language": {
     "message": "Език"
@@ -1458,10 +1412,6 @@
   },
   "reports": {
     "message": "Доклади"
-  },
-  "reportsDesc": {
-    "message": "Открийте и отстранете проблемите със защитата на профилите си като щракнете върху докладите по-долу.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
   },
   "unsecuredWebsitesReport": {
     "message": "Доклад за сайтове без защита"
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Изтриване на организация"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "Въведете главната парола, за да потвърдите изтриването на $ORGANIZATION$ и всички свързани данни. Данните в трезора на $ORGANIZATION$ включват:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Продължете с действието отдолу и организацията и нейните данни ще бъдат изтрити. Абонаментите на отделните хора ще останат, но те няма да бъдат свързани с тази организация. "
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "Потребителите ще продължат да съществуват и след изтриването, но вече няма да бъдат свързани с тази организация."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "Изтриването на $ORGANIZATION$ е окончателно и необратимо.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "Изтриването на организация е окончателно и напълно необратимо действие."
   },
   "organizationDeleted": {
     "message": "Организацията е изтрита"
@@ -3646,8 +3581,7 @@
     "message": "Всички изпращания"
   },
   "maxAccessCountReached": {
-    "message": "Достигнат е максималният брой достъпвания",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Достигнат е максималният брой достъпвания"
   },
   "pendingDeletion": {
     "message": "Предстои изтриване"
@@ -4431,12 +4365,6 @@
   "vaultTimeoutToLarge": {
     "message": "Времето за достъп до трезора Ви превишава ограничението, определено от организацията Ви."
   },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Минималното персонализирано време за изчакване е 1 минута."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Времето за изчакване на трезора не е в позволения интервал."
-  },
   "disablePersonalVaultExport": {
     "message": "Забраняване на изнасянето на личния трезор"
   },
@@ -4600,7 +4528,7 @@
     "message": "Enter your personal email to redeem Bitwarden Families"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "If you remove an offer or are removed from the sponsoring organization, your Families sponsorship will expire at the next renewal date."
+    "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Accept offer for an existing organization or create a new Families organization."
@@ -4675,13 +4603,13 @@
     "message": "Писмото е изпратено"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "After removing this account, the Families plan sponsorship will expire at the end of the billing period. You will not be able to redeem a new sponsorship offer until the existing one expires. Are you sure you want to continue?"
+    "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
   },
   "removeSponsorshipSuccess": {
-    "message": "Спонсорството е премахнато"
+    "message": "Sponsorship Removed"
   },
-  "ssoKeyConnectorError": {
-    "message": "Грешка с конектора за ключове: уверете се, че конекторът за ключове е наличен и работи правилно."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Конекторът за ключове е недостъпен. Опитайте отново по-късно."
   },
   "keyConnectorUrl": {
     "message": "Адрес на конектора за ключове"
@@ -4809,75 +4737,6 @@
   "freeWithSponsorship": {
     "message": "БЕЗПЛАТНО чрез спонсориране"
   },
-  "viewBillingSyncToken": {
-    "message": "Преглед на идентификатора за синхронизиране на плащанията"
-  },
-  "generateBillingSyncToken": {
-    "message": "Създаване на идентификатор за синхронизиране на плащанията"
-  },
-  "copyPasteBillingSync": {
-    "message": "Копирайте този идентификатор в настройките за синхронизиране на плащанията във Вашата организация."
-  },
-  "billingSyncCanAccess": {
-    "message": "Чрез своя идентификатор за синхронизиране на плащанията Вие имате достъп и можете да редактирате настройките за абонамента на тази организация."
-  },
-  "manageBillingSync": {
-    "message": "Управление на синхронизирането на плащанията"
-  },
-  "setUpBillingSync": {
-    "message": "Настройване на синхронизирането на плащанията"
-  },
-  "generateToken": {
-    "message": "Създаване на идентификатор"
-  },
-  "rotateToken": {
-    "message": "Пресъздаване на идентификатора"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "Ако продължите, ще трябва да настроите наново синхронизирането на плащанията на своя сървър."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Пресъздаването на идентификатора за синхронизиране на плащанията ще направи така, че досегашният вече няма да работи."
-  },
-  "selfHostingTitle": {
-    "message": "Self-Hosting"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "To set-up your organization on your own server, you will need to upload your license file. To support Free Families plans and advanced billing capabilities for your self-hosted organization, you will need to set up billing sync."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Идентификаторът е пресъздаден."
-  },
-  "billingSync": {
-    "message": "Синхронизиране на плащанията"
-  },
-  "billingSyncDesc": {
-    "message": "Billing Sync provides Free Families plans for members and advanced billing capabilities by linking your self-hosted Bitwarden to the Bitwarden cloud server."
-  },
-  "billingSyncKeyDesc": {
-    "message": "За да попълните този формуляр, се нуждаете от идентификатор за синхронизиране на плащанията, който може да намерите или създадете в настройките за абонамента на организацията си в облака."
-  },
-  "billingSyncKey": {
-    "message": "Идентификатор за синхронизиране на плащанията"
-  },
-  "active": {
-    "message": "Активно"
-  },
-  "inactive": {
-    "message": "Неактивно"
-  },
-  "sentAwaitingSync": {
-    "message": "Изпратено (чака се синхронизиране)"
-  },
-  "sent": {
-    "message": "Изпратено"
-  },
-  "requestRemoved": {
-    "message": "Премахнато (чака се синхронизиране)"
-  },
-  "requested": {
-    "message": "Премахнато"
-  },
   "formErrorSummaryPlural": {
     "message": "$COUNT$ полета по-горе се нуждаят от вниманието Ви.",
     "placeholders": {
@@ -4940,140 +4799,5 @@
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Достъпът е отказан. Нямате право за преглед на тази страница."
-  },
-  "masterPassword": {
-    "message": "Главна парола"
-  },
-  "security": {
-    "message": "Сигурност"
-  },
-  "keys": {
-    "message": "Ключове"
-  },
-  "billingHistory": {
-    "message": "История на плащанията"
-  },
-  "backToReports": {
-    "message": "Обратно към докладите"
-  },
-  "organizationPicker": {
-    "message": "Избор на организация"
-  },
-  "currentOrganization": {
-    "message": "Текуща организация",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Настройки на регистрацията"
-  },
-  "generator": {
-    "message": "Генератор"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "Какво бихте искали да генерирате?"
-  },
-  "passwordType": {
-    "message": "Тип парола"
-  },
-  "regenerateUsername": {
-    "message": "Повторно генериране на потр. име"
-  },
-  "generateUsername": {
-    "message": "Генериране на потр. име"
-  },
-  "usernameType": {
-    "message": "Тип потребителско име"
-  },
-  "plusAddressedEmail": {
-    "message": "Plus Addressed Email",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "Използвайте възможностите за под-адресиране на е-поща на своя доставчик."
-  },
-  "catchallEmail": {
-    "message": "Catch-all Email"
-  },
-  "catchallEmailDesc": {
-    "message": "Use your domain's configured catch-all inbox."
-  },
-  "random": {
-    "message": "Произволно",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Произволна дума"
-  },
-  "service": {
-    "message": "Услуга"
-  },
-  "unknownCipher": {
-    "message": "Непознат запис. Може да трябва да се впишете с друга регистрация, за да получите достъп до този запис."
-  },
-  "cannotSponsorSelf": {
-    "message": "You cannot redeem for the active account. Enter a different email."
-  },
-  "revokeWhenExpired": {
-    "message": "Изтича на $DATE$",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Идентификаторът е пресъздаден преди $DAYS$ ден. Актуализирайте идентификатора за сихронизиране на плащанията в настройките на своята организация във Вашия сървър.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Идентификаторът е пресъздаден преди $DAYS$ дни. Актуализирайте идентификатора за сихронизиране на плащанията в настройките на своята организация във Вашия сървър.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Последно синхронизиране",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Спонсорствата на собствения сървър са синхронизирани."
-  },
-  "billingManagedByProvider": {
-    "message": "Управлява се от $PROVIDER$",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Свържете се с този доставчик, ако имате нужда от помощ",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Forwarded Email Alias"
-  },
-  "forwardedEmailDesc": {
-    "message": "Generate an email alias with an external forwarding service."
-  },
-  "hostname": {
-    "message": "Име на сървъра",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "Идентификатор за достъп до API"
   }
 }

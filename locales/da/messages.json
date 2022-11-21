@@ -187,12 +187,7 @@
     "message": "Redigér mappe"
   },
   "baseDomain": {
-    "message": "Grund-domæne",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Domænenavn",
-    "description": "Domain name. Ex. website.com"
+    "message": "Grund-domæne"
   },
   "host": {
     "message": "Vært",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Sikret notat"
   },
-  "typeLoginPlural": {
-    "message": "Logins"
-  },
-  "typeCardPlural": {
-    "message": "Kort"
-  },
-  "typeIdentityPlural": {
-    "message": "Identiteter"
-  },
-  "typeSecureNotePlural": {
-    "message": "Sikre notater"
-  },
   "folders": {
     "message": "Mapper"
   },
@@ -421,23 +404,11 @@
     "message": "Kopiér URI",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Mig"
-  },
   "myVault": {
     "message": "Min boks"
   },
-  "allVaults": {
-    "message": "Alle bokse"
-  },
   "vault": {
     "message": "Boks"
-  },
-  "vaults": {
-    "message": "Bokse"
-  },
-  "vaultItems": {
-    "message": "Boksemner"
   },
   "moveSelectedToOrg": {
     "message": "Flyt valgte til organisation"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Længde"
   },
-  "uppercase": {
-    "message": "Store bogstaver (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Små bogstaver (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Cifre (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Specialtegn (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Antal ord"
   },
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Indstillinger"
   },
-  "preferences": {
-    "message": "Præferencer"
-  },
-  "preferencesDesc": {
+  "optionsDesc": {
     "message": "Tilpas din web-boks oplevelse."
   },
-  "preferencesUpdated": {
-    "message": "Præferencer opdateret"
+  "optionsUpdated": {
+    "message": "Indstillinger opdateret"
   },
   "language": {
     "message": "Sprog"
@@ -1459,15 +1413,11 @@
   "reports": {
     "message": "Rapporter"
   },
-  "reportsDesc": {
-    "message": "Identificér og luk sikkerhedshuller i dine onlinekonti ved at klikke på rapporterne nedenfor.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
-  },
   "unsecuredWebsitesReport": {
-    "message": "Usikre hjemmesider"
+    "message": "Rapport over ikke-sikrede hjemmesider"
   },
   "unsecuredWebsitesReportDesc": {
-    "message": "URL'er, der starter med http://, bruger ikke den bedst tilgængelige kryptering. Skift login-URI'erne for disse konti til https:// for sikrere browsing."
+    "message": "Brug af ikke-sikrede hjemmesider med http://-protokollen kan være farlig. Hvis hjemmesiden tillader det, skal du altid tilgå det ved hjælp af https://-protokollen, så din forbindelse er krypteret."
   },
   "unsecuredWebsitesFound": {
     "message": "Ikke-sikrede hjemmesider fundet"
@@ -1485,10 +1435,10 @@
     "message": "Ingen elementer i din boks har ikke-sikrede URI'er."
   },
   "inactive2faReport": {
-    "message": "Inaktive to-trins login"
+    "message": "Rapport over inaktive 2FA"
   },
   "inactive2faReportDesc": {
-    "message": "To-trins login tilføjer et lag af beskyttelse til dine konti. Slå to-trins login til ved hjælp af Bitwarden Authenticator for disse konti, eller brug en alternativ metode."
+    "message": "To-faktor autentificering (2FA) er en vigtig sikkerhedsindstilling, der hjælper med at sikre dine konti. Hvis hjemmesiden tilbyder det, skal du altid aktivere to-faktor autentificering."
   },
   "inactive2faFound": {
     "message": "Logins uden 2FA fundet"
@@ -1509,10 +1459,10 @@
     "message": "Instruktioner"
   },
   "exposedPasswordsReport": {
-    "message": "Afslørede adgangskoder"
+    "message": "Rapport over afslørede adgangskoder"
   },
   "exposedPasswordsReportDesc": {
-    "message": "Adgangskoder afsløret i et datalæk er nemme mål for angribere. Skift disse adgangskoder for at forhindre potentielle indbrud."
+    "message": "Afslørede adgangskoder er adgangskoder, der er blevet afsløret i kendte datalæk og er blevet offentliggjort eller solgt på det mørke web af hackere."
   },
   "exposedPasswordsFound": {
     "message": "Afslørede adgangskoder fundet"
@@ -1542,10 +1492,10 @@
     }
   },
   "weakPasswordsReport": {
-    "message": "Svage adgangskoder"
+    "message": "Rapport over svage adgangskoder"
   },
   "weakPasswordsReportDesc": {
-    "message": "Svage adgangskoder kan let gættes af angribere. Skift disse adgangskoder til stærke koder ved hjælp af adgangskodegeneratoren."
+    "message": "Svage adgangskoder kan nemt gættes af hackere og automatiserede værktøjer, der bruges til at knække adgangskoder. Bitwarden adgangskodegenerator kan hjælpe dig med at oprette stærke adgangskoder."
   },
   "weakPasswordsFound": {
     "message": "Svage adgangskoder fundet"
@@ -1563,10 +1513,10 @@
     "message": "Ingen elementer i din boks har svage adgangskoder."
   },
   "reusedPasswordsReport": {
-    "message": "Genbrugte adgangskoder"
+    "message": "Rapport over genbrugte adgangskoder"
   },
   "reusedPasswordsReportDesc": {
-    "message": "Genbrug af adgangskoder gør det nemmere for angribere at bryde ind på flere konti. Skift disse adgangskoder, så hver af dem er unikke."
+    "message": "Hvis en tjeneste, som du bruger, bliver kompromitteret, kan genbrug af samme adgangskode andetsteds tillade, at hackere nemt får adgang til flere af dine onlinekonti. Du bør bruge en unik adgangskode for hver konto eller tjeneste."
   },
   "reusedPasswordsFound": {
     "message": "Genbrugte adgangskoder fundet"
@@ -1593,10 +1543,10 @@
     }
   },
   "dataBreachReport": {
-    "message": "Datalæk"
+    "message": "Datalæk rapport"
   },
   "breachDesc": {
-    "message": "Lækkede konti kan afsløre dine personlige oplysninger. Beskyt lækkede konti ved at aktivere 2FA eller oprette en stærkere adgangskode."
+    "message": "Et \"læk\" er en hændelse, hvor et websteds data er blevet ulovligt tilgået til af hackere og derefter offentliggjort. Gennemgå de typer af data, der blev kompromitteret (e-mailadresser, adgangskoder, kreditkort osv.) og træf passende foranstaltninger, som f.eks. ændring af adgangskoder."
   },
   "breachCheckUsernameEmail": {
     "message": "Kontroller eventuelle brugernavne eller e-mailadresser, som du bruger."
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Slet organisation"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "Angiv hovedadgangskoden for at bekræfte sletning af $ORGANIZATION$ og alle tilknyttede data. Boks-data i $ORGANIZATION$ inkluderer:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Fortsæt nedenfor for at slette denne organisation og alle tilknyttede data. Individuelle brugerkonti forbliver, selv om de ikke længere vil være tilknyttet denne organisation."
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "Brugerkonti forbliver aktive efter sletning, men vil ikke længere være tilknyttet denne organisation."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "Sletning af $ORGANIZATION$ er permanent og uigenkaldelig.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "Sletning af organisationen er permanent. Det kan ikke fortrydes."
   },
   "organizationDeleted": {
     "message": "Organisation slettet"
@@ -3646,8 +3581,7 @@
     "message": "Alle Send"
   },
   "maxAccessCountReached": {
-    "message": "Maks. adgangsantal nået",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Maks. adgangsantal nået"
   },
   "pendingDeletion": {
     "message": "Afventer sletning"
@@ -4163,7 +4097,7 @@
     "message": "Adgangskode nulstillet!"
   },
   "resetPasswordEnrollmentWarning": {
-    "message": "Indrullering giver organisationsadministratorer mulighed for at ændre din hovedadgangskode"
+    "message": "Indrullering vil tillade organisationsadministratorer at ændre din hovedadgangskode. Er du sikker på, at du vil indrullere dig?"
   },
   "resetPasswordPolicy": {
     "message": "Nulstil hovedadgangskode"
@@ -4431,12 +4365,6 @@
   "vaultTimeoutToLarge": {
     "message": "Din boks-timeout overskrider den begrænsning, der er fastsat af din organisation."
   },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Minimum brugerdefineret timeout er 1 minut."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Boks-timeout er ikke inden for det tilladte interval."
-  },
   "disablePersonalVaultExport": {
     "message": "Deaktivér eksport af personlig boks"
   },
@@ -4486,25 +4414,25 @@
     "message": "OIDC-omdirigeringsadfærd"
   },
   "getClaimsFromUserInfoEndpoint": {
-    "message": "Hent claims fra endpoint for brugeroplysninger"
+    "message": "Hent claims fra brugerinfoslutpunkt"
   },
   "additionalScopes": {
-    "message": "Brugerdefinerede omfang"
+    "message": "Yderligere/tilpassede Scopes (kommasepareret)"
   },
   "additionalUserIdClaimTypes": {
-    "message": "Tilpassede bruger-id claim-typer"
+    "message": "Yderligere/tilpassede bruger-ID-claimtyper (kommasepareret)"
   },
   "additionalEmailClaimTypes": {
-    "message": "E-mail claim-typer"
+    "message": "Yderligere/tilpassede e-mail-claimtyper (kommasepareret)"
   },
   "additionalNameClaimTypes": {
-    "message": "Tilpassede navne-claimtyper"
+    "message": "Yderligere/tilpassede navne-claimtyper (kommasepareret)"
   },
   "acrValues": {
-    "message": "Anmodet godkendelseskontekst klassereferenceværdier"
+    "message": "Anmodet godkendelseskontekst klassereferenceværdier (acr_værdier)"
   },
   "expectedReturnAcrValue": {
-    "message": "Forventet \"acr\"-claimværdi i svar"
+    "message": "Forventet \"acr\"-claimværdi som svar (acr-validering)"
   },
   "spEntityId": {
     "message": "SP Enheds-ID"
@@ -4528,7 +4456,7 @@
     "message": "Minimum indgående signeringsalgoritme"
   },
   "spWantAssertionsSigned": {
-    "message": "Forvent signerede assertions"
+    "message": "Ønsker assertions signeret"
   },
   "spValidateCertificates": {
     "message": "Validér certifikater"
@@ -4555,10 +4483,10 @@
     "message": "Tillad uopfordret godkendelsessvar"
   },
   "idpAllowOutboundLogoutRequests": {
-    "message": "Tillad udgående logout-anmodninger"
+    "message": "Allow outbound logout requests"
   },
   "idpSignAuthenticationRequests": {
-    "message": "Signér godkendelsesanmodninger"
+    "message": "Sign authentication requests"
   },
   "ssoSettingsSaved": {
     "message": "Single Sign-On opsætning blev gemt."
@@ -4600,7 +4528,7 @@
     "message": "Angiv din personlige e-mail for at indløse Bitwarden Familier"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "Hvis du fjerner et tilbud eller bliver fjernet fra sponsororganisationen, udløber dit Familier-abonnement ved næste fornyelsesdato."
+    "message": "Forlader eller fjernes du fra sponsororganisationen, udløber dit Familier-abonnement ved faktureringsperiodens udløb."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Acceptér tilbud for en eksisterende organisation, eller opret en ny Familier-organisation."
@@ -4675,13 +4603,13 @@
     "message": "E-mail sendt"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "Efter at have fjernet denne konto, udløber familie-abonnementets sponsorat ved slutningen af faktureringsperioden. Du vil ikke kunne indløse et nyt sponsortilbud, før det eksisterende udløber. Er du sikker på, at du vil fortsætte?"
+    "message": "Efter at have fjernet denne konto, vil Familier-organisationens ejer være ansvarlig for dette abonnement og relaterede fakturaer. Er du sikker på, at du vil fortsætte?"
   },
   "removeSponsorshipSuccess": {
     "message": "Sponsoratet fjernet"
   },
-  "ssoKeyConnectorError": {
-    "message": "Key Connector-fejl: Sørg for, at Key Connector er tilgængelig og fungerer korrekt."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Kan ikke kontakte Key Connector, forsøg igen senere."
   },
   "keyConnectorUrl": {
     "message": "Key Connector-URL"
@@ -4809,77 +4737,8 @@
   "freeWithSponsorship": {
     "message": "GRATIS med sponsorat"
   },
-  "viewBillingSyncToken": {
-    "message": "Vis faktureringssynk-token"
-  },
-  "generateBillingSyncToken": {
-    "message": "Generering af faktureringssynk-token"
-  },
-  "copyPasteBillingSync": {
-    "message": "Kopiér og indsæt dette token i indstillingerne Faktureringssynk i din selvhostede organisation."
-  },
-  "billingSyncCanAccess": {
-    "message": "Din faktureringssynk-token kan tilgå og redigere denne organisations abonnementsindstillinger."
-  },
-  "manageBillingSync": {
-    "message": "Håndtering af faktureringssynk"
-  },
-  "setUpBillingSync": {
-    "message": "Opsæt faktureringssynk"
-  },
-  "generateToken": {
-    "message": "Generér token"
-  },
-  "rotateToken": {
-    "message": "Rotér token"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "Hvis du fortsætter, skal du genopsætte faktureringssynk på din selvhostede server."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Rotation af faktureringssynk-token vil ugyldiggøre det foregående token."
-  },
-  "selfHostingTitle": {
-    "message": "Selvhosting"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "For at opsætte din organisation på din egen server, skal du uploade din licensfil. For at understøtte gratis familieabonnementer og avancerede faktureringsmuligheder for din selv-hostede organisation, skal du konfigurere faktureringssynk."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Token roteret."
-  },
-  "billingSync": {
-    "message": "Faktureringssynk"
-  },
-  "billingSyncDesc": {
-    "message": "Faktureringssynk giver gratis familieabonnementer til medlemmer og avancerede faktureringsmuligheder ved at linke din selvhostede Bitwarden til Bitwarden-cloudserveren."
-  },
-  "billingSyncKeyDesc": {
-    "message": "Et faktureringssynk-token fra din cloud-organisations abonnementsindstillinger er påkrævet for at udfylde denne formular."
-  },
-  "billingSyncKey": {
-    "message": "Faktureringssynk-token"
-  },
-  "active": {
-    "message": "Aktiv"
-  },
-  "inactive": {
-    "message": "Inaktiv"
-  },
-  "sentAwaitingSync": {
-    "message": "Sendt (afventer synk)"
-  },
-  "sent": {
-    "message": "Sendt"
-  },
-  "requestRemoved": {
-    "message": "Fjernet (afventer synk)"
-  },
-  "requested": {
-    "message": "Anmodet"
-  },
   "formErrorSummaryPlural": {
-    "message": "$COUNT$ felter ovenfor kræver din opmærksomhed.",
+    "message": "$COUNT$ fields above need your attention.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -4888,10 +4747,10 @@
     }
   },
   "formErrorSummarySingle": {
-    "message": "1 felt ovenfor kræver din opmærksomhed."
+    "message": "1 field above needs your attention."
   },
   "fieldRequiredError": {
-    "message": "$FIELDNAME$ er påkrævet.",
+    "message": "$FIELDNAME$ is required.",
     "placeholders": {
       "fieldname": {
         "content": "$1",
@@ -4900,28 +4759,28 @@
     }
   },
   "required": {
-    "message": "krævet"
+    "message": "required"
   },
   "idpSingleSignOnServiceUrlRequired": {
-    "message": "Krævet, hvis enheds-id ikke er en URL."
+    "message": "Required if Entity ID is not a URL."
   },
   "openIdOptionalCustomizations": {
-    "message": "Valgfrie tilpasninger"
+    "message": "Optional Customizations"
   },
   "openIdAuthorityRequired": {
-    "message": "Påkrævet, hvis autoriteten ikke er gyldig."
+    "message": "Required if Authority is not valid."
   },
   "separateMultipleWithComma": {
-    "message": "Adskil flere med et komma."
+    "message": "Separate multiple with a comma."
   },
   "sessionTimeout": {
-    "message": "Din session er udløbet. Gå tilbage og prøv at logge ind igen."
+    "message": "Sessionen er udløbet. Gå tilbage og prøv at logge ind igen."
   },
   "exportingPersonalVaultTitle": {
-    "message": "Eksporterer personlig boks"
+    "message": "Eksport af Personlig Boks"
   },
   "exportingOrganizationVaultTitle": {
-    "message": "Eksporterer organisationsboks"
+    "message": "Eksport af Organisationsboks"
   },
   "exportingPersonalVaultDescription": {
     "message": "Kun de personlige bokselementer tilknyttet $EMAIL$ eksporteres. Organisationsbokseelementer medtages ikke.",
@@ -4940,140 +4799,5 @@
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Adgang nægtet. Du har ikke tilladelse til at se denne side."
-  },
-  "masterPassword": {
-    "message": "Hovedadgangskode"
-  },
-  "security": {
-    "message": "Sikkerhed"
-  },
-  "keys": {
-    "message": "Nøgler"
-  },
-  "billingHistory": {
-    "message": "Faktureringshistorik"
-  },
-  "backToReports": {
-    "message": "Tilbage til rapporter"
-  },
-  "organizationPicker": {
-    "message": "Organisationsvælger"
-  },
-  "currentOrganization": {
-    "message": "Aktuel organisation",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Kontoindstillinger"
-  },
-  "generator": {
-    "message": "Generator"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "Hvad vil du gerne generere?"
-  },
-  "passwordType": {
-    "message": "Adgangskodetype"
-  },
-  "regenerateUsername": {
-    "message": "Regenerér brugernavn"
-  },
-  "generateUsername": {
-    "message": "Generér brugernavn"
-  },
-  "usernameType": {
-    "message": "Brugernavnstype"
-  },
-  "plusAddressedEmail": {
-    "message": "Plus adresseret e-mail",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "Brug din e-mailudbyders underadresseringsmuligheder."
-  },
-  "catchallEmail": {
-    "message": "Fang-alle e-mail"
-  },
-  "catchallEmailDesc": {
-    "message": "Brug dit domænes konfigurerede fang-alle-indbakke."
-  },
-  "random": {
-    "message": "Tilfældig",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Tilfældigt ord"
-  },
-  "service": {
-    "message": "Tjeneste"
-  },
-  "unknownCipher": {
-    "message": "Ukendt element. Du skal muligvis anmode om tilladelse for at få adgang til dette element."
-  },
-  "cannotSponsorSelf": {
-    "message": "Du kan ikke indløse for den aktive konto. Angiv en anden e-mail."
-  },
-  "revokeWhenExpired": {
-    "message": "Udløber $DATE$",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Token er roteret for $DAYS$ dag siden. Opdatér faktureringssynk i de selvhostede organisationsindstillinger.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Token er roteret for $DAYS$ dage siden. Opdatér faktureringssynk i de selvhostede organisationsindstillinger.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Seneste synk",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Selv-hostet sponsorater synket."
-  },
-  "billingManagedByProvider": {
-    "message": "Håndteres af $PROVIDER$",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Kontakt venligst dem for yderligere assistance",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Videresendt E-mail Alias"
-  },
-  "forwardedEmailDesc": {
-    "message": "Generér et e-mail alias med en ekstern viderestillingstjeneste."
-  },
-  "hostname": {
-    "message": "Værtsnavn",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "API-adgangstoken"
   }
 }

@@ -187,12 +187,7 @@
     "message": "Editar Pasta"
   },
   "baseDomain": {
-    "message": "Domínio de base",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Domain Name",
-    "description": "Domain name. Ex. website.com"
+    "message": "Domínio de base"
   },
   "host": {
     "message": "Servidor",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Nota Segura"
   },
-  "typeLoginPlural": {
-    "message": "Logins"
-  },
-  "typeCardPlural": {
-    "message": "Cartões"
-  },
-  "typeIdentityPlural": {
-    "message": "Identidades"
-  },
-  "typeSecureNotePlural": {
-    "message": "Notas Seguras"
-  },
   "folders": {
     "message": "Pastas"
   },
@@ -421,23 +404,11 @@
     "message": "Copiar URI",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Me"
-  },
   "myVault": {
     "message": "Meu Cofre"
   },
-  "allVaults": {
-    "message": "All Vaults"
-  },
   "vault": {
     "message": "Cofre"
-  },
-  "vaults": {
-    "message": "Vaults"
-  },
-  "vaultItems": {
-    "message": "Vault Items"
   },
   "moveSelectedToOrg": {
     "message": "Mover Selecionados para a organização"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Comprimento"
   },
-  "uppercase": {
-    "message": "Maiúsculas (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Minúsculas (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Números (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Caracteres Especiais (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Número de palavras"
   },
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Opções"
   },
-  "preferences": {
-    "message": "Preferences"
+  "optionsDesc": {
+    "message": "Personalize sua experiência no cofre web."
   },
-  "preferencesDesc": {
-    "message": "Customize your web vault experience."
-  },
-  "preferencesUpdated": {
-    "message": "Preferences updated"
+  "optionsUpdated": {
+    "message": "Opções atualizadas"
   },
   "language": {
     "message": "Idioma"
@@ -1459,10 +1413,6 @@
   "reports": {
     "message": "Relatórios"
   },
-  "reportsDesc": {
-    "message": "Identify and close security gaps in your online accounts by clicking the reports below.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
-  },
   "unsecuredWebsitesReport": {
     "message": "Relatório de Sites Inseguros"
   },
@@ -1596,7 +1546,7 @@
     "message": "Relatório de Violação de Dados"
   },
   "breachDesc": {
-    "message": "Uma \"brecha\" é um incidente em que os dados de um site foram acessados ilegalmente por hackers e liberados publicamente. Revise os tipos de dados que foram comprometidos (endereços de e-mail, senhas, cartões de crédito etc.) e tome as medidas adequadas, como a alteração de senhas."
+    "message": "Uma \"violação\" é um incidente em que os dados de um site foram acessados ilegalmente por hackers e liberados publicamente. Revise os tipos de dados que foram comprometidos (endereços de e-mail, senhas, cartões de crédito etc.) e tome as medidas adequadas, como a alteração de senhas."
   },
   "breachCheckUsernameEmail": {
     "message": "Verifique qualquer nome de usuário ou endereço de e-mail que você usa."
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Excluir Organização"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "Digite a senha mestra para confirmar a exclusão de $ORGANIZATION$ e todos os dados associados. Os dados do cofre no $ORGANIZATION$ incluem:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Continue abaixo para excluir esta organização e todos os dados associados. As contas de usuários individuais permanecerão, embora elas não serão mais associadas a essa organização. "
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "As contas de usuários permanecerão ativas após a exclusão, mas não estarão mais associadas a essa organização."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "A exclusão de $ORGANIZATION$ é permanente e irreversível.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "A exclusão da organização é permanente. Não pode ser desfeita."
   },
   "organizationDeleted": {
     "message": "Organização Excluida"
@@ -3646,8 +3581,7 @@
     "message": "Todos os Sends"
   },
   "maxAccessCountReached": {
-    "message": "Número máximo de acessos atingido",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Número máximo de acessos atingido"
   },
   "pendingDeletion": {
     "message": "Exclusão pendente"
@@ -4392,7 +4326,7 @@
     "message": "Sua Senha Mestra foi alterada recentemente por um administrador em sua organização. Para acessar o cofre, você deve atualizar sua Senha Mestra agora. Prosseguir irá desconectá-lo da sessão atual, exigindo que você faça login novamente. As sessões ativas em outros dispositivos podem continuar ativas por até uma hora."
   },
   "masterPasswordInvalidWarning": {
-    "message": "Sua Senha Mestra foi alterada recentemente por um administrador de sua organização. Para acessar o cofre, você precisa atualizar sua Senha Mestra agora. O processo desconectará você da sessão atual, exigindo que você inicie a sessão novamente. Sessões ativas em outros dispositivos podem continuar ativas por até uma hora."
+    "message": "Your Master Password does not meet the policy requirements of this organization. In order to join the organization, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
   },
   "maximumVaultTimeout": {
     "message": "Tempo Limite do Cofre"
@@ -4430,12 +4364,6 @@
   },
   "vaultTimeoutToLarge": {
     "message": "O tempo limite do seu cofre excede a restrição definida por sua organização."
-  },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Minimum custom timeout is 1 minute."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Vault Timeout is not within allowed range."
   },
   "disablePersonalVaultExport": {
     "message": "Desabilitar Exportação de Cofre Pessoal"
@@ -4558,7 +4486,7 @@
     "message": "Allow outbound logout requests"
   },
   "idpSignAuthenticationRequests": {
-    "message": "Assinar pedidos de autenticação"
+    "message": "Sign authentication requests"
   },
   "ssoSettingsSaved": {
     "message": "Configuração de logon único foi salva."
@@ -4680,8 +4608,8 @@
   "removeSponsorshipSuccess": {
     "message": "Patrocínio Removido"
   },
-  "ssoKeyConnectorError": {
-    "message": "Key Connector error: make sure Key Connector is available and working correctly."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Não foi possível acessar o Conector de Chave, tente novamente mais tarde."
   },
   "keyConnectorUrl": {
     "message": "URL de Conector de Chave"
@@ -4809,75 +4737,6 @@
   "freeWithSponsorship": {
     "message": "GRÁTIS com patrocínio"
   },
-  "viewBillingSyncToken": {
-    "message": "View Billing Sync Token"
-  },
-  "generateBillingSyncToken": {
-    "message": "Generate Billing Sync Token"
-  },
-  "copyPasteBillingSync": {
-    "message": "Copy and paste this token into the Billing Sync settings of your self-hosted organization."
-  },
-  "billingSyncCanAccess": {
-    "message": "Your Billing Sync token can access and edit this organization's subscription settings."
-  },
-  "manageBillingSync": {
-    "message": "Manage Billing Sync"
-  },
-  "setUpBillingSync": {
-    "message": "Set Up Billing Sync"
-  },
-  "generateToken": {
-    "message": "Generate Token"
-  },
-  "rotateToken": {
-    "message": "Rotate Token"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "If you proceed, you will need to re-setup billing sync on your self-hosted server."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Rotating the Billing Sync Token will invalidate the previous token."
-  },
-  "selfHostingTitle": {
-    "message": "Self-Hosting"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "To set-up your organization on your own server, you will need to upload your license file. To support Free Families plans and advanced billing capabilities for your self-hosted organization, you will need to set up billing sync."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Token rotated."
-  },
-  "billingSync": {
-    "message": "Billing Sync"
-  },
-  "billingSyncDesc": {
-    "message": "Billing Sync provides Free Families plans for members and advanced billing capabilities by linking your self-hosted Bitwarden to the Bitwarden cloud server."
-  },
-  "billingSyncKeyDesc": {
-    "message": "A Billing Sync Token from your cloud organization's subscription settings is required to complete this form."
-  },
-  "billingSyncKey": {
-    "message": "Billing Sync Token"
-  },
-  "active": {
-    "message": "Active"
-  },
-  "inactive": {
-    "message": "Inactive"
-  },
-  "sentAwaitingSync": {
-    "message": "Sent (Awaiting Sync)"
-  },
-  "sent": {
-    "message": "Sent"
-  },
-  "requestRemoved": {
-    "message": "Removed (Awaiting Sync)"
-  },
-  "requested": {
-    "message": "Requested"
-  },
   "formErrorSummaryPlural": {
     "message": "$COUNT$ fields above need your attention.",
     "placeholders": {
@@ -4940,140 +4799,5 @@
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Access Denied. You do not have permission to view this page."
-  },
-  "masterPassword": {
-    "message": "Master Password"
-  },
-  "security": {
-    "message": "Security"
-  },
-  "keys": {
-    "message": "Keys"
-  },
-  "billingHistory": {
-    "message": "Billing History"
-  },
-  "backToReports": {
-    "message": "Back to Reports"
-  },
-  "organizationPicker": {
-    "message": "Organization picker"
-  },
-  "currentOrganization": {
-    "message": "Current organization",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Account Settings"
-  },
-  "generator": {
-    "message": "Generator"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "What would you like to generate?"
-  },
-  "passwordType": {
-    "message": "Password Type"
-  },
-  "regenerateUsername": {
-    "message": "Recriar Usuário"
-  },
-  "generateUsername": {
-    "message": "Generate Username"
-  },
-  "usernameType": {
-    "message": "Username Type"
-  },
-  "plusAddressedEmail": {
-    "message": "Plus Addressed Email",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "Use your email provider's sub-addressing capabilities."
-  },
-  "catchallEmail": {
-    "message": "Catch-all Email"
-  },
-  "catchallEmailDesc": {
-    "message": "Use your domain's configured catch-all inbox."
-  },
-  "random": {
-    "message": "Random",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Random Word"
-  },
-  "service": {
-    "message": "Service"
-  },
-  "unknownCipher": {
-    "message": "Item desconhecido, talvez você precise fazer login com outra conta para acessar este item."
-  },
-  "cannotSponsorSelf": {
-    "message": "You cannot redeem for the active account. Enter a different email."
-  },
-  "revokeWhenExpired": {
-    "message": "Expires $DATE$",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Token rotated $DAYS$ day ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Token rotated $DAYS$ days ago. Update the billing sync token in your self-hosted organization settings.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Last Sync",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Self-hosted sponsorships synced."
-  },
-  "billingManagedByProvider": {
-    "message": "Managed by $PROVIDER$",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Please reach out to them for further assistance",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Alias de E-mail Encaminhado"
-  },
-  "forwardedEmailDesc": {
-    "message": "Gere um alias de e-mail com um serviço externo de encaminhamento."
-  },
-  "hostname": {
-    "message": "Hostname",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "API Access Token"
   }
 }

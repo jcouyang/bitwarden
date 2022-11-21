@@ -187,12 +187,7 @@
     "message": "Qovluğa düzəliş et"
   },
   "baseDomain": {
-    "message": "Baza domeni",
-    "description": "Domain name. Ex. website.com"
-  },
-  "domainName": {
-    "message": "Domen adı",
-    "description": "Domain name. Ex. website.com"
+    "message": "Baza domeni"
   },
   "host": {
     "message": "Host",
@@ -305,18 +300,6 @@
   "typeSecureNote": {
     "message": "Təhlükəsizlik qeydi"
   },
-  "typeLoginPlural": {
-    "message": "Girişlər"
-  },
-  "typeCardPlural": {
-    "message": "Kartlar"
-  },
-  "typeIdentityPlural": {
-    "message": "Kimliklər"
-  },
-  "typeSecureNotePlural": {
-    "message": "Təhlükəsizlik qeydləri"
-  },
   "folders": {
     "message": "Qovluqlar"
   },
@@ -421,23 +404,11 @@
     "message": "URI-ni kopyala",
     "description": "Copy URI to clipboard"
   },
-  "me": {
-    "message": "Mən"
-  },
   "myVault": {
     "message": "Anbarım"
   },
-  "allVaults": {
-    "message": "Bütün anbarlar"
-  },
   "vault": {
     "message": "Anbar"
-  },
-  "vaults": {
-    "message": "Anbarlar"
-  },
-  "vaultItems": {
-    "message": "Anbar elementləri"
   },
   "moveSelectedToOrg": {
     "message": "Seçiləni təşkilata daşı"
@@ -903,20 +874,6 @@
   "length": {
     "message": "Uzunluq"
   },
-  "uppercase": {
-    "message": "Böyük hərf (A-Z)",
-    "description": "Include uppercase letters in the password generator."
-  },
-  "lowercase": {
-    "message": "Kiçik hərf (a-z)",
-    "description": "Include lowercase letters in the password generator."
-  },
-  "numbers": {
-    "message": "Rəqəmlər (0-9)"
-  },
-  "specialCharacters": {
-    "message": "Xüsusi simvollar (!@#$%^&*)"
-  },
   "numWords": {
     "message": "Söz sayı"
   },
@@ -1136,14 +1093,11 @@
   "options": {
     "message": "Seçimlər"
   },
-  "preferences": {
-    "message": "Tərcihlər"
-  },
-  "preferencesDesc": {
+  "optionsDesc": {
     "message": "Veb anbar təcrübənizi özəlləşdirin."
   },
-  "preferencesUpdated": {
-    "message": "Tərcihlər yeniləndi"
+  "optionsUpdated": {
+    "message": "Seçimlər yeniləndi"
   },
   "language": {
     "message": "Dil"
@@ -1459,15 +1413,11 @@
   "reports": {
     "message": "Hesabatlar"
   },
-  "reportsDesc": {
-    "message": "Aşağıdakı hesabatlara klikləyərək onlayn hesablarınızdakı güvənlik boşluqlarına baxın və onları bağlayın.",
-    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
-  },
   "unsecuredWebsitesReport": {
-    "message": "Güvənli olmayan veb saytlar"
+    "message": "Təhlükəli veb sayt hesabatları"
   },
   "unsecuredWebsitesReportDesc": {
-    "message": "http:// ilə başlayan ünvanlarda mövcud olan ən yaxşı şifrələmə istifadə edilmir. Saytlarda daha güvənli gəzinmək üçün bu hesabların ünvanlarını https:// ilə əvəz edin."
+    "message": "http:// sxemini sahib güvənli olmayan veb saytları istifadə etmək təhlükəli ola bilər. Əgər veb sayt icazə verirsə, hər zaman bağlantınızın şifrələnməsi üçün https:// sxemini istifadə edərək müraciət etməlisiniz."
   },
   "unsecuredWebsitesFound": {
     "message": "Güvənli olmayan veb sayt tapıldı"
@@ -1485,10 +1435,10 @@
     "message": "Anbarınızda güvənli olmayan URI-ə sahib element yoxdur."
   },
   "inactive2faReport": {
-    "message": "Aktiv olmayan iki mərhələli giriş"
+    "message": "2FA hesabatı aktiv deyil"
   },
   "inactive2faReportDesc": {
-    "message": "İki mərhələli giriş, hesablarınıza bir qoruma qatı əlavə edir. Bu hesablar üçün Bitwarden Authenticator-u istifadə edərək \"İki mərhələli giriş\" özəlliyini işə salın və ya alternativ metod istifadə edin."
+    "message": "İki mərhələli kimlik təsdiqləmə (2FA), hesablarınızı qorumağınıza kömək etməsi üçün vacib təhlükəsizlik tənzimləməsidir. Veb sayt təklif edirsə, hər zaman iki mərhələli kimlik təsdiqləməsini fəallaşdırmalısınız."
   },
   "inactive2faFound": {
     "message": "2FA olmayan hesablar tapıldı"
@@ -1509,10 +1459,10 @@
     "message": "Təlimatlar"
   },
   "exposedPasswordsReport": {
-    "message": "İfşa olunmuş parollar"
+    "message": "Parolların hesabatı ifşa olundu"
   },
   "exposedPasswordsReportDesc": {
-    "message": "Məlumatların pozuntusu zamanı ifşa olunmuş parollar, təcavüzkarlar üçün asan hədəfdir. Potensial müdaxilələrin qarşısını almaq üçün bu parolları dəyişdirin."
+    "message": "İfşa olunmuş parollar, ictimai olaraq yayımlanmış və ya xakerlər tərəfindən \"dark web\"də satılmış kimi bilinən məlumat pozuntusunda aşkarlanan parollardır."
   },
   "exposedPasswordsFound": {
     "message": "İfşa olunmuş parollar tapıldı"
@@ -1542,13 +1492,13 @@
     }
   },
   "weakPasswordsReport": {
-    "message": "Zəif parol"
+    "message": "Zəif parol hesabatı"
   },
   "weakPasswordsReportDesc": {
-    "message": "Zəif parollar, təcavüzkarlar tərəfindən asanlıqla təxmin edilə bilər. Parol Yaradıcı istifadə edərək bu parolları daha güclüləri ilə əvəz edin."
+    "message": "Zəif şifrələr, xakerlər və şifrələri qırmaq üçün istifadə olunan avtomatik alətlər tərəfindən asanlıqla təxmin edilə bilər. Bitwarden şifrə yaradıcı, güclü şifrələr yaratmağınıza kömək edə bilər."
   },
   "weakPasswordsFound": {
-    "message": "Zəif parol tapıldı"
+    "message": "Zəif şifrə tapıldı"
   },
   "weakPasswordsFoundDesc": {
     "message": "Anbarınızda, şifrələri güclü olmayan $COUNT$ element tapdıq. Güclü şifrələr istifadə etmək üçün onları yeniləməlisiniz.",
@@ -1563,10 +1513,10 @@
     "message": "Anbarınızdakı heç bir elementin zəif parolu yoxdur."
   },
   "reusedPasswordsReport": {
-    "message": "Təkrar istifadə edilmiş parollar"
+    "message": "Təkrar istifadə edilmiş parolların hesabatı"
   },
   "reusedPasswordsReportDesc": {
-    "message": "Parolların təkrar istifadəsi, təcavüzkarların bir çox hesaba müdaxilə etməsini asanlaşdırır. Bu parolları, hər birini təkrarolunmaz və unikal olaraq dəyişdirin."
+    "message": "İstifadə etdiyiniz bir xidmət təhlükə altındadırsa, eyni parolu başqa yerdə təkrar istifadə etmək, xakerlərin onlayn hesabınızlarınız daha çoxuna asanlıqla müraciət əldə etməsinə şərait yaradır. Hər hesab və ya xidmət üçün unikal bir parol istifadə etməlisiniz."
   },
   "reusedPasswordsFound": {
     "message": "Təkrar istifadə olunmuş parollar tapıldı"
@@ -1593,10 +1543,10 @@
     }
   },
   "dataBreachReport": {
-    "message": "Məlumatların pozuntusu"
+    "message": "Məlumatların pozuntusu hesabatı"
   },
   "breachDesc": {
-    "message": "Hesabların pozuntusu zamanı, şəxsi məlumatlar ifşa oluna bilər. 2FA-nı fəallaşdıraraq və ya daha güclü bir parol yaradaraq pozuntuya daxil olmuş hesabların güvənliyini artırın."
+    "message": "\"Pozuntu\", bir saytın verilənlərinə xakerlər tərəfindən qanunsuz bir formada müraciət edildiyi və daha sonra ictimai olaraq yayımlandığı bir hadisədir. Ələ keçirilmiş verilənlərin növlərini (e-poçt, ünvan, şifrələr, kredit kartları və s.) nəzərdən keçirin və parolların dəyidirilməsi kimi müvafiq addımları atın."
   },
   "breachCheckUsernameEmail": {
     "message": "İstifadə etdiyiniz istifadəçi adlarını və ya e-poçt ünvanlarını yoxlayın."
@@ -2832,26 +2782,11 @@
   "deleteOrganization": {
     "message": "Təşkilatı sil"
   },
-  "deletingOrganizationContentWarning": {
-    "message": "$ORGANIZATION$ təşkilatının və bütün əlaqəli verilənlərinin silinməsini təsdiqləmək üçün ana parolu daxil edin. $ORGANIZATION$ anbar verilənləri bunları ehtiva edir:",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationDesc": {
+    "message": "Bu təşkilatı və əlaqəli bütün verilənlərini silmək üçün aşağıda davam edin. Fərdi istifadəçi hesabları qalacaq, ancaq bu təşkilat ilə əlaqəsi kəsiləcək. "
   },
-  "deletingOrganizationActiveUserAccountsWarning": {
-    "message": "Silmə prosesindən sonra istifadəçi hesabları aktiv qalacaq, ancaq bu təşkilatla əlaqəli olmayacaq."
-  },
-  "deletingOrganizationIsPermanentWarning": {
-    "message": "$ORGANIZATION$ təşkilatının silinməsi daimi və geri qaytarıla bilməyən prosesdir.",
-    "placeholders": {
-      "organization": {
-        "content": "$1",
-        "example": "My Org Name"
-      }
-    }
+  "deleteOrganizationWarning": {
+    "message": "Təşkilatı silmək birdəfəlik prosesdir. Bu əməliyyatın geri dönüşü yoxdur."
   },
   "organizationDeleted": {
     "message": "Təşkilat silindi"
@@ -3646,8 +3581,7 @@
     "message": "Bütün \"Send\"lər"
   },
   "maxAccessCountReached": {
-    "message": "Maksimal müraciət sayına çatıldı",
-    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
+    "message": "Maksimal müraciət sayına çatıldı"
   },
   "pendingDeletion": {
     "message": "Silinməsi gözlənilir"
@@ -4392,7 +4326,7 @@
     "message": "Ana parolunuz təzəlikcə təşkilatınızdakı bir administrator tərəfindən dəyişdirildi. Anbara müraciət üçün Ana parolunuzu indi yeniləməlisiniz. Davam etsəniz, hazırkı seansdan çıxış etmiş və təkrar giriş etməli olacaqsınız. Digər cihazlardakı aktiv seanslar bir saata qədər aktiv qalmağa davam edə bilər."
   },
   "masterPasswordInvalidWarning": {
-    "message": "Ana parolunuz bu təşkilatın siyasət tələblərinə cavab vermir. Təşkilata qoşulmaq üçün Ana parolunuzu indi yeniləməlisiniz. Davam etsəniz, hazırkı seansdan çıxış etmiş və təkrar giriş etməli olacaqsınız. Digər cihazlardakı aktiv seanslar bir saata qədər aktiv qalmağa davam edə bilər."
+    "message": "Your Master Password does not meet the policy requirements of this organization. In order to join the organization, you must update your Master Password now. Proceeding will log you out of your current session, requiring you to log back in. Active sessions on other devices may continue to remain active for up to one hour."
   },
   "maximumVaultTimeout": {
     "message": "Anbara müraciət bitəcək"
@@ -4430,12 +4364,6 @@
   },
   "vaultTimeoutToLarge": {
     "message": "Anbar vaxt bitişi, təşkilatınız tərəfindən tənzimlənən məhdudiyyətləri aşır."
-  },
-  "vaultCustomTimeoutMinimum": {
-    "message": "Minimum custom timeout is 1 minute."
-  },
-  "vaultTimeoutRangeError": {
-    "message": "Vault Timeout is not within allowed range."
   },
   "disablePersonalVaultExport": {
     "message": "Fərdi anbarın ixracını sıradan çıxart"
@@ -4537,7 +4465,7 @@
     "message": "Varlıq kimliyi"
   },
   "idpBindingType": {
-    "message": "Bağlanma növü"
+    "message": "Binding Type"
   },
   "idpSingleSignOnServiceUrl": {
     "message": "Tək daxil olma xidmətinin URL-si"
@@ -4555,10 +4483,10 @@
     "message": "İstənilməyən kimlik təsdiqləmə cavabına icazə ver"
   },
   "idpAllowOutboundLogoutRequests": {
-    "message": "Gedən çıxış tələblərinə icazə ver"
+    "message": "Allow outbound logout requests"
   },
   "idpSignAuthenticationRequests": {
-    "message": "Kimlik təsdiqləmə tələblərini imzala"
+    "message": "Sign authentication requests"
   },
   "ssoSettingsSaved": {
     "message": "Tək daxil olma konfiqurasiyası saxlanıldı."
@@ -4680,8 +4608,8 @@
   "removeSponsorshipSuccess": {
     "message": "Sponsorluq silindi"
   },
-  "ssoKeyConnectorError": {
-    "message": "Key Connector error: make sure Key Connector is available and working correctly."
+  "ssoKeyConnectorUnavailable": {
+    "message": "Açar Bağlayıcı əlçatmazdır, daha sonra yenidən sınayın."
   },
   "keyConnectorUrl": {
     "message": "Açar Bağlayıcı URL-si"
@@ -4744,7 +4672,7 @@
     "description": "This will be used as part of a larger sentence, broken up to include links. The full sentence will read 'Enable the SSO Authentication policy to require all members to log in with SSO.'"
   },
   "ssoPolicyHelpKeyConnector": {
-    "message": "Açar Bağlayıcı şifrə açmanı quraşdırmaq üçün SSO Kimlik Təsdiqləmə və Tək Təşkilat siyasətləri tələb olunur."
+    "message": "SSO Authentication and Single Organization policies are required to set up Key Connector decryption."
   },
   "memberDecryptionOption": {
     "message": "Üzv şifrə açma seçimləri"
@@ -4756,10 +4684,10 @@
     "message": "Açar Bağlayıcı"
   },
   "memberDecryptionKeyConnectorDesc": {
-    "message": "SSO ilə Giriş etməni, öz-özünə sahiblik edən şifrə açma açar serverinizə bağlayın. Bu seçimi istifadə edərək, üzvlərin anbar verilənlərinin şifrəsini açmaq üçün Ana Parollarını istifadə etməsinə ehtiyac qalmayacaq. Quraşdırma üzrə kömək üçün Bitwarden Dəstək ilə əlaqə saxlayın."
+    "message": "Connect Login with SSO to your self-hosted decryption key server. Using this option, members won’t need to use their Master Passwords to decrypt vault data. Contact Bitwarden Support for set up assistance."
   },
   "keyConnectorPolicyRestriction": {
-    "message": "\"SSO və Açar Bağlayıcı Şifrə Açma ilə Giriş\" fəaldır. Bu siyasət yalnız Sahiblər və Adminlər üçün etibarlıdır."
+    "message": "\"Login with SSO and Key Connector Decryption\" is enabled. This policy will only apply to Owners and Admins."
   },
   "enabledSso": {
     "message": "SSO fəaldır"
@@ -4809,77 +4737,8 @@
   "freeWithSponsorship": {
     "message": "ÖDƏNİŞSİZ sponsorluq"
   },
-  "viewBillingSyncToken": {
-    "message": "Faktura eyniləşdirmə tokeninə bax"
-  },
-  "generateBillingSyncToken": {
-    "message": "Faktura eyniləşdirmə tokenini yarat"
-  },
-  "copyPasteBillingSync": {
-    "message": "Bu tokeni kopyalayın və öz-özünə sahiblik edən təşkilatınızın Faktura eyniləşdirmə tənzimləmələrində yapışdırın."
-  },
-  "billingSyncCanAccess": {
-    "message": "Faktura eyniləşdirmə tokeniniz, bu təşkilatın abunəlik tənzimləmələrinə müraciət edə və düzəliş edə bilər."
-  },
-  "manageBillingSync": {
-    "message": "Faktura eyniləşdirməni idarə et"
-  },
-  "setUpBillingSync": {
-    "message": "Faktura eyniləşdirməni quraşdır"
-  },
-  "generateToken": {
-    "message": "Token yarat"
-  },
-  "rotateToken": {
-    "message": "Tokeni döndər"
-  },
-  "rotateBillingSyncTokenWarning": {
-    "message": "Davam etsəniz, öz-özünə sahiblik edən serverinizdəki faktura eyniləşdirməni təkrar quraşdırmalı olacaqsınız."
-  },
-  "rotateBillingSyncTokenTitle": {
-    "message": "Faktura eyniləşdirmə tokenini döndərmək, əvvəlki tokeni etibarsız edəcək."
-  },
-  "selfHostingTitle": {
-    "message": "Öz-özünə sahiblik etmə"
-  },
-  "selfHostingEnterpriseOrganizationSectionCopy": {
-    "message": "Təşkilatınızı öz serverinizdə quraşdırmaq üçün lisenziya faylınızı yükləməlisiniz. Öz-özünə sahiblik edən təşkilatınız üçün ödənişsiz ailələr planlarını və qabaqcıl faktura özəlliklərini dəstəkləmək üçün, faktura eyniləşdirməsini quraşdırmalısınız."
-  },
-  "billingSyncApiKeyRotated": {
-    "message": "Token döndərildi."
-  },
-  "billingSync": {
-    "message": "Faktura eyniləşdirmə"
-  },
-  "billingSyncDesc": {
-    "message": "Faktura eyniləşdirmə, öz-özünə sahiblik edən Bitwarden-inizi Bitwarden bulud serveri ilə əlaqələndirərək ailələr üçün Ödənişsiz Ailələr planını və qabaqcıl faktura özəllilərini təmin edir."
-  },
-  "billingSyncKeyDesc": {
-    "message": "Bu forumu tamamlamaq üçün bulud təşkilatınızın abunəlik tənzimləmələrindən Faktura eyniləşdirmə tokeni tələb olunur."
-  },
-  "billingSyncKey": {
-    "message": "Faktura eyniləşdirmə tokeni"
-  },
-  "active": {
-    "message": "Aktiv"
-  },
-  "inactive": {
-    "message": "Qeyri-aktiv"
-  },
-  "sentAwaitingSync": {
-    "message": "Göndərildi (eyniləşdirmə gözlənilir)"
-  },
-  "sent": {
-    "message": "Göndərildi"
-  },
-  "requestRemoved": {
-    "message": "Çıxarıldı (eyniləşdirmə gözlənilir)"
-  },
-  "requested": {
-    "message": "Tələb edildi"
-  },
   "formErrorSummaryPlural": {
-    "message": "Yuxarıdakı $COUNT$ sahənin diqqətinizə ehtiyacı var.",
+    "message": "$COUNT$ fields above need your attention.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -4888,10 +4747,10 @@
     }
   },
   "formErrorSummarySingle": {
-    "message": "Yuxarıdakı 1 sahənin diqqətinizə ehtiyacı var."
+    "message": "1 field above needs your attention."
   },
   "fieldRequiredError": {
-    "message": "$FIELDNAME$ tələb olunur.",
+    "message": "$FIELDNAME$ is required.",
     "placeholders": {
       "fieldname": {
         "content": "$1",
@@ -4900,31 +4759,31 @@
     }
   },
   "required": {
-    "message": "tələb olunur"
+    "message": "required"
   },
   "idpSingleSignOnServiceUrlRequired": {
-    "message": "Varlıq Kimliyi bir URL deyilsə tələb olunur."
+    "message": "Required if Entity ID is not a URL."
   },
   "openIdOptionalCustomizations": {
-    "message": "İxtiyari Özəlləşdirmələr"
+    "message": "Optional Customizations"
   },
   "openIdAuthorityRequired": {
-    "message": "Səlahiyyət etibarlı deyilsə tələb olunur."
+    "message": "Required if Authority is not valid."
   },
   "separateMultipleWithComma": {
-    "message": "Vergüllə ayırın."
+    "message": "Separate multiple with a comma."
   },
   "sessionTimeout": {
-    "message": "Seansınızın vaxtı bitdi. Zəhmət olmasa geri qayıdıb yenidən giriş etməyə cəhd edin."
+    "message": "Your session has timed out. Please go back and try logging in again."
   },
   "exportingPersonalVaultTitle": {
-    "message": "Şəxsi anbarın ixracı"
+    "message": "Exporting Personal Vault"
   },
   "exportingOrganizationVaultTitle": {
-    "message": "Təşkilat anbarının ixracı"
+    "message": "Exporting Organization Vault"
   },
   "exportingPersonalVaultDescription": {
-    "message": "Yalnız $EMAIL$ ilə əlaqəli şəxsi anbar elementləri ixrac ediləcək. Təşkilat anbar elementləri daxil edilmir.",
+    "message": "Only the personal vault items associated with $EMAIL$ will be exported. Organization vault items will not be included.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4933,147 +4792,12 @@
     }
   },
   "exportingOrganizationVaultDescription": {
-    "message": "Yalnız $ORGANIZATION$ ilə əlaqəli təşkilat anbar elementləri ixrac ediləcək. Şəxsi anbar elementləri və digər təşkilatlardan olan elementlər daxil edilmir.",
+    "message": "Only the organization vault associated with $ORGANIZATION$ will be exported. Personal vault items and items from other organizations will not be included.",
     "placeholders": {
       "organization": {
         "content": "$1",
         "example": "My Org Name"
       }
     }
-  },
-  "accessDenied": {
-    "message": "Müraciət rədd edildi. Bu səhifəyə baxmaq üçün icazəniz yoxdur."
-  },
-  "masterPassword": {
-    "message": "Ana parol"
-  },
-  "security": {
-    "message": "Təhlükəsizlik"
-  },
-  "keys": {
-    "message": "Açarlar"
-  },
-  "billingHistory": {
-    "message": "Faktura tarixçəsi"
-  },
-  "backToReports": {
-    "message": "Hesabatlara qayıt"
-  },
-  "organizationPicker": {
-    "message": "Təşkilat seçici"
-  },
-  "currentOrganization": {
-    "message": "Hazırkı təşkilat",
-    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
-  },
-  "accountSettings": {
-    "message": "Hesab tənzimləmələri"
-  },
-  "generator": {
-    "message": "Yaradıcı"
-  },
-  "whatWouldYouLikeToGenerate": {
-    "message": "Nə yaratmaq istəyirsiniz?"
-  },
-  "passwordType": {
-    "message": "Parol növü"
-  },
-  "regenerateUsername": {
-    "message": "İstifadəçi adını yenidən yarat"
-  },
-  "generateUsername": {
-    "message": "İstifadəçi adı yarat"
-  },
-  "usernameType": {
-    "message": "İstifadəçi adı növü"
-  },
-  "plusAddressedEmail": {
-    "message": "Plyus ünvanlı e-poçt",
-    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
-  },
-  "plusAddressedEmailDesc": {
-    "message": "E-poçt təchizatçınızın alt ünvan özəlliklərini istifadə et."
-  },
-  "catchallEmail": {
-    "message": "Catch-all E-poçt"
-  },
-  "catchallEmailDesc": {
-    "message": "Domeninizin konfiqurasiya edilmiş hamısını yaxalama gələn qutusunu istifadə edin."
-  },
-  "random": {
-    "message": "Təsadüfi",
-    "description": "Generates domain-based username using random letters"
-  },
-  "randomWord": {
-    "message": "Təsadüfi söz"
-  },
-  "service": {
-    "message": "Xidmət"
-  },
-  "unknownCipher": {
-    "message": "Bilinməyən element, bu elementə müraciət etmək üçün başqa bir hesabla giriş etməlisiniz."
-  },
-  "cannotSponsorSelf": {
-    "message": "Aktiv hesab üçün istifadə edə bilməzsiniz. Fərqli bir e-poçt daxil edin."
-  },
-  "revokeWhenExpired": {
-    "message": "$DATE$ başa çatır",
-    "placeholders": {
-      "date": {
-        "content": "$1",
-        "example": "12/31/2020"
-      }
-    }
-  },
-  "awaitingSyncSingular": {
-    "message": "Token $DAYS$ gün əvvəl döndərildi. Öz-özünə sahiblik edən təşkilat tənzimləmələrinizdə faktura eyniləşdirmə tokenini yeniləyin.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "awaitingSyncPlural": {
-    "message": "Token $DAYS$ gün əvvəl döndərildi. Öz-özünə sahiblik edən təşkilat tənzimləmələrinizdə faktura eyniləşdirmə tokenini yeniləyin.",
-    "placeholders": {
-      "days": {
-        "content": "$1",
-        "example": "1"
-      }
-    }
-  },
-  "lastSync": {
-    "message": "Son eyniləşdirmə",
-    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
-  },
-  "sponsorshipsSynced": {
-    "message": "Öz-özünə sahiblik edən sponsorluq eyniləşdirildi."
-  },
-  "billingManagedByProvider": {
-    "message": "$PROVIDER$ tərəfindən idarə olunur",
-    "placeholders": {
-      "provider": {
-        "content": "$1",
-        "example": "Managed Services Company"
-      }
-    }
-  },
-  "billingContactProviderForAssistance": {
-    "message": "Əlavə yardım üçün zəhmət olmasa onlara müraciət edin",
-    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
-  },
-  "forwardedEmail": {
-    "message": "Yönləndirilən e-poçt ləqəbi"
-  },
-  "forwardedEmailDesc": {
-    "message": "Xarici yönləndirmə xidməti ilə e-poçt ləqəbi yaradın."
-  },
-  "hostname": {
-    "message": "Host adı",
-    "description": "Part of a URL."
-  },
-  "apiAccessToken": {
-    "message": "API müraciət tokeni"
   }
 }
