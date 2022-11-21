@@ -187,7 +187,12 @@
     "message": "Muokkaa kansiota"
   },
   "baseDomain": {
-    "message": "Pääverkkotunnus"
+    "message": "Pääverkkotunnus",
+    "description": "Domain name. Ex. website.com"
+  },
+  "domainName": {
+    "message": "Verkkotunnus",
+    "description": "Domain name. Ex. website.com"
   },
   "host": {
     "message": "Isäntä",
@@ -300,6 +305,18 @@
   "typeSecureNote": {
     "message": "Salattu muistio"
   },
+  "typeLoginPlural": {
+    "message": "Kirjautumistiedot"
+  },
+  "typeCardPlural": {
+    "message": "Kortit"
+  },
+  "typeIdentityPlural": {
+    "message": "Henkilöllisyydet"
+  },
+  "typeSecureNotePlural": {
+    "message": "Salatut muistiot"
+  },
   "folders": {
     "message": "Kansiot"
   },
@@ -404,11 +421,23 @@
     "message": "Kopioi URI",
     "description": "Copy URI to clipboard"
   },
+  "me": {
+    "message": "Minä"
+  },
   "myVault": {
     "message": "Oma holvi"
   },
+  "allVaults": {
+    "message": "Kaikki holvit"
+  },
   "vault": {
     "message": "Holvi"
+  },
+  "vaults": {
+    "message": "Holvit"
+  },
+  "vaultItems": {
+    "message": "Holvin kohteet"
   },
   "moveSelectedToOrg": {
     "message": "Siirrä valitut organisaatiolle"
@@ -874,6 +903,20 @@
   "length": {
     "message": "Pituus"
   },
+  "uppercase": {
+    "message": "Isot kirjaimet (A-Z)",
+    "description": "Include uppercase letters in the password generator."
+  },
+  "lowercase": {
+    "message": "Pienet kirjaimet (a-z)",
+    "description": "Include lowercase letters in the password generator."
+  },
+  "numbers": {
+    "message": "Numerot (0-9)"
+  },
+  "specialCharacters": {
+    "message": "Erikoismerkit (!@#$%^&*)"
+  },
   "numWords": {
     "message": "Sanojen määrä"
   },
@@ -1093,10 +1136,13 @@
   "options": {
     "message": "Asetukset"
   },
-  "optionsDesc": {
+  "preferences": {
+    "message": "Asetukset"
+  },
+  "preferencesDesc": {
     "message": "Muokkaa verkkoholvisi käyttökokemusta."
   },
-  "optionsUpdated": {
+  "preferencesUpdated": {
     "message": "Asetukset päivitetty"
   },
   "language": {
@@ -1212,7 +1258,7 @@
     "message": "Premium-toiminnot ovat jo käytettävissäsi, johtuen organisaatiosta, jonka jäsen olet."
   },
   "manage": {
-    "message": "Hallinnointi"
+    "message": "Hallinnoi"
   },
   "disable": {
     "message": "Poista käytöstä"
@@ -1413,11 +1459,15 @@
   "reports": {
     "message": "Raportit"
   },
+  "reportsDesc": {
+    "message": "Tunnista ja paikkaa verkkopalvelutunnustesi tietoturva-aukkoja painamalla alla olevia raportteja.",
+    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
+  },
   "unsecuredWebsitesReport": {
     "message": "Suojaamattomat sivustot"
   },
   "unsecuredWebsitesReportDesc": {
-    "message": "Sivustojen käyttö suojaamattoman \"http://\" -protokollan välityksellä voi olla vaarallista. Jos sivusto sitä tukee, tulisi sitä aina käyttää \"https://\" -protokollan välityksellä, jolloin yhteytesi on salattu."
+    "message": "Osoitteet, jotka alkavat http://, eivät hyödynnä parasta mahdollista salausta. Vaihda tällaiset kirjatumisosoitteet https://-muotoisiksi turvallisempaa selausta varten."
   },
   "unsecuredWebsitesFound": {
     "message": "Suojaamattomia verkkosivustoja löytyi"
@@ -1438,7 +1488,7 @@
     "message": "Tunnusten 2FA-tila"
   },
   "inactive2faReportDesc": {
-    "message": "Kaksivaiheinen kirjautuminen (2FA) on tärkeä suojausasetus, joka auttaa käyttäjätiliesi suojauksessa. Jos sivusto tarjoaa mahdollisuuden kaksivaiheisen kirjautmisen käyttöön, sinun tulisi aina ottaa se käyttöön."
+    "message": "Kaksivaiheinen kirjautuminen (2FA) lisää tileillesi yhden suojaustason. Voit käyttää kaksivaiheiseen kirjautumiseen Bitwarden-todentajaa tai vaihtoehtoisia menetelmiä."
   },
   "inactive2faFound": {
     "message": "Tunnuksia ilman kaksivaiheista kirjautumista löytyi"
@@ -1462,7 +1512,7 @@
     "message": "Paljastuneet salasanat"
   },
   "exposedPasswordsReportDesc": {
-    "message": "Paljastuneet salasanat ovat salasanoja, jotka on paljastettu julkaistujen tietovuotojen yhteydessä tai joita murtautujat ovat myyneet pimeässä verkossa (dark web)."
+    "message": "Tietovuodoissa paljastuneet salasanat ovat helppoja kohteita hyökkääjille. Vaihda nämä salasanat estääksesi mahdolliset murrot."
   },
   "exposedPasswordsFound": {
     "message": "Paljastuneita salasanoja löytyi"
@@ -1495,7 +1545,7 @@
     "message": "Heikot salasanat"
   },
   "weakPasswordsReportDesc": {
-    "message": "Heikot salasanat ovat murtautujien ja automaattisten salasanojen murtotyökalujen helposti arvattavissa. Bitwardenin salasanageneraattori auttaa sinua luomaan vahvoja salasanoja."
+    "message": "Heikot salasanat ovat hyökkääjien helposti arvattavissa. Bitwardenin salasanageneraattorin avulla voit luoda vahvoja salasanoja."
   },
   "weakPasswordsFound": {
     "message": "Heikkoja salasanoja löytyi"
@@ -1516,7 +1566,7 @@
     "message": "Toistuvat salasanat"
   },
   "reusedPasswordsReportDesc": {
-    "message": "Jos käyttämäsi palvelu on vaarantunut, saman salasanan toistuva käyttö muualla voi mahdollistaa murtautujien pääsyn myös muille käyttäjätileillesi. Jokaiselle tilille ja palvelulle tulisi käyttää yksilöllisiä salasanoja."
+    "message": "Samojen salasanojen toistuva käyttö helpottaa hakkereiden pääsyä useille käyttäjätileille. Vaihda kaikki nämä salasanat yksilöllisiksi."
   },
   "reusedPasswordsFound": {
     "message": "Toistuvia salasanoja löytyi"
@@ -1546,7 +1596,7 @@
     "message": "Tietovuodot"
   },
   "breachDesc": {
-    "message": "\"Tietovuoto\" tai \"tietomurto\" on tilanne, jossa murtautujat (hakkerit) ovat laittomasti päässeet käsiksi sivuston suojattuihin tietoihin ja julkaisseet ne tämän jälkeen julkisesti. Tarkista vaarantuneet tiedot (sähköpostiosoitteet, salasanat, maksukortit jne.) ja tee asianmukaiset toimet, kuten salasanan vaihdot."
+    "message": "Murretut tilit saattavat paljastaa henkilötietosi. Suojaa tilit kaksivaiheisella todennuksella tai vahvemmilla salasanoilla."
   },
   "breachCheckUsernameEmail": {
     "message": "Tarkista kaikki käyttämäsi käyttäjätunnukset tai sähköpostiosoitteet."
@@ -2318,13 +2368,13 @@
     "message": "Tilin salasana vaihdettu."
   },
   "enabledUpdated2fa": {
-    "message": "Kaksivaiheinen kirjautuminen otettu käyttöön/päivitetty."
+    "message": "Kaksivaiheinen kirjautuminen otettiin käyttöön/päivitettiin."
   },
   "disabled2fa": {
-    "message": "Kaksivaiheinen kirjautuminen poistettu käytöstä."
+    "message": "Kaksivaiheinen kirjautuminen poistettiin käytöstä."
   },
   "recovered2fa": {
-    "message": "Tili vapautettu kaksivaiheisesta kirjautumisesta."
+    "message": "Tili vapautettiin kaksivaiheisesta kirjautumisesta."
   },
   "failedLogin": {
     "message": "Sisäänkirjautumisyritys epäonnistui väärän salasanan vuoksi."
@@ -2782,11 +2832,26 @@
   "deleteOrganization": {
     "message": "Poista organisaatio"
   },
-  "deleteOrganizationDesc": {
-    "message": "Jatka alla poistaaksesi organisaation ja kaikki siihen liittyvät tiedot. Yksittäiset käyttäjätilit säilyvät, mutta ne eivät ole enää kytköksissä tähän organisaatioon."
+  "deletingOrganizationContentWarning": {
+    "message": "Vahvista organisaation $ORGANIZATION$ ja kaikkien sen kohteiden poisto syöttämällä pääsalasanasi. Organisaation $ORGANIZATION$ tiedot holvissa:",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
-  "deleteOrganizationWarning": {
-    "message": "Organisaation poisto on pysyvä toimenpide, eikä sen peruminen ole mahdollista."
+  "deletingOrganizationActiveUserAccountsWarning": {
+    "message": "Käyttäjätilit pysyvät poiston jälkeen toiminnassa, mutta niiden kytkös tähän organisaatioon poistuu."
+  },
+  "deletingOrganizationIsPermanentWarning": {
+    "message": "Organisaation $ORGANIZATION$ poisto on pysyvää, eikä sitä ole mahdollista perua.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
   "organizationDeleted": {
     "message": "Organisaatio poistettu"
@@ -3134,13 +3199,13 @@
     "message": "Valitsemasi pääsalasana on heikko. Sinun tulisi käyttää vahvaa pääsalasanaa (tai salauslauseketta) suojataksesi Bitwarden-tilisi kunnolla. Haluatko varmasti käyttää tätä pääsalasanaa?"
   },
   "rotateAccountEncKey": {
-    "message": "Kierrätä myös tilini salausavain"
+    "message": "Uudista myös tilini salausavain"
   },
   "rotateEncKeyTitle": {
-    "message": "Kierrätä salausavain"
+    "message": "Uudista salausavain"
   },
   "rotateEncKeyConfirmation": {
-    "message": "Haluatko varmasti kierrättää tilisi salausavaimen?"
+    "message": "Haluatko varmasti uudistaa tilisi salausavaimen?"
   },
   "attachmentsNeedFix": {
     "message": "Kohteella on vanhoja tiedostoliitteitä, jotka on korjattava."
@@ -3178,7 +3243,7 @@
     "message": "API-avainta voi käyttää tunnistautumiseen Bitwardenin julkista rajapintaa vasten."
   },
   "apiKeyRotateDesc": {
-    "message": "API-avaimen kierrättäminen mitätöi edellisen avaimen. Voit kierrättää API-avaimen, jos uskot, ettei nykyisen avaimen käyttö ole enää turvallista."
+    "message": "API-avaimen uudistus mitätöi edellisen avaimen. Voit uudistaa API-avaimen, jos uskot, ettei nykyisen avaimen käyttö ole enää turvallista."
   },
   "apiKeyWarning": {
     "message": "API-avaimellasi on täysi käyttöoikeus organisaatioon ja se tulee pitää turvassa."
@@ -3197,7 +3262,7 @@
     "message": "Näytä API-avain"
   },
   "rotateApiKey": {
-    "message": "Kierrätä API-avain"
+    "message": "Uudista API-avain"
   },
   "selectOneCollection": {
     "message": "Valitse ainakin yksi kokoelma."
@@ -3529,7 +3594,7 @@
     "message": "Erääntymisajankohta"
   },
   "expirationDateDesc": {
-    "message": "Send erääntyy määritettynä ajankohtana.",
+    "message": "Jos määritetty, Send erääntyy määritettynä ajankohtana.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "maxAccessCount": {
@@ -3547,7 +3612,7 @@
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendNotesDesc": {
-    "message": "Yksityiset muistiinpanot tästä Sendistä.",
+    "message": "Yksityisiä merkintöjä tästä Sendistä.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "disabled": {
@@ -3581,7 +3646,8 @@
     "message": "Kaikki Sendit"
   },
   "maxAccessCountReached": {
-    "message": "Käyttökertojen enimmäismäärä saavutettu"
+    "message": "Käyttökertojen enimmäismäärä saavutettu",
+    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
   },
   "pendingDeletion": {
     "message": "Odottaa poistoa"
@@ -4097,7 +4163,7 @@
     "message": "Salasanan palautus onnistui!"
   },
   "resetPasswordEnrollmentWarning": {
-    "message": "Liitos sallii organisaation ylläpitäjien vaihtaa pääsalasanasi. Haluatko varmasti liittyä?"
+    "message": "Liitos sallii organisaation ylläpitäjien vaihtaa pääsalasanasi"
   },
   "resetPasswordPolicy": {
     "message": "Pääsalasanan palautus"
@@ -4365,6 +4431,12 @@
   "vaultTimeoutToLarge": {
     "message": "Holvisi aikakatkaisuviive ylittää organisaatiosi asettamat rajoitukset."
   },
+  "vaultCustomTimeoutMinimum": {
+    "message": "Lyhin omavalintainen aikakatkaisuaika on 1 minuutti."
+  },
+  "vaultTimeoutRangeError": {
+    "message": "Holvin aikakatkaisuaika ei ole sallitun alueen sisällä."
+  },
   "disablePersonalVaultExport": {
     "message": "Poista henkilökohtaisen holvin vienti käytöstä"
   },
@@ -4528,7 +4600,7 @@
     "message": "Syötä henkilökohtainen sähköpostiosoitteesi lunastaaksesi Bitwarden Perheille -tilauksen"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "Jos eroat tai sinut erotetaan sponsoroivasta organisaatiosta, päättyy Perheille-tilauksesi kuluvan laskutuskauden lopussa."
+    "message": "Jos poistat tarjouksen tai sinut poistetaan sponsoroivasta organisaatiosta, päättyy Perheille-sponsorointisi seuraavana uudistusajankohtana."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Hyväksy tarjous olemassa olevalla organisaatiolla tai luo uusi Perheille-organisaatio."
@@ -4603,13 +4675,13 @@
     "message": "Sähköposti on lähetetty"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "Tämän tilin poiston jälkeen, on Perheille-organisaation omistaja jatkossa vastuussa tilauksesta ja siihen liittyvistä laskuista. Haluatko varmasti jatkaa?"
+    "message": "Tilin poiston jälkeen Perheille-tilauksen sponsorointi päättyy kuluvan laskutusjakson lopussa. Et voi lunastaa uuttaa sponsorointitarjousta ennen nykyisen päättymistä. Haluatko varmasti jatkaa?"
   },
   "removeSponsorshipSuccess": {
     "message": "Sponsorointi on poistettu"
   },
-  "ssoKeyConnectorUnavailable": {
-    "message": "Key Connectoria ei tavoiteta. Yritä myöhemmin uudelleen."
+  "ssoKeyConnectorError": {
+    "message": "Key Connector -virhe: Varmista, että Key Connector on käytettävissä ja toimii oikein."
   },
   "keyConnectorUrl": {
     "message": "Key Connector URL"
@@ -4636,7 +4708,7 @@
     "message": "Virheellinen todennuskoodi"
   },
   "convertOrganizationEncryptionDesc": {
-    "message": "$ORGANIZATION$ käyttää kertakirjautumista (SSO) oman avainpalvelimensa kanssa. Organisaation jäsenet eivät enää tarvitse pääsalasanaa kirjautumiseen.",
+    "message": "$ORGANIZATION$ käyttää kertakirjautumista (SSO) itse ylläpitämänsä avainpalvelimen kanssa. Organisaation jäsenet eivät enää tarvitse pääsalasanaa kirjautumiseen.",
     "placeholders": {
       "organization": {
         "content": "$1",
@@ -4684,7 +4756,7 @@
     "message": "Key Connector"
   },
   "memberDecryptionKeyConnectorDesc": {
-    "message": "Liitä kertakirjautuminen (SSO) omaan salauksenpurkuavainpalvelimeesi. Tätä valintaa käyttämällä jäsenten ei tarvitse käyttää pääsalasanojaan holvin salauksen purkuun. Ota yhtettä Bitwardenin tukeen saadaksesi apua määritykseen."
+    "message": "Liitä kertakirjautuminen (SSO) itse ylläpitämääsi salauksenpurkuavainpalvelimeen. Tätä valintaa käyttämällä jäsenten ei tarvitse käyttää pääsalasanojaan holvin salauksen purkuun. Ota yhtettä Bitwardenin tukeen saadaksesi apua määritykseen."
   },
   "keyConnectorPolicyRestriction": {
     "message": "Kertakirjautuminen (SSO) Key Connector -salauksenpurulla on käytössä. Käytäntö vaikuttaa vain omistajiin ja ylläpitäjiin."
@@ -4711,7 +4783,7 @@
     "message": "Ilmoita organisaatioon liitettävä maksutapa. Voit olla huoletta, sillä emme veloita sinulta mitään, ellet itse valitse lisäominaisuuksia tai sponsorointisi pääty."
   },
   "orgCreatedSponsorshipInvalid": {
-    "message": "Sponsorointitarjous on päättynyt. Voit poistaa luomasi organisaation välttääksesi veloituksen 7- päivän kokeilujaksosi päättyessä. Muussa tapauksessa voit sulkea ilmoituksen, jolloin organisaatio säilyy sinulla ja vastaat jatkossa siihen liittyvistä laskuista."
+    "message": "Sponsorointitarjous on päättynyt. Voit poistaa luomasi organisaation välttääksesi veloituksen 7 päivän kokeilujaksosi päättyessä. Muussa tapauksessa voit sulkea ilmoituksen, jolloin organisaatio säilyy sinulla ja vastaat jatkossa siihen liittyvistä laskuista."
   },
   "newFamiliesOrganization": {
     "message": "Uusi Perheille-organisaatio"
@@ -4736,6 +4808,75 @@
   },
   "freeWithSponsorship": {
     "message": "ILMAINEN sponsoroinnilla"
+  },
+  "viewBillingSyncToken": {
+    "message": "Näytä laskutuksen synkronointitunniste"
+  },
+  "generateBillingSyncToken": {
+    "message": "Luo laskutuksen synkronointitunniste"
+  },
+  "copyPasteBillingSync": {
+    "message": "Kopioi ja liitä tämä tunniste itse ylläpitämäsi organisaation laskutuksen synkronoinnin asetuksiin."
+  },
+  "billingSyncCanAccess": {
+    "message": "Laskutuksen synkronointitunniste mahdollistaa organisaation tilausasetusten tarkastelun ja muokkauksen."
+  },
+  "manageBillingSync": {
+    "message": "Hallitse laskutuksen synkronointia"
+  },
+  "setUpBillingSync": {
+    "message": "Määritä laskutuksen synkronointi"
+  },
+  "generateToken": {
+    "message": "Luo tunniste"
+  },
+  "rotateToken": {
+    "message": "Uudista tunniste"
+  },
+  "rotateBillingSyncTokenWarning": {
+    "message": "Jos jatkat, on itse ylläpitämäsi palvelimen laskutuksen synkronointi määritettävä uudelleen."
+  },
+  "rotateBillingSyncTokenTitle": {
+    "message": "Laskutuksen synkronointitunnisteen uudistus mitätöi edellisen tunnisteen."
+  },
+  "selfHostingTitle": {
+    "message": "Itse ylläpidetty"
+  },
+  "selfHostingEnterpriseOrganizationSectionCopy": {
+    "message": "Määrittääksesi organisaatiosi itse ylläpitämällesi palvelimelle, on lisenssitiedostosi tallennettava sinne. Sinun on määritettävä laskutuksen synkronointi, jotta ilmaiset Perheille-tilaukset ja edistyneet laskutusominaisuudet ovat itse ylläpitämäsi organisaation käytettävissä."
+  },
+  "billingSyncApiKeyRotated": {
+    "message": "Tunniste uudistettiin."
+  },
+  "billingSync": {
+    "message": "Laskutuksen synkronointi"
+  },
+  "billingSyncDesc": {
+    "message": "Laskutuksen synkronointi mahdollistaa jäsenille ilmaiset Perheille-tilaukset ja edistyneet laskutusominaisuudet liittämällä itse ylläpitämäsi Bitwarden-palvelimen Bitwardenin pilvipalvelimeen."
+  },
+  "billingSyncKeyDesc": {
+    "message": "Tämän lomakkeen täyttöön tarvitaan laskutuksen synkronointitunniste pilviorganisaatiosi tilausasetuksista."
+  },
+  "billingSyncKey": {
+    "message": "Laskutuksen synkronointitunniste"
+  },
+  "active": {
+    "message": "Käytössä"
+  },
+  "inactive": {
+    "message": "Ei käytössä"
+  },
+  "sentAwaitingSync": {
+    "message": "Lähetetty (odottaa synkronointia)"
+  },
+  "sent": {
+    "message": "Lähetetty"
+  },
+  "requestRemoved": {
+    "message": "Poistettu (odottaa synkronointia)"
+  },
+  "requested": {
+    "message": "Pyydetty"
   },
   "formErrorSummaryPlural": {
     "message": "$COUNT$ yllä olevaa kenttää vaatii huomiotasi.",
@@ -4768,7 +4909,7 @@
     "message": "Valinnaiset mukautukset"
   },
   "openIdAuthorityRequired": {
-    "message": "Vaaditaan jos viranomainen ei ole kelvollinen."
+    "message": "Vaaditaan jos Authority-arvo ei ole kelvollinen."
   },
   "separateMultipleWithComma": {
     "message": "Erota useita pilkuilla."
@@ -4799,5 +4940,140 @@
         "example": "My Org Name"
       }
     }
+  },
+  "accessDenied": {
+    "message": "Pääsy estetty. Sinulla ei ole oikeutta avata sivua."
+  },
+  "masterPassword": {
+    "message": "Pääsalasana"
+  },
+  "security": {
+    "message": "Suojaus"
+  },
+  "keys": {
+    "message": "Avaimet"
+  },
+  "billingHistory": {
+    "message": "Laskutushistoria"
+  },
+  "backToReports": {
+    "message": "Palaa raportteihin"
+  },
+  "organizationPicker": {
+    "message": "Organisaation valitsin"
+  },
+  "currentOrganization": {
+    "message": "Nykyinen organisaatio",
+    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
+  },
+  "accountSettings": {
+    "message": "Tilin asetukset"
+  },
+  "generator": {
+    "message": "Generaattori"
+  },
+  "whatWouldYouLikeToGenerate": {
+    "message": "Mitä haluat luoda?"
+  },
+  "passwordType": {
+    "message": "Salasanan tyyppi"
+  },
+  "regenerateUsername": {
+    "message": "Luo uusi käyttäjätunnus"
+  },
+  "generateUsername": {
+    "message": "Luo käyttäjätunnus"
+  },
+  "usernameType": {
+    "message": "Käyttäjätunnuksen tyyppi"
+  },
+  "plusAddressedEmail": {
+    "message": "Plus-osoitteinen sähköposti",
+    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
+  },
+  "plusAddressedEmailDesc": {
+    "message": "Käytä sähköpostipalvelusi aliosoiteominaisuuksia."
+  },
+  "catchallEmail": {
+    "message": "Catch-all-sähköpostiosoite"
+  },
+  "catchallEmailDesc": {
+    "message": "Käytä verkkotunnuksellesi määritettyä catch-all-postilaatikkoa."
+  },
+  "random": {
+    "message": "Satunnainen",
+    "description": "Generates domain-based username using random letters"
+  },
+  "randomWord": {
+    "message": "Satunnainen sana"
+  },
+  "service": {
+    "message": "Palvelu"
+  },
+  "unknownCipher": {
+    "message": "Tuntematon kohde, jota varten joudut mahdollisesti pyytämään käyttöoikeuden."
+  },
+  "cannotSponsorSelf": {
+    "message": "Et voi lunastaa aktiiviselle tilille. Syötä eri sähköpostiosoite."
+  },
+  "revokeWhenExpired": {
+    "message": "Erääntyy $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/31/2020"
+      }
+    }
+  },
+  "awaitingSyncSingular": {
+    "message": "Tunniste uudistettiin $DAYS$ päivä sitten. Päivitä laskutuksen synkronoitituniste itse ylläpitämäsi organisaation asetuksiin.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "awaitingSyncPlural": {
+    "message": "Tunniste uudistettiin $DAYS$ päivää sitten. Päivitä laskutuksen synkronoitituniste itse ylläpitämäsi organisaation asetuksiin.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "lastSync": {
+    "message": "Viimeisin synkronointi",
+    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
+  },
+  "sponsorshipsSynced": {
+    "message": "Itse ylläpidetyt sponsoroinnit on synkronoitu."
+  },
+  "billingManagedByProvider": {
+    "message": "Hallinnasta vastaa $PROVIDER$",
+    "placeholders": {
+      "provider": {
+        "content": "$1",
+        "example": "Managed Services Company"
+      }
+    }
+  },
+  "billingContactProviderForAssistance": {
+    "message": "Ole yhteydessä heihin saadaksesi lisää apua",
+    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
+  },
+  "forwardedEmail": {
+    "message": "Välitykseen käytetty sähköpostialias"
+  },
+  "forwardedEmailDesc": {
+    "message": "Luo sähköpostialias ulkoisella ohjauspalvelulla."
+  },
+  "hostname": {
+    "message": "Osoite",
+    "description": "Part of a URL."
+  },
+  "apiAccessToken": {
+    "message": "API-käyttötunniste"
   }
 }
