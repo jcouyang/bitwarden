@@ -1,6 +1,13 @@
 [[redirects]]
-  from = "https://jcoybw.netlify.app/api/*"
+  from = "/api/*"
   to = "https://oyanglulu.synology.me:2873/api/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
+[[redirects]]
+  from = "/identity/*"
+  to = "https://oyanglulu.synology.me:2873/identity/:splat"
   status = 200
   force = true
   [redirects.headers]
