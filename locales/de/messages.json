@@ -187,7 +187,12 @@
     "message": "Ordner bearbeiten"
   },
   "baseDomain": {
-    "message": "Basisdomäne"
+    "message": "Basisdomäne",
+    "description": "Domain name. Ex. website.com"
+  },
+  "domainName": {
+    "message": "Domain-Name",
+    "description": "Domain name. Ex. website.com"
   },
   "host": {
     "message": "Host",
@@ -300,6 +305,18 @@
   "typeSecureNote": {
     "message": "Sichere Notiz"
   },
+  "typeLoginPlural": {
+    "message": "Zugangsdaten"
+  },
+  "typeCardPlural": {
+    "message": "Karten"
+  },
+  "typeIdentityPlural": {
+    "message": "Identitäten"
+  },
+  "typeSecureNotePlural": {
+    "message": "Sichere Notizen"
+  },
   "folders": {
     "message": "Ordner"
   },
@@ -404,11 +421,23 @@
     "message": "URI kopieren",
     "description": "Copy URI to clipboard"
   },
+  "me": {
+    "message": "Ich"
+  },
   "myVault": {
     "message": "Mein Tresor"
   },
+  "allVaults": {
+    "message": "Alle Tresore"
+  },
   "vault": {
     "message": "Tresor"
+  },
+  "vaults": {
+    "message": "Tresore"
+  },
+  "vaultItems": {
+    "message": "Tresor-Einträge"
   },
   "moveSelectedToOrg": {
     "message": "Auswahl zur Organisation verschieben"
@@ -874,6 +903,20 @@
   "length": {
     "message": "Länge"
   },
+  "uppercase": {
+    "message": "Großbuchstaben (A-Z)",
+    "description": "Include uppercase letters in the password generator."
+  },
+  "lowercase": {
+    "message": "Kleinbuchstaben (a-z)",
+    "description": "Include lowercase letters in the password generator."
+  },
+  "numbers": {
+    "message": "Zahlen (0-9)"
+  },
+  "specialCharacters": {
+    "message": "Sonderzeichen (!@#$%^&*)"
+  },
   "numWords": {
     "message": "Anzahl der Wörter"
   },
@@ -1093,11 +1136,14 @@
   "options": {
     "message": "Optionen"
   },
-  "optionsDesc": {
-    "message": "Passen Sie den Web-Tresor Ihren Bedürfnissen an."
+  "preferences": {
+    "message": "Einstellungen"
   },
-  "optionsUpdated": {
-    "message": "Optionen aktualisiert"
+  "preferencesDesc": {
+    "message": "Passe den Web-Tresor deinen Bedürfnissen an."
+  },
+  "preferencesUpdated": {
+    "message": "Einstellungen aktualisiert"
   },
   "language": {
     "message": "Sprache"
@@ -1412,6 +1458,10 @@
   },
   "reports": {
     "message": "Berichte"
+  },
+  "reportsDesc": {
+    "message": "Identifiziere und schließe Sicherheitslücken in deinen Online-Konten, indem du auf die Berichte unten klickst.",
+    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
   },
   "unsecuredWebsitesReport": {
     "message": "Bericht über ungesicherte Websites"
@@ -2138,7 +2188,7 @@
     "message": "Hilfe erhalten"
   },
   "getApps": {
-    "message": "Die Apps erhalten"
+    "message": "Die Apps beziehen"
   },
   "loggedInAs": {
     "message": "angemeldet als"
@@ -2782,11 +2832,26 @@
   "deleteOrganization": {
     "message": "Organisation löschen"
   },
-  "deleteOrganizationDesc": {
-    "message": "Fahren Sie fort, um diese Organisation und alle ihre zugehörigen Daten zu löschen. Einzelne Benutzerkonten bleiben erhalten, obwohl sie nicht länger mit dieser Organisation verbunden sein werden. "
+  "deletingOrganizationContentWarning": {
+    "message": "Gebe das Master-Passwort ein, um das Löschen von $ORGANIZATION$ und allen zugehörigen Daten zu bestätigen. Die Tresordaten in $ORGANIZATION$ beinhalten:",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
-  "deleteOrganizationWarning": {
-    "message": "Das Löschen dieser Organisation ist unwiderruflich."
+  "deletingOrganizationActiveUserAccountsWarning": {
+    "message": "Die Benutzerkonten bleiben nach dem Löschen aktiv, sind aber nicht mehr mit dieser Organisation verknüpft."
+  },
+  "deletingOrganizationIsPermanentWarning": {
+    "message": "Das Löschen von $ORGANIZATION$ ist dauerhaft und unwiderruflich.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
   "organizationDeleted": {
     "message": "Die Organisation wurde gelöscht"
@@ -3581,7 +3646,8 @@
     "message": "Alle Sends"
   },
   "maxAccessCountReached": {
-    "message": "Maximale Zugriffsanzahl erreicht"
+    "message": "Maximale Zugriffsanzahl erreicht",
+    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
   },
   "pendingDeletion": {
     "message": "Ausstehende Löschung"
@@ -4365,6 +4431,12 @@
   "vaultTimeoutToLarge": {
     "message": "Dein Tresor-Timeout überschreitet die von deinem Unternehmen festgelegte Beschränkung."
   },
+  "vaultCustomTimeoutMinimum": {
+    "message": "Minimum custom timeout is 1 minute."
+  },
+  "vaultTimeoutRangeError": {
+    "message": "Vault Timeout is not within allowed range."
+  },
   "disablePersonalVaultExport": {
     "message": "Persönlichen Tresor-Export deaktivieren"
   },
@@ -4528,7 +4600,7 @@
     "message": "Gebe deine persönliche E-Mail ein, um Bitwarden Familien einlösen zu können"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "Wenn du diese Organisation verlässt oder aus ihr entfernt wirst, läuft dein Familien-Abo am Ende des Abrechnungszeitraums ab."
+    "message": "Wenn du ein Angebot entfernst oder von der Patenschaft-Organisation entfernt wirst, verfällt deine Patenschaft am nächsten Verlängerungsdatum."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Angebot für eine bestehende Organisation akzeptieren oder eine neue Familien-Organisation erstellen."
@@ -4570,7 +4642,7 @@
     }
   },
   "resendEmailLabel": {
-    "message": "Sponsoring-E-Mail erneut an $NAME$ Sponsoring senden",
+    "message": "Patenschaft-E-Mail erneut an $NAME$ Patenschaft senden",
     "placeholders": {
       "name": {
         "content": "$1",
@@ -4588,13 +4660,13 @@
     "message": "Empfänger"
   },
   "removeSponsorship": {
-    "message": "Sponsoring entfernen"
+    "message": "Patenschaft entfernen"
   },
   "removeSponsorshipConfirmation": {
-    "message": "Nachdem du eine Förderung entfernt hast, bist du für dieses Abo und die damit verbundenen Rechnungen verantwortlich. Bist du sicher, dass du fortfahren möchtest?"
+    "message": "Nachdem du eine Patenschaft entfernt hast, bist du für dieses Abo und die damit verbundenen Rechnungen verantwortlich. Bist du sicher, dass du fortfahren möchtest?"
   },
   "sponsorshipCreated": {
-    "message": "Förderung erstellt"
+    "message": "Patenschaft erstellt"
   },
   "revoke": {
     "message": "Zurückziehen"
@@ -4603,13 +4675,13 @@
     "message": "E-Mail gesendet"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "Nach dem Entfernen dieses Kontos ist der Besitzer der Familienorganisation für dieses Abo und die damit verbundenen Rechnungen verantwortlich. Bist du sicher, dass du fortfahren möchtest?"
+    "message": "Nach dem Entfernen dieses Kontos läuft Förderung des Familien-Abos am Ende des Abrechnungszeitraums ab. Du wirst kein neues Patenschaftsangebot einlösen können, bis das bestehende abläuft. Bist du sicher, dass du fortfahren möchtest?"
   },
   "removeSponsorshipSuccess": {
-    "message": "Förderung entfernt"
+    "message": "Patenschaft entfernt"
   },
-  "ssoKeyConnectorUnavailable": {
-    "message": "Der Key Connector konnte nicht erreicht werden. Versuche es später erneut."
+  "ssoKeyConnectorError": {
+    "message": "Key Connector Fehler: Stelle sicher, dass der Key Connector verfügbar ist und einwandfrei funktioniert."
   },
   "keyConnectorUrl": {
     "message": "Key Connector URL"
@@ -4708,10 +4780,10 @@
     "message": "Zum Key Connector migriert"
   },
   "paymentSponsored": {
-    "message": "Bitte gib eine Zahlungsmethode an, die mit der Organisation verbunden wird. Keine Sorge, wir werden dir nichts berechnen, es sei denn, du wählst zusätzliche Funktionen aus oder deine Förderung läuft ab. "
+    "message": "Bitte gib eine Zahlungsmethode an, die mit der Organisation verbunden wird. Keine Sorge, wir werden dir nichts berechnen, es sei denn, du wählst zusätzliche Funktionen aus oder deine Patenschaft läuft ab. "
   },
   "orgCreatedSponsorshipInvalid": {
-    "message": "Das Förderangebot ist abgelaufen. Du kannst die Organisation, die du erstellt hast, löschen, um eine Gebühr am Ende deiner 7-Tage-Testversion zu vermeiden. Andernfalls kannst du diese Meldung schließen, um die Organisation zu behalten und die Rechnungsverantwortung zu übernehmen."
+    "message": "Das Patenschaftsangebot ist abgelaufen. Du kannst die Organisation, die du erstellt hast, löschen, um eine Gebühr am Ende deiner 7-Tage-Testversion zu vermeiden. Andernfalls kannst du diese Meldung schließen, um die Organisation zu behalten und die Rechnungsverantwortung zu übernehmen."
   },
   "newFamiliesOrganization": {
     "message": "Neue Familien-Organisation"
@@ -4732,10 +4804,79 @@
     "message": "Key Connector nicht erreichbar. URL überprüfen."
   },
   "sponsorshipTokenHasExpired": {
-    "message": "Das Förderangebot ist abgelaufen."
+    "message": "Das Patenschaftsangbot ist abgelaufen."
   },
   "freeWithSponsorship": {
-    "message": "KOSTENLOS mit Förderung"
+    "message": "KOSTENLOS mit Patenschaft"
+  },
+  "viewBillingSyncToken": {
+    "message": "Rechnungssynchronisierungs-Token ansehen"
+  },
+  "generateBillingSyncToken": {
+    "message": "Rechnungssynchronisierungs-Token generieren"
+  },
+  "copyPasteBillingSync": {
+    "message": "Kopiere dieses Token und füge es in die Rechnungssynchronisations-Einstellungen deiner selbst gehosteten Organisation ein."
+  },
+  "billingSyncCanAccess": {
+    "message": "Dein Rechnungssynchronisations-Token kann auf die Abonnement-Einstellungen dieser Organisation zugreifen und diese bearbeiten."
+  },
+  "manageBillingSync": {
+    "message": "Rechnungssynchronisation verwalten"
+  },
+  "setUpBillingSync": {
+    "message": "Rechnungssynchronisation einrichten"
+  },
+  "generateToken": {
+    "message": "Token generieren"
+  },
+  "rotateToken": {
+    "message": "Token erneuern"
+  },
+  "rotateBillingSyncTokenWarning": {
+    "message": "Wenn du fortfährt, musst du die Rechnungssynchronisation auf deinem selbst gehosteten Server neu einrichten."
+  },
+  "rotateBillingSyncTokenTitle": {
+    "message": "Durch Erneuerung des Rechnungssynchroniserungs-Token wird der vorherige Token ungültig."
+  },
+  "selfHostingTitle": {
+    "message": "Selbst gehostet"
+  },
+  "selfHostingEnterpriseOrganizationSectionCopy": {
+    "message": "Um deine Organisation auf deinem eigenen Server einzurichten, musst du deine Lizenzdatei hochladen. Um kostenlose Familien-Abos und erweiterte Abrechnungsmöglichkeiten für deine selbst gehostete Organisation anzubieten, musst du die Rechnungssynchronisation einrichten."
+  },
+  "billingSyncApiKeyRotated": {
+    "message": "Token erneuert."
+  },
+  "billingSync": {
+    "message": "Rechnungssynchronisation"
+  },
+  "billingSyncDesc": {
+    "message": "Die Rechnungssynchronisation bietet ein kostenloses Familien-Abo für Mitglieder und erweiterte Abrechnungsmöglichkeiten, indem du dein selbst gehostetes Bitwarden mit dem Bitwarden Cloud-Server verbindest."
+  },
+  "billingSyncKeyDesc": {
+    "message": "Um dieses Formular auszufüllen, ist ein Rechnungssynchronisations-Token aus den Abo-Einstellungen deiner Cloud-Organisation erforderlich."
+  },
+  "billingSyncKey": {
+    "message": "Rechnungssynchronisations-Token"
+  },
+  "active": {
+    "message": "Aktiv"
+  },
+  "inactive": {
+    "message": "Inaktiv"
+  },
+  "sentAwaitingSync": {
+    "message": "Gesendet (Warte auf Synchronisation)"
+  },
+  "sent": {
+    "message": "Gesendet"
+  },
+  "requestRemoved": {
+    "message": "Entfernt (Warte auf Synchronisation)"
+  },
+  "requested": {
+    "message": "Beantragt"
   },
   "formErrorSummaryPlural": {
     "message": "$COUNT$ Felder oben müssen beachtet werden.",
@@ -4799,5 +4940,140 @@
         "example": "My Org Name"
       }
     }
+  },
+  "accessDenied": {
+    "message": "Zugriff verweigert. Du hast keine Berechtigung, um diese Seite anzuzeigen."
+  },
+  "masterPassword": {
+    "message": "Master-Passwort"
+  },
+  "security": {
+    "message": "Sicherheit"
+  },
+  "keys": {
+    "message": "Schlüssel"
+  },
+  "billingHistory": {
+    "message": "Rechnungsverlauf"
+  },
+  "backToReports": {
+    "message": "Zurück zu den Berichten"
+  },
+  "organizationPicker": {
+    "message": "Organisationsauswahl"
+  },
+  "currentOrganization": {
+    "message": "Aktuelle Organisation",
+    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
+  },
+  "accountSettings": {
+    "message": "Kontoeinstellungen"
+  },
+  "generator": {
+    "message": "Generator"
+  },
+  "whatWouldYouLikeToGenerate": {
+    "message": "Was möchtest du generieren?"
+  },
+  "passwordType": {
+    "message": "Passworttyp"
+  },
+  "regenerateUsername": {
+    "message": "Benutzername neu generieren"
+  },
+  "generateUsername": {
+    "message": "Benutzernamen generieren"
+  },
+  "usernameType": {
+    "message": "Benutzernamentyp"
+  },
+  "plusAddressedEmail": {
+    "message": "Mit Plus adressierte E-Mail",
+    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
+  },
+  "plusAddressedEmailDesc": {
+    "message": "Verwende die Unteradressierungsmöglichkeiten deines E-Mail-Providers."
+  },
+  "catchallEmail": {
+    "message": "Catch-all-E-Mail-Adresse"
+  },
+  "catchallEmailDesc": {
+    "message": "Verwenden Sie den konfigurierten Catch-All-Posteingang Ihrer Domain."
+  },
+  "random": {
+    "message": "Zufällig",
+    "description": "Generates domain-based username using random letters"
+  },
+  "randomWord": {
+    "message": "Zufälliges Wort"
+  },
+  "service": {
+    "message": "Dienst"
+  },
+  "unknownCipher": {
+    "message": "Unbekannter Eintrag, du musst dich möglicherweise mit einem anderen Konto anmelden, um auf diesen Eintrag zuzugreifen."
+  },
+  "cannotSponsorSelf": {
+    "message": "Du kannst nicht für das aktive Konto einlösen. Gebe eine andere E-Mail ein."
+  },
+  "revokeWhenExpired": {
+    "message": "Läuft ab am $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/31/2020"
+      }
+    }
+  },
+  "awaitingSyncSingular": {
+    "message": "Token vor $DAYS$ Tag erneuert. Aktualisiere den Rechnungssynchronsierungs-Token in deinen selbst gehosteten Organisationseinstellungen.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "awaitingSyncPlural": {
+    "message": "Token vor $DAYS$ Tagen erneuert. Aktualisiere den Rechnungssynchronsierungs-Token in deinen selbst gehosteten Organisationseinstellungen.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "lastSync": {
+    "message": "Letzte Synchronisierung",
+    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
+  },
+  "sponsorshipsSynced": {
+    "message": "Selbst-gehostete Patenschaft synchronisiert."
+  },
+  "billingManagedByProvider": {
+    "message": "Verwaltet von $PROVIDER$",
+    "placeholders": {
+      "provider": {
+        "content": "$1",
+        "example": "Managed Services Company"
+      }
+    }
+  },
+  "billingContactProviderForAssistance": {
+    "message": "Bitte kontaktiere deinen Anbieter für weitere Hilfe",
+    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
+  },
+  "forwardedEmail": {
+    "message": "Weitergeleitetes E-Mail-Alias"
+  },
+  "forwardedEmailDesc": {
+    "message": "Generiere ein E-Mail-Alias mit einem externen Weiterleitungsdienst."
+  },
+  "hostname": {
+    "message": "Hostname",
+    "description": "Part of a URL."
+  },
+  "apiAccessToken": {
+    "message": "API-Zugangs-Token"
   }
 }

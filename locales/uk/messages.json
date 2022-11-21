@@ -187,7 +187,12 @@
     "message": "Редагувати теку"
   },
   "baseDomain": {
-    "message": "Основний домен"
+    "message": "Основний домен",
+    "description": "Domain name. Ex. website.com"
+  },
+  "domainName": {
+    "message": "Ім'я домену",
+    "description": "Domain name. Ex. website.com"
   },
   "host": {
     "message": "Вузол",
@@ -264,20 +269,20 @@
     "message": "Змінити"
   },
   "searchCollection": {
-    "message": "Пошук в збірках"
+    "message": "Шукати в збірці"
   },
   "searchFolder": {
-    "message": "Пошук в теці"
+    "message": "Шукати в теці"
   },
   "searchFavorites": {
-    "message": "Пошук в обраному"
+    "message": "Шукати в обраному"
   },
   "searchType": {
-    "message": "Пошук за типом",
+    "message": "Шукати за типом",
     "description": "Search item type"
   },
   "searchVault": {
-    "message": "Пошук"
+    "message": "Шукати у сховищі"
   },
   "allItems": {
     "message": "Всі елементи"
@@ -299,6 +304,18 @@
   },
   "typeSecureNote": {
     "message": "Захищена нотатка"
+  },
+  "typeLoginPlural": {
+    "message": "Записи"
+  },
+  "typeCardPlural": {
+    "message": "Картки"
+  },
+  "typeIdentityPlural": {
+    "message": "Особисті дані"
+  },
+  "typeSecureNotePlural": {
+    "message": "Захищені нотатки"
   },
   "folders": {
     "message": "Теки"
@@ -404,11 +421,23 @@
     "message": "Копіювати URI",
     "description": "Copy URI to clipboard"
   },
+  "me": {
+    "message": "Я"
+  },
   "myVault": {
     "message": "Моє сховище"
   },
+  "allVaults": {
+    "message": "Усі сховища"
+  },
   "vault": {
     "message": "Сховище"
+  },
+  "vaults": {
+    "message": "Сховища"
+  },
+  "vaultItems": {
+    "message": "Елементи сховища"
   },
   "moveSelectedToOrg": {
     "message": "Перемістити вибране до організації"
@@ -874,6 +903,20 @@
   "length": {
     "message": "Довжина"
   },
+  "uppercase": {
+    "message": "Верхній регістр (A-Z)",
+    "description": "Include uppercase letters in the password generator."
+  },
+  "lowercase": {
+    "message": "Нижній регістр (a-z)",
+    "description": "Include lowercase letters in the password generator."
+  },
+  "numbers": {
+    "message": "Числа (0-9)"
+  },
+  "specialCharacters": {
+    "message": "Спеціальні символи (!@#$%^&*)"
+  },
   "numWords": {
     "message": "Кількість слів"
   },
@@ -1093,10 +1136,13 @@
   "options": {
     "message": "Додатково"
   },
-  "optionsDesc": {
+  "preferences": {
+    "message": "Налаштування"
+  },
+  "preferencesDesc": {
     "message": "Налаштуйте свою роботу з веб сховищем."
   },
-  "optionsUpdated": {
+  "preferencesUpdated": {
     "message": "Налаштування оновлено"
   },
   "language": {
@@ -1413,11 +1459,15 @@
   "reports": {
     "message": "Звіти"
   },
+  "reportsDesc": {
+    "message": "Визначте і закрийте прогалини в безпеці у ваших облікових записах, натиснувши на звіти нижче.",
+    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
+  },
   "unsecuredWebsitesReport": {
-    "message": "Звіт про незахищені вебсайти"
+    "message": "Незахищені вебсайти"
   },
   "unsecuredWebsitesReportDesc": {
-    "message": "Використання незахищених вебсайтів з протоколом http:// може бути небезпечним. Якщо вебсайт дозволяє, вам слід завжди використовувати його з протоколом https://, щоб ваше з'єднання було зашифрованим."
+    "message": "URL-адреси, що починаються з http:// не мають надійного шифрування. Змініть URL-адреси цих облікових записів на https:// для використання безпечного з'єднання."
   },
   "unsecuredWebsitesFound": {
     "message": "Знайдено незахищені вебсайти"
@@ -1435,10 +1485,10 @@
     "message": "У вашому сховищі немає записів з незахищеними URL-адресами."
   },
   "inactive2faReport": {
-    "message": "Звіт про неактивну двоетапну перевірку"
+    "message": "Неактивна двоетапна перевірка"
   },
   "inactive2faReportDesc": {
-    "message": "Двоетапна перевірка (2FA) - це важливе налаштування безпеки, що дозволяє захистити ваші облікові дані. Ви повинні завжди використовувати її на вебсайтах, де вона пропонується."
+    "message": "Двоетапна перевірка надає додатковий рівень захисту для ваших облікових записів. Увімкніть двоетапнуперевірку з використанням вбудованих засобів Bitwarden для цих облікових записів, або скористайтеся альтернативним способом."
   },
   "inactive2faFound": {
     "message": "Знайдено записи без двоетапної перевірки"
@@ -1459,10 +1509,10 @@
     "message": "Інструкції"
   },
   "exposedPasswordsReport": {
-    "message": "Звіт викритих паролів"
+    "message": "Викриті паролі"
   },
   "exposedPasswordsReportDesc": {
-    "message": "Викритими називаються паролі, які було знайдено у відомих витоках даних, що публікуються в загальнодоступних місцях або продаються на чорному ринку в інтернеті хакерами."
+    "message": "Паролі, викриті у витоках даних, є легкою мішенню для зловмисників. Змініть ці паролі для запобігання потенційних ризиків."
   },
   "exposedPasswordsFound": {
     "message": "Знайдено викриті паролі"
@@ -1492,10 +1542,10 @@
     }
   },
   "weakPasswordsReport": {
-    "message": "Звіт про ненадійні паролі"
+    "message": "Ненадійні паролі"
   },
   "weakPasswordsReportDesc": {
-    "message": "Ненадійні паролі можуть легко бути вгадані хакерами і автоматизованими засобами злому паролів. Генератор паролів Bitwarden може допомогти вам створити надійні паролі."
+    "message": "Ненадійні паролі можуть легко бути вгадані зловмисниками. Замініть ці паролі на надійні за допомогою генератора паролів."
   },
   "weakPasswordsFound": {
     "message": "Знайдено ненадійні паролі"
@@ -1513,10 +1563,10 @@
     "message": "У вашому сховищі немає ненадійних паролів."
   },
   "reusedPasswordsReport": {
-    "message": "Звіт повторюваних паролів"
+    "message": "Повторювані паролі"
   },
   "reusedPasswordsReportDesc": {
-    "message": "Якщо використовуваний вами сервіс було скомпрометовано, повторне використання однакового пароля в інших місцях може дозволити хакерам легко отримати доступ до інших ваших облікових записів. Вам слід використовувати унікальний пароль для кожного сервісу чи облікового запису."
+    "message": "Повторне використання паролів дає змогу легко отримати доступ до багатьох облікових записів. Замініть ці паролі, щоб кожен з них був унікальним."
   },
   "reusedPasswordsFound": {
     "message": "Знайдено повторювані паролі"
@@ -1543,10 +1593,10 @@
     }
   },
   "dataBreachReport": {
-    "message": "Звіт про витік даних"
+    "message": "Витік даних"
   },
   "breachDesc": {
-    "message": "Витік даних - це подія, під час якої зловмисниками було отримано неавторизований доступ до даних вебсайтів та оприлюднено їх. Перегляньте тип даних, які було скомпрометовано (адреси електронної пошти, паролі, кредитні картки та інше) і виконайте необхідні дії, наприклад, змініть паролі."
+    "message": "Викриті облікові дані можуть розкрити вашу особисту інформацію. Захистіть викриті облікові записи, увімкнувши двоктапну перевірку чи створивши надійніший пароль."
   },
   "breachCheckUsernameEmail": {
     "message": "Перевірте будь-які використовувані вами імена користувачів чи адреси електронної пошти."
@@ -2782,11 +2832,26 @@
   "deleteOrganization": {
     "message": "Видалити організацію"
   },
-  "deleteOrganizationDesc": {
-    "message": "Продовжуйте внизу, щоб видалити цю організацію і всі пов'язані дані. Індивідуальні облікові записи користувачів залишаться без змін, однак, вони більше не будуть пов'язані з цією організацією. "
+  "deletingOrganizationContentWarning": {
+    "message": "Введіть головний пароль для підтвердження видалення $ORGANIZATION$ та всіх пов'язаних даних. Дані сховища в $ORGANIZATION$ включають:",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
-  "deleteOrganizationWarning": {
-    "message": "Видалення організації є незворотною дією. Її неможливо скасувати."
+  "deletingOrganizationActiveUserAccountsWarning": {
+    "message": "Облікові записи користувачів залишатимуться активними після видалення, але більше не будуть пов'язані з цією організацією."
+  },
+  "deletingOrganizationIsPermanentWarning": {
+    "message": "Видалення $ORGANIZATION$ є остаточним і незворотнім.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
   "organizationDeleted": {
     "message": "Організацію видалено"
@@ -3307,7 +3372,7 @@
     "description": "Noun: A special folder for holding deleted items that have not yet been permanently deleted"
   },
   "searchTrash": {
-    "message": "Пошук у смітнику"
+    "message": "Шукати в смітнику"
   },
   "permanentlyDelete": {
     "message": "Остаточно видалити"
@@ -3581,7 +3646,8 @@
     "message": "Усі відправлення"
   },
   "maxAccessCountReached": {
-    "message": "Досягнуто максимальну кількість доступів"
+    "message": "Досягнуто максимальну кількість доступів",
+    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
   },
   "pendingDeletion": {
     "message": "Очікується видалення"
@@ -3590,7 +3656,7 @@
     "message": "Термін дії завершився"
   },
   "searchSends": {
-    "message": "Пошук відправлень",
+    "message": "Шукати відправлення",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendProtectedPassword": {
@@ -4097,7 +4163,7 @@
     "message": "Пароль успішно скинуто!"
   },
   "resetPasswordEnrollmentWarning": {
-    "message": "Розгортання дозволить адміністраторам організації змінювати ваш головний пароль. Ви дійсно хочете розгорнути?"
+    "message": "Розгортання дозволить адміністраторам організації змінювати ваш головний пароль"
   },
   "resetPasswordPolicy": {
     "message": "Скидання головного пароля"
@@ -4365,6 +4431,12 @@
   "vaultTimeoutToLarge": {
     "message": "Час очікування сховища перевищує обмеження, встановлене вашою організацією."
   },
+  "vaultCustomTimeoutMinimum": {
+    "message": "Мінімальний власний час очікування – 1 хвилина."
+  },
+  "vaultTimeoutRangeError": {
+    "message": "Час очікування сховища поза межами дозволеного діапазону."
+  },
   "disablePersonalVaultExport": {
     "message": "Вимкнути експорт особистого сховища"
   },
@@ -4417,22 +4489,22 @@
     "message": "Отримувати запити від інформації користувача кінцевої точки"
   },
   "additionalScopes": {
-    "message": "Додаткові/Власні межі (розділені комами)"
+    "message": "Власні області"
   },
   "additionalUserIdClaimTypes": {
-    "message": "Додаткові/Власні типи запитів ID користувача (розділені комами)"
+    "message": "Власні типи запитів ID користувача"
   },
   "additionalEmailClaimTypes": {
-    "message": "Додаткові/Власні типи запитів е-пошти (розділені комами)"
+    "message": "Типи запитів е-пошти"
   },
   "additionalNameClaimTypes": {
-    "message": "Додаткові/Власні типи запитів імені (розділені комами)"
+    "message": "Типи запитів власного імені"
   },
   "acrValues": {
-    "message": "Запитані значення посилання класу контексту автентифікації (acr_values)"
+    "message": "Запитані значення посилання класу контексту автентифікації"
   },
   "expectedReturnAcrValue": {
-    "message": "Очікувалось значення запиту \"acr\" у відповіді (засвідчення acr)"
+    "message": "Очікувалось значення запиту \"acr\" у відповіді"
   },
   "spEntityId": {
     "message": "ID об'єкта SP"
@@ -4456,7 +4528,7 @@
     "message": "Мінімальний алгоритм вхідного підписання"
   },
   "spWantAssertionsSigned": {
-    "message": "Вимагається підпис підтвердження"
+    "message": "Очікується підпис підтвердження"
   },
   "spValidateCertificates": {
     "message": "Перевірка сертифікатів"
@@ -4483,10 +4555,10 @@
     "message": "Дозволити небажану відповідь авторизації"
   },
   "idpAllowOutboundLogoutRequests": {
-    "message": "Allow outbound logout requests"
+    "message": "Дозволити вихідні запити для виходу"
   },
   "idpSignAuthenticationRequests": {
-    "message": "Sign authentication requests"
+    "message": "Підписувати запити авторизації"
   },
   "ssoSettingsSaved": {
     "message": "Конфігурацію єдиного входу збережено."
@@ -4528,7 +4600,7 @@
     "message": "Введіть особисту електронну адресу для активації Bitwarden Families"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "Якщо ви покинете цю спонсоровану організацію, ваш доступ до тарифного плану Bitwarden Families завершиться в кінці оплаченого періоду."
+    "message": "Якщо ви вилучите пропозицію, або якщо вас вилучено з цієї спонсорованої організації, ваш доступ до тарифного плану Bitwarden Families завершиться під час наступної дати поновлення."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Прийняти пропозицію для наявної організації або створити нову сімейну організацію."
@@ -4603,13 +4675,13 @@
     "message": "Лист надіслано"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "Після вилучення цього облікового запису, власники сімейної організації будуть відповідальними за цю передплату та пов'язані рахунки. Ви дійсно хочете продовжити?"
+    "message": "Після вилучення цього облікового запису, спонсорування сімейного плану завершиться в кінці платіжного періоду. Ви не зможете запитати нову пропозицію спонсорування доки чинна не завершиться. Ви дійсно хочете продовжити?"
   },
   "removeSponsorshipSuccess": {
     "message": "Спонсорування вилучено"
   },
-  "ssoKeyConnectorUnavailable": {
-    "message": "Не вдається отримати доступ до Key Connector. Спробуйте знову пізніше."
+  "ssoKeyConnectorError": {
+    "message": "Помилка Key Connector: переконайтеся, що Key Connector доступний та працює правильно."
   },
   "keyConnectorUrl": {
     "message": "URL-адреса Key Connector"
@@ -4737,8 +4809,77 @@
   "freeWithSponsorship": {
     "message": "БЕЗПЛАТНО зі спонсоруванням"
   },
+  "viewBillingSyncToken": {
+    "message": "Переглянути токен платіжної синхронізації"
+  },
+  "generateBillingSyncToken": {
+    "message": "Згенерувати токен платіжної синхронізації"
+  },
+  "copyPasteBillingSync": {
+    "message": "Скопіюйте і вставте цей токен у налаштування платіжної синхронізації своєї власної розміщеної організації."
+  },
+  "billingSyncCanAccess": {
+    "message": "Ваш токен платіжної синхронізації може отримувати доступ і редагувати налаштування передплати цієї організації."
+  },
+  "manageBillingSync": {
+    "message": "Керувати платіжною синхронізацією"
+  },
+  "setUpBillingSync": {
+    "message": "Налаштувати платіжну синхронізацію"
+  },
+  "generateToken": {
+    "message": "Генерувати токен"
+  },
+  "rotateToken": {
+    "message": "Замінити токен"
+  },
+  "rotateBillingSyncTokenWarning": {
+    "message": "Якщо ви продовжите, вам потрібно буде повторно налаштувати платіжну синхронізацію на вашому власному розміщеному сервері."
+  },
+  "rotateBillingSyncTokenTitle": {
+    "message": "Заміна токена платіжної синхронізації призведе до скасування попереднього токена."
+  },
+  "selfHostingTitle": {
+    "message": "Власне розміщення"
+  },
+  "selfHostingEnterpriseOrganizationSectionCopy": {
+    "message": "Щоб налаштувати свою організацію на власному сервері, вам необхідно вивантажити файл ліцензії. Для підтримки безплатних сімейних тарифних планів та розширених можливостей власної розміщеної організації, вам необхідно налаштувати платіжну синхронізацію."
+  },
+  "billingSyncApiKeyRotated": {
+    "message": "Токен замінено."
+  },
+  "billingSync": {
+    "message": "Платіжна синхронізація"
+  },
+  "billingSyncDesc": {
+    "message": "Платіжна синхронізація надає безплатні сімейні тарифні плани для учасників, а також розширені можливості передплати завдяки зв'язку вашого власного розміщеного Bitwarden з хмарним сервером Bitwarden."
+  },
+  "billingSyncKeyDesc": {
+    "message": "Для завершення цієї форми необхідний токен платіжної синхронізації з налаштувань передплати організації в хмарному сховищі."
+  },
+  "billingSyncKey": {
+    "message": "Токен платіжної синхронізації"
+  },
+  "active": {
+    "message": "Активний"
+  },
+  "inactive": {
+    "message": "Неактивний"
+  },
+  "sentAwaitingSync": {
+    "message": "Надіслано (Очікується синхронізація)"
+  },
+  "sent": {
+    "message": "Надіслано"
+  },
+  "requestRemoved": {
+    "message": "Вилучено (Очікується синхронізація)"
+  },
+  "requested": {
+    "message": "Запитано"
+  },
   "formErrorSummaryPlural": {
-    "message": "$COUNT$ fields above need your attention.",
+    "message": "$COUNT$ зазначених вище полів потребують вашої уваги.",
     "placeholders": {
       "count": {
         "content": "$1",
@@ -4747,10 +4888,10 @@
     }
   },
   "formErrorSummarySingle": {
-    "message": "1 field above needs your attention."
+    "message": "1 зазначене вище поле потребує вашої уваги."
   },
   "fieldRequiredError": {
-    "message": "$FIELDNAME$ is required.",
+    "message": "$FIELDNAME$ є обов'язковим.",
     "placeholders": {
       "fieldname": {
         "content": "$1",
@@ -4759,31 +4900,31 @@
     }
   },
   "required": {
-    "message": "required"
+    "message": "обов’язково"
   },
   "idpSingleSignOnServiceUrlRequired": {
-    "message": "Required if Entity ID is not a URL."
+    "message": "Обов'язково, якщо ID елемента не є URL."
   },
   "openIdOptionalCustomizations": {
-    "message": "Optional Customizations"
+    "message": "Додаткові налаштування"
   },
   "openIdAuthorityRequired": {
-    "message": "Required if Authority is not valid."
+    "message": "Обов'язково, якщо установа недійсна."
   },
   "separateMultipleWithComma": {
-    "message": "Separate multiple with a comma."
+    "message": "Декілька значень розділених комою."
   },
   "sessionTimeout": {
-    "message": "Your session has timed out. Please go back and try logging in again."
+    "message": "Час вашого сеансу завершився. Поверніться назад і спробуйте увійти знову."
   },
   "exportingPersonalVaultTitle": {
-    "message": "Exporting Personal Vault"
+    "message": "Експортування особистого сховища"
   },
   "exportingOrganizationVaultTitle": {
-    "message": "Exporting Organization Vault"
+    "message": "Експортування сховища організації"
   },
   "exportingPersonalVaultDescription": {
-    "message": "Only the personal vault items associated with $EMAIL$ will be exported. Organization vault items will not be included.",
+    "message": "Будуть експортовані лише записи особистого сховища, пов'язані з $EMAIL$. Записи сховища організації не буде включено.",
     "placeholders": {
       "email": {
         "content": "$1",
@@ -4792,12 +4933,147 @@
     }
   },
   "exportingOrganizationVaultDescription": {
-    "message": "Only the organization vault associated with $ORGANIZATION$ will be exported. Personal vault items and items from other organizations will not be included.",
+    "message": "Будуть експортовані лише записи сховища організації, пов'язані з $ORGANIZATION$. Записи особистого сховища та записи з інших організацій не буде включено.",
     "placeholders": {
       "organization": {
         "content": "$1",
         "example": "My Org Name"
       }
     }
+  },
+  "accessDenied": {
+    "message": "Доступ заборонено. У вас немає дозволу на перегляд цієї сторінки."
+  },
+  "masterPassword": {
+    "message": "Головний пароль"
+  },
+  "security": {
+    "message": "Безпека"
+  },
+  "keys": {
+    "message": "Ключі"
+  },
+  "billingHistory": {
+    "message": "Історія платежів"
+  },
+  "backToReports": {
+    "message": "Повернутися до звітів"
+  },
+  "organizationPicker": {
+    "message": "Вибір організації"
+  },
+  "currentOrganization": {
+    "message": "Поточна організація",
+    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
+  },
+  "accountSettings": {
+    "message": "Налаштування облікового запису"
+  },
+  "generator": {
+    "message": "Генератор"
+  },
+  "whatWouldYouLikeToGenerate": {
+    "message": "Що ви бажаєте згенерувати?"
+  },
+  "passwordType": {
+    "message": "Тип пароля"
+  },
+  "regenerateUsername": {
+    "message": "Повторно генерувати ім'я користувача"
+  },
+  "generateUsername": {
+    "message": "Генерувати ім'я користувача"
+  },
+  "usernameType": {
+    "message": "Тип імені користувача"
+  },
+  "plusAddressedEmail": {
+    "message": "Плюс адреса електронної пошти",
+    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
+  },
+  "plusAddressedEmailDesc": {
+    "message": "Використовуйте розширені можливості адрес вашого постачальника електронної пошти."
+  },
+  "catchallEmail": {
+    "message": "Адреса е-пошти Catch-all"
+  },
+  "catchallEmailDesc": {
+    "message": "Використовуйте свою скриньку вхідних Catch-All власного домену."
+  },
+  "random": {
+    "message": "Випадково",
+    "description": "Generates domain-based username using random letters"
+  },
+  "randomWord": {
+    "message": "Випадкове слово"
+  },
+  "service": {
+    "message": "Послуга"
+  },
+  "unknownCipher": {
+    "message": "Невідомий елемент. Можливо, вам необхідно запитати дозвіл для доступу до нього."
+  },
+  "cannotSponsorSelf": {
+    "message": "Ви не можете отримати для активного облікового запису. Введіть іншу адресу е-пошти."
+  },
+  "revokeWhenExpired": {
+    "message": "Завершується $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/31/2020"
+      }
+    }
+  },
+  "awaitingSyncSingular": {
+    "message": "Токен замінено $DAYS$ день тому. Оновіть токен платіжної синхронізації у налаштуваннях власної розміщеної організації.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "awaitingSyncPlural": {
+    "message": "Токен замінено $DAYS$ днів тому. Оновіть токен платіжної синхронізації у налаштуваннях власної розміщеної організації.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "lastSync": {
+    "message": "Востаннє синхронізовано",
+    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
+  },
+  "sponsorshipsSynced": {
+    "message": "Власне розміщене спонсорування синхронізовано."
+  },
+  "billingManagedByProvider": {
+    "message": "Керується $PROVIDER$",
+    "placeholders": {
+      "provider": {
+        "content": "$1",
+        "example": "Managed Services Company"
+      }
+    }
+  },
+  "billingContactProviderForAssistance": {
+    "message": "Будь ласка, зверніться до них за допомогою",
+    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
+  },
+  "forwardedEmail": {
+    "message": "Псевдонім е-пошти для пересилання"
+  },
+  "forwardedEmailDesc": {
+    "message": "Згенеруйте псевдонім е-пошти зі стороннім сервісом пересилання."
+  },
+  "hostname": {
+    "message": "Ім'я вузла",
+    "description": "Part of a URL."
+  },
+  "apiAccessToken": {
+    "message": "Токен доступу до АРІ"
   }
 }

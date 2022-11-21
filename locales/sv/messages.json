@@ -187,7 +187,12 @@
     "message": "Redigera mapp"
   },
   "baseDomain": {
-    "message": "Basdomän"
+    "message": "Basdomän",
+    "description": "Domain name. Ex. website.com"
+  },
+  "domainName": {
+    "message": "Domännamn",
+    "description": "Domain name. Ex. website.com"
   },
   "host": {
     "message": "Värd",
@@ -300,6 +305,18 @@
   "typeSecureNote": {
     "message": "Säker anteckning"
   },
+  "typeLoginPlural": {
+    "message": "Inloggningar"
+  },
+  "typeCardPlural": {
+    "message": "Kort"
+  },
+  "typeIdentityPlural": {
+    "message": "Identiteter"
+  },
+  "typeSecureNotePlural": {
+    "message": "Säkra anteckningar"
+  },
   "folders": {
     "message": "Mappar"
   },
@@ -404,11 +421,23 @@
     "message": "Kopiera URI",
     "description": "Copy URI to clipboard"
   },
+  "me": {
+    "message": "Jag"
+  },
   "myVault": {
     "message": "Mitt valv"
   },
+  "allVaults": {
+    "message": "Alla valv"
+  },
   "vault": {
     "message": "Valv"
+  },
+  "vaults": {
+    "message": "Valv"
+  },
+  "vaultItems": {
+    "message": "Vault Items"
   },
   "moveSelectedToOrg": {
     "message": "Flytta valda till organisation"
@@ -874,6 +903,20 @@
   "length": {
     "message": "Längd"
   },
+  "uppercase": {
+    "message": "Versaler (A-Ö)",
+    "description": "Include uppercase letters in the password generator."
+  },
+  "lowercase": {
+    "message": "Gemener (a-ö)",
+    "description": "Include lowercase letters in the password generator."
+  },
+  "numbers": {
+    "message": "Siffror (0-9)"
+  },
+  "specialCharacters": {
+    "message": "Specialtecken (!@#$%^&*)"
+  },
   "numWords": {
     "message": "Antal ord"
   },
@@ -1006,7 +1049,7 @@
     "message": "Rensade organisationsvalv."
   },
   "vaultAccessedByProvider": {
-    "message": "Vault accessed by provider."
+    "message": "Valv nås av leverantör."
   },
   "purgeVaultDesc": {
     "message": "Fortsätt nedan för att radera alla objekt och mappar i ditt valv. Objekt som tillhör en organisation som du delar med kommer inte raderas."
@@ -1093,11 +1136,14 @@
   "options": {
     "message": "Alternativ"
   },
-  "optionsDesc": {
-    "message": "Anpassa din upplevelse i webbvalvet."
+  "preferences": {
+    "message": "Preferences"
   },
-  "optionsUpdated": {
-    "message": "Alternativen uppdaterades"
+  "preferencesDesc": {
+    "message": "Customize your web vault experience."
+  },
+  "preferencesUpdated": {
+    "message": "Preferences updated"
   },
   "language": {
     "message": "Språk"
@@ -1412,6 +1458,10 @@
   },
   "reports": {
     "message": "Rapporter"
+  },
+  "reportsDesc": {
+    "message": "Identifiera och åtgärda säkerhetsluckor på dina online-konton genom att klicka på rapporterna nedan.",
+    "description": "Vault Health Reports can be used to evaluate the security of your Bitwarden Personal or Organization Vault."
   },
   "unsecuredWebsitesReport": {
     "message": "Rapport om osäkra webbplatser"
@@ -2782,11 +2832,26 @@
   "deleteOrganization": {
     "message": "Radera organisation"
   },
-  "deleteOrganizationDesc": {
-    "message": "Fortsätt nedan för att radera denna organisation och all tillhörande data. Enskilda användarkonton kommer finnas kvar, men de kommer inte längre tillhöra denna organisation. "
+  "deletingOrganizationContentWarning": {
+    "message": "Enter the master password to confirm deletion of $ORGANIZATION$ and all associated data. Vault data in $ORGANIZATION$ includes:",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
-  "deleteOrganizationWarning": {
-    "message": "Att radera organisationen är permanent. Det går inte att ångra."
+  "deletingOrganizationActiveUserAccountsWarning": {
+    "message": "User accounts will remain active after deletion but will no longer be associated to this organization."
+  },
+  "deletingOrganizationIsPermanentWarning": {
+    "message": "Deleting $ORGANIZATION$ is permanent and irreversible.",
+    "placeholders": {
+      "organization": {
+        "content": "$1",
+        "example": "My Org Name"
+      }
+    }
   },
   "organizationDeleted": {
     "message": "Organisationen raderades"
@@ -3097,7 +3162,7 @@
     "message": "Organisationen är inaktiverad."
   },
   "licenseIsExpired": {
-    "message": "License is expired."
+    "message": "Licensen har upphört att gälla."
   },
   "updatedUsers": {
     "message": "Uppdaterade användare"
@@ -3164,7 +3229,7 @@
     "description": "A 'fingerprint phrase' is a unique word phrase (similar to a passphrase) that a user can use to authenticate their public key with another user, for the purposes of sharing."
   },
   "dontAskFingerprintAgain": {
-    "message": "Fråga inte om verifiering av fingeravtrycksfrasen igen",
+    "message": "Never prompt to verify fingerprint phrases for invited users (Not recommended)",
     "description": "A 'fingerprint phrase' is a unique word phrase (similar to a passphrase) that a user can use to authenticate their public key with another user, for the purposes of sharing."
   },
   "free": {
@@ -3495,7 +3560,7 @@
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "createdSend": {
-    "message": "Created Send",
+    "message": "Skapade Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "editedSend": {
@@ -3554,11 +3619,11 @@
     "message": "Inaktiverad"
   },
   "sendLink": {
-    "message": "Send link",
+    "message": "Länk till Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "copySendLink": {
-    "message": "Copy Send Link",
+    "message": "Kopiera länk till Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "removePassword": {
@@ -3578,10 +3643,11 @@
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "allSends": {
-    "message": "All Sends"
+    "message": "Alla Send"
   },
   "maxAccessCountReached": {
-    "message": "Det maximala antalet åtkomster har uppnåtts"
+    "message": "Det maximala antalet åtkomster har uppnåtts",
+    "description": "This text will be displayed after a Send has been accessed the maximum amount of times."
   },
   "pendingDeletion": {
     "message": "Väntar på radering"
@@ -3590,11 +3656,11 @@
     "message": "Utgången"
   },
   "searchSends": {
-    "message": "Search Sends",
+    "message": "Sök bland Send",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendProtectedPassword": {
-    "message": "This Send is protected with a password. Please type the password below to continue.",
+    "message": "Denna Send är skyddad med ett lösenord. Vänligen skriv in lösenordet nedan för att fortsätta.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendProtectedPasswordDontKnow": {
@@ -3785,7 +3851,7 @@
     "message": "Användare som kan hantera organisationens policyer är berörs inte av den här policyn."
   },
   "sendDisabled": {
-    "message": "Send disabled",
+    "message": "Send inaktiverad",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendDisabledWarning": {
@@ -3909,7 +3975,7 @@
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendNameDesc": {
-    "message": "A friendly name to describe this Send.",
+    "message": "Ett eget namn för att beskriva denna Send.",
     "description": "'Send' is a noun and the name of a feature called 'Bitwarden Send'. It should not be translated."
   },
   "sendTextDesc": {
@@ -4214,7 +4280,7 @@
     "message": "The provider has been set up."
   },
   "clients": {
-    "message": "Clients"
+    "message": "Klienter"
   },
   "providerAdmin": {
     "message": "Provider Admin"
@@ -4365,6 +4431,12 @@
   "vaultTimeoutToLarge": {
     "message": "Your vault timeout exceeds the restriction set by your organization."
   },
+  "vaultCustomTimeoutMinimum": {
+    "message": "Minimum custom timeout is 1 minute."
+  },
+  "vaultTimeoutRangeError": {
+    "message": "Vault Timeout is not within allowed range."
+  },
   "disablePersonalVaultExport": {
     "message": "Disable Personal Vault Export"
   },
@@ -4381,7 +4453,7 @@
     "message": "Select SSO Type"
   },
   "type": {
-    "message": "Type"
+    "message": "Typ"
   },
   "openIdConnectConfig": {
     "message": "OpenID Connect Configuration"
@@ -4528,7 +4600,7 @@
     "message": "Enter your personal email to redeem Bitwarden Families"
   },
   "sponsoredFamiliesLeaveCopy": {
-    "message": "If you leave or are removed from the sponsoring organization, your Families plan will expire at the end of the billing period."
+    "message": "If you remove an offer or are removed from the sponsoring organization, your Families sponsorship will expire at the next renewal date."
   },
   "acceptBitwardenFamiliesHelp": {
     "message": "Accept offer for an existing organization or create a new Families organization."
@@ -4603,13 +4675,13 @@
     "message": "Email Sent"
   },
   "revokeSponsorshipConfirmation": {
-    "message": "After removing this account, the Families organization owner will be responsible for this subscription and related invoices. Are you sure you want to continue?"
+    "message": "After removing this account, the Families plan sponsorship will expire at the end of the billing period. You will not be able to redeem a new sponsorship offer until the existing one expires. Are you sure you want to continue?"
   },
   "removeSponsorshipSuccess": {
     "message": "Sponsorship Removed"
   },
-  "ssoKeyConnectorUnavailable": {
-    "message": "Unable to reach the Key Connector, try again later."
+  "ssoKeyConnectorError": {
+    "message": "Key Connector error: make sure Key Connector is available and working correctly."
   },
   "keyConnectorUrl": {
     "message": "Key Connector URL"
@@ -4737,6 +4809,75 @@
   "freeWithSponsorship": {
     "message": "FREE with sponsorship"
   },
+  "viewBillingSyncToken": {
+    "message": "View Billing Sync Token"
+  },
+  "generateBillingSyncToken": {
+    "message": "Generate Billing Sync Token"
+  },
+  "copyPasteBillingSync": {
+    "message": "Copy and paste this token into the Billing Sync settings of your self-hosted organization."
+  },
+  "billingSyncCanAccess": {
+    "message": "Your Billing Sync token can access and edit this organization's subscription settings."
+  },
+  "manageBillingSync": {
+    "message": "Manage Billing Sync"
+  },
+  "setUpBillingSync": {
+    "message": "Set Up Billing Sync"
+  },
+  "generateToken": {
+    "message": "Generate Token"
+  },
+  "rotateToken": {
+    "message": "Rotate Token"
+  },
+  "rotateBillingSyncTokenWarning": {
+    "message": "If you proceed, you will need to re-setup billing sync on your self-hosted server."
+  },
+  "rotateBillingSyncTokenTitle": {
+    "message": "Rotating the Billing Sync Token will invalidate the previous token."
+  },
+  "selfHostingTitle": {
+    "message": "Self-Hosting"
+  },
+  "selfHostingEnterpriseOrganizationSectionCopy": {
+    "message": "To set-up your organization on your own server, you will need to upload your license file. To support Free Families plans and advanced billing capabilities for your self-hosted organization, you will need to set up billing sync."
+  },
+  "billingSyncApiKeyRotated": {
+    "message": "Token rotated."
+  },
+  "billingSync": {
+    "message": "Billing Sync"
+  },
+  "billingSyncDesc": {
+    "message": "Billing Sync provides Free Families plans for members and advanced billing capabilities by linking your self-hosted Bitwarden to the Bitwarden cloud server."
+  },
+  "billingSyncKeyDesc": {
+    "message": "A Billing Sync Token from your cloud organization's subscription settings is required to complete this form."
+  },
+  "billingSyncKey": {
+    "message": "Billing Sync Token"
+  },
+  "active": {
+    "message": "Active"
+  },
+  "inactive": {
+    "message": "Inactive"
+  },
+  "sentAwaitingSync": {
+    "message": "Sent (Awaiting Sync)"
+  },
+  "sent": {
+    "message": "Sent"
+  },
+  "requestRemoved": {
+    "message": "Removed (Awaiting Sync)"
+  },
+  "requested": {
+    "message": "Requested"
+  },
   "formErrorSummaryPlural": {
     "message": "$COUNT$ fields above need your attention.",
     "placeholders": {
@@ -4799,5 +4940,140 @@
         "example": "My Org Name"
       }
     }
+  },
+  "accessDenied": {
+    "message": "Access Denied. You do not have permission to view this page."
+  },
+  "masterPassword": {
+    "message": "Master Password"
+  },
+  "security": {
+    "message": "Security"
+  },
+  "keys": {
+    "message": "Keys"
+  },
+  "billingHistory": {
+    "message": "Billing History"
+  },
+  "backToReports": {
+    "message": "Tillbaka till Rapporter"
+  },
+  "organizationPicker": {
+    "message": "Organization picker"
+  },
+  "currentOrganization": {
+    "message": "Current organization",
+    "description": "This is used by screen readers to indicate the organization that is currently being shown to the user."
+  },
+  "accountSettings": {
+    "message": "Account Settings"
+  },
+  "generator": {
+    "message": "Generator"
+  },
+  "whatWouldYouLikeToGenerate": {
+    "message": "What would you like to generate?"
+  },
+  "passwordType": {
+    "message": "Password Type"
+  },
+  "regenerateUsername": {
+    "message": "Regenerate Username"
+  },
+  "generateUsername": {
+    "message": "Generate Username"
+  },
+  "usernameType": {
+    "message": "Username Type"
+  },
+  "plusAddressedEmail": {
+    "message": "Plus Addressed Email",
+    "description": "Username generator option that appends a random sub-address to the username. For example: address+subaddress@email.com"
+  },
+  "plusAddressedEmailDesc": {
+    "message": "Use your email provider's sub-addressing capabilities."
+  },
+  "catchallEmail": {
+    "message": "Catch-all Email"
+  },
+  "catchallEmailDesc": {
+    "message": "Use your domain's configured catch-all inbox."
+  },
+  "random": {
+    "message": "Random",
+    "description": "Generates domain-based username using random letters"
+  },
+  "randomWord": {
+    "message": "Random Word"
+  },
+  "service": {
+    "message": "Service"
+  },
+  "unknownCipher": {
+    "message": "Unknown Item, you may need to request permission to access this item."
+  },
+  "cannotSponsorSelf": {
+    "message": "You cannot redeem for the active account. Enter a different email."
+  },
+  "revokeWhenExpired": {
+    "message": "Expires $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1",
+        "example": "12/31/2020"
+      }
+    }
+  },
+  "awaitingSyncSingular": {
+    "message": "Token rotated $DAYS$ day ago. Update the billing sync token in your self-hosted organization settings.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "awaitingSyncPlural": {
+    "message": "Token rotated $DAYS$ days ago. Update the billing sync token in your self-hosted organization settings.",
+    "placeholders": {
+      "days": {
+        "content": "$1",
+        "example": "1"
+      }
+    }
+  },
+  "lastSync": {
+    "message": "Last Sync",
+    "Description": "Used as a prefix to indicate the last time a sync occured. Example \"Last sync 1968-11-16 00:00:00\""
+  },
+  "sponsorshipsSynced": {
+    "message": "Self-hosted sponsorships synced."
+  },
+  "billingManagedByProvider": {
+    "message": "Managed by $PROVIDER$",
+    "placeholders": {
+      "provider": {
+        "content": "$1",
+        "example": "Managed Services Company"
+      }
+    }
+  },
+  "billingContactProviderForAssistance": {
+    "message": "Please reach out to them for further assistance",
+    "description": "This text is displayed if an organization's billing is managed by a Provider. It tells the user to contact the Provider for assistance."
+  },
+  "forwardedEmail": {
+    "message": "Forwarded Email Alias"
+  },
+  "forwardedEmailDesc": {
+    "message": "Generate an email alias with an external forwarding service."
+  },
+  "hostname": {
+    "message": "Hostname",
+    "description": "Part of a URL."
+  },
+  "apiAccessToken": {
+    "message": "API Access Token"
   }
 }
