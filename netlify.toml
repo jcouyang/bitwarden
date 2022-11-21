@@ -1,5 +1,5 @@
 [[redirects]]
-  from = "/api/*"
+  from = "https://jcoybw.netlify.app/api/*"
   to = "https://oyanglulu.synology.me:2873/api/:splat"
   status = 200
   force = true
