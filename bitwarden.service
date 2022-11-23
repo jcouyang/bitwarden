@@ -1,0 +1,9 @@
+[Unit]
+Description=Bitwarden Service
+
+[Service]
+WorkingDirectory=/var/services/homes/jcouyang/Apps/BitWarden
+ExecStart=/var/services/homes/jcouyang/Apps/BitWarden/vaultwarden
+
+[Install]
+WantedBy=multi-user.target
