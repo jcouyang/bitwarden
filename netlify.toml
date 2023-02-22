@@ -19,3 +19,10 @@
   force = true
   [redirects.headers]
     X-From = "Netlify"
+[[redirects]]
+  from = "/attachments/*"
+  to = "https://oyanglulu.synology.me:2873/attachments/:splat"
+  status = 200
+  force = true
+  [redirects.headers]
+    X-From = "Netlify"
