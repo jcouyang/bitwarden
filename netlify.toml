@@ -1,27 +1,27 @@
 [[redirects]]
   from = "/api/*"
-  to = "https://oyanglulu.synology.me:2873/api/:splat"
+  to = "https://vaultwarden.oyanglul.us/api/:splat"
   status = 200
   force = true
   [redirects.headers]
     X-From = "Netlify"
 [[redirects]]
   from = "/identity/*"
-  to = "https://oyanglulu.synology.me:2873/identity/:splat"
+  to = "https://vaultwarden.oyanglul.us/identity/:splat"
   status = 200
   force = true
   [redirects.headers]
     X-From = "Netlify"
 [[redirects]]
   from = "/icons/*"
-  to = "https://oyanglulu.synology.me:2873/icons/:splat"
+  to = "https://vaultwarden.oyanglul.us/icons/:splat"
   status = 200
   force = true
   [redirects.headers]
     X-From = "Netlify"
 [[redirects]]
   from = "/attachments/*"
-  to = "https://oyanglulu.synology.me:2873/attachments/:splat"
+  to = "https://vaultwarden.oyanglul.us/attachments/:splat"
   status = 200
   force = true
   [redirects.headers]
