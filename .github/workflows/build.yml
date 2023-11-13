@@ -15,7 +15,7 @@ jobs:
         name: jcouyang
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: |
-        nix bundle nixos#pkgsCross.armv7l-hf-multiplatform.vaultwarden
+        nix bundle nixpkgs#pkgsCross.armv7l-hf-multiplatform.vaultwarden
         ./vaultwarden --version
         nix-build '<nixpkgs>' -A pkgsCross.armv7l-hf-multiplatform.vaultwarden.passthru.webvault
     - uses: actions/upload-artifact@v2
