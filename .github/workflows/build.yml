@@ -16,11 +16,9 @@ jobs:
         authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: |
         nix bundle nixpkgs#pkgsCross.armv7l-hf-multiplatform.vaultwarden
-        nix-build '<nixpkgs>' -A pkgsCross.armv7l-hf-multiplatform.vaultwarden.passthru.webvault
         ls -al
     - uses: actions/upload-artifact@v2
       with:
         name: vaultwarden
         path: |
-          ./vaultwarden
-          ./result/share/vaultwarden/vault
+          .
