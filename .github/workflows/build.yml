@@ -17,7 +17,7 @@ jobs:
     - run: |
         nix bundle nixpkgs#pkgsCross.armv7l-hf-multiplatform.vaultwarden
         ls -al
-    - uses: actions/upload-artifact@v2
+    - uses: actions/upload-artifact@v4
       with:
         name: vaultwarden
         path: |
