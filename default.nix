@@ -3,7 +3,7 @@ let pkgs = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/809d16
       crossSystem = {
         config = "armv7l-unknown-linux-gnueabi"; }; };
 in {
-  server = armpkgs.vaultwarden;
+  server = armpkgs.pkgsStatic.vaultwarden;
   ui = pkgs.vaultwarden.webvault;
-  cloudflared = armpkgs.cloudflared;
+  cloudflared = armpkgs.pkgsStatic.cloudflared;
 }
